@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hedge Fund Position Predictor v6 | GitHub Pages</title>
+  <meta name="description" content="100% Free Data Hedge Fund Position Estimation Engine & Web Dashboard. 14 Free Data Channels, 11 Engines, Multi-Timeframe Fusion.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-group">
+      <div class="logo-badge">H</div>
+      <div>
+        <span class="brand-title">Hedge Fund Position Predictor</span>
+        <span class="version-tag">v6 Quant</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="https://github.com/eljja/Hedge" target="_blank" class="btn-github">
+        <i data-lucide="github"></i> GitHub Repository
+      </a>
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <div class="container">
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <h1 class="hero-title">Institutional Hedge Fund Position Tracker</h1>
+      <p class="hero-subtitle">
+        100% Free Data • 14 Data Channels • 11 Prediction Engines • Multi-Timeframe Fusion • GNN Herding
+      </p>
+    </header>
+
+    <!-- Metrics Grid -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-label">Tracked AUM</div>
+        <div class="metric-value">$2.45 Trillion</div>
+        <div class="metric-sub">50+ Top Global Funds</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Information Coefficient (IC)</div>
+        <div class="metric-value" id="metricIC">+0.385</div>
+        <div class="metric-sub">Spearman Rank Correlation</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Brier Calibration Score</div>
+        <div class="metric-value" id="metricBrier">0.082</div>
+        <div class="metric-sub">Optimal Calibration (&lt; 0.15)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Top-3 Sector Hit Rate</div>
+        <div class="metric-value" id="metricHit">84%</div>
+        <div class="metric-sub" id="lastUpdated">Last Updated: Live</div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+      <button class="tab-btn active" data-tab="tab-predictions">📊 Fund Position Estimates</button>
+      <button class="tab-btn" data-tab="tab-conviction">🌐 Conviction & Crowding</button>
+      <button class="tab-btn" data-tab="tab-heatmap">🔥 Sector Exposure Heatmap</button>
+      <button class="tab-btn" data-tab="tab-macro">🔮 CFTC Macro Futures Tilts</button>
+      <button class="tab-btn" data-tab="tab-architecture">🧪 System Architecture</button>
+    </nav>
+
+    <!-- Tab 1: Predictions -->
+    <main id="tab-predictions" class="tab-content active">
+      <div class="control-bar">
+        <select id="fundSelect" class="select-fund">
+          <!-- Populated by JS -->
+        </select>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search ticker or company name...">
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Issuer Name</th>
+              <th>Sector</th>
+              <th>Est. Weight</th>
+              <th>Confidence</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody id="fundPositionsTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tab 2: Conviction & Crowding -->
+    <main id="tab-conviction" class="tab-content">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div>
+          <h3 style="margin-bottom: 16px; color: var(--accent-emerald);">🟢 Hidden Alpha Opportunities (High Conviction, Low Consensus)</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Company</th>
+                  <th>Manager</th>
+                  <th>Confidence</th>
+                  <th>Rationale</th>
+                </tr>
+              </thead>
+              <tbody id="hiddenAlphaTable">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 16px; color: var(--accent-rose);">🔴 Crowding Risk Alerts (Forced Selling Risk)</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th>Company</th>
+                  <th>Holders</th>
+                  <th>Risk Level</th>
+                  <th>Rationale</th>
+                </tr>
+              </thead>
+              <tbody id="crowdingRiskTable">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Tab 3: Heatmap -->
+    <main id="tab-heatmap" class="tab-content">
+      <h3 style="margin-bottom: 16px;">Top Hedge Funds Sector Weight Matrix (%)</h3>
+      <div class="table-container">
+        <table class="heatmap-table">
+          <thead>
+            <tr>
+              <th>Manager</th>
+              <th>Tech</th>
+              <th>Financials</th>
+              <th>Health</th>
+              <th>Discretionary</th>
+              <th>Comm</th>
+              <th>Industrials</th>
+              <th>Energy</th>
+            </tr>
+          </thead>
+          <tbody id="sectorHeatmapTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tab 4: CFTC Macro -->
+    <main id="tab-macro" class="tab-content">
+      <h3 style="margin-bottom: 16px;">CFTC Commitments of Traders (COT) Leveraged Funds Positioning</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Contract</th>
+              <th>Category</th>
+              <th>Net Position</th>
+              <th>Z-Score</th>
+              <th>Macro Sentiment</th>
+            </tr>
+          </thead>
+          <tbody id="cftcTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tab 5: Architecture -->
+    <main id="tab-architecture" class="tab-content">
+      <div class="table-container" style="padding: 30px;">
+        <h2>System Architecture & Quantitative Methodology</h2>
+        <br>
+        <p>This application is powered by an institution-grade 11-engine quantitative ensemble using <strong>100% free regulatory and market data channels</strong>:</p>
+        <br>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>Data Channels (14)</strong>: SEC DERA 13F, 13D/13G, Form 4, 13F/A CT Reveal, N-PORT, N-PX, EU Short Register, Form 4 Insiders, SEC CORRESP Letters, yfinance, FF5, FRED, CFTC COT, OCC Options.</li>
+          <li><strong>Prediction Engines (11)</strong>: E1 Price Drift, E2 Kalman RBSA, E3 Bayesian Jump, E4 Options Delta, E5 Crowding Matrix, E6 NLP Sentiment, E7 CFTC Tilts, E8 Meta Return Gap, E9 GNN Herding, E10 Insider Boost, E11 SEC Scrutiny.</li>
+          <li><strong>Automated CI/CD Pipeline</strong>: GitHub Actions updates data daily and deploys directly to GitHub Pages (<code>https://eljja.github.io/Hedge</code>).</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Hosted on <a href="https://eljja.github.io/Hedge" target="_blank">GitHub Pages</a> • Open Source Project <a href="https://github.com/eljja/Hedge" target="_blank">github.com/eljja/Hedge</a></p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script>lucide.createIcons();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>
