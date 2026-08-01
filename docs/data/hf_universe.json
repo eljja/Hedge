@@ -268,5 +268,185 @@
     "public_vehicle": null,
     "eu_short_name": "Anchorage Capital",
     "aum_display": "$10B+"
+  },
+  {
+    "id": "schonfeld",
+    "name": "Schonfeld",
+    "cik": "0001665241",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Schonfeld Strategic Advisors",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "verition",
+    "name": "Verition",
+    "cik": "0001454027",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Verition Fund Management",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "walleye",
+    "name": "Walleye",
+    "cik": "0001758720",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "Walleye Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "hudson_bay",
+    "name": "Hudson Bay",
+    "cik": "0001393825",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Hudson Bay Capital Management",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "magnetar",
+    "name": "Magnetar",
+    "cik": "0001352851",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "Magnetar Financial",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "maverick",
+    "name": "Maverick",
+    "cik": "0000934639",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Maverick Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "whale_rock",
+    "name": "Whale Rock",
+    "cik": "0001387322",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Whale Rock Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "d1_capital",
+    "name": "D1 Capital",
+    "cik": "0001747057",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "D1 Capital Partners",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "matrix_capital",
+    "name": "Matrix Capital",
+    "cik": "0001410830",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Matrix Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "cik": "0001214822",
+    "strategy": "equity_long_short",
+    "public_vehicle": null,
+    "eu_short_name": "Steadfast Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "glenview",
+    "name": "Glenview",
+    "cik": "0001138995",
+    "strategy": "equity_long_short",
+    "public_vehicle": null,
+    "eu_short_name": "Glenview Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "icahn",
+    "name": "Icahn",
+    "cik": "0000921669",
+    "strategy": "concentrated_activist",
+    "public_vehicle": null,
+    "eu_short_name": "Icahn Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "valueact",
+    "name": "Valueact",
+    "cik": "0001351069",
+    "strategy": "concentrated_activist",
+    "public_vehicle": null,
+    "eu_short_name": "ValueAct Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "jana_partners",
+    "name": "Jana Partners",
+    "cik": "0001998597",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "JANA Partners",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "starboard",
+    "name": "Starboard",
+    "cik": "0001517137",
+    "strategy": "concentrated_activist",
+    "public_vehicle": null,
+    "eu_short_name": "Starboard Value",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "winton",
+    "name": "Winton",
+    "cik": "0001456098",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "Winton Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "worldquant",
+    "name": "Worldquant",
+    "cik": "0001745981",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "WorldQuant",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "king_street",
+    "name": "King Street",
+    "cik": "0001218199",
+    "strategy": "credit",
+    "public_vehicle": null,
+    "eu_short_name": "King Street Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "cerberus",
+    "name": "Cerberus",
+    "cik": "0001525907",
+    "strategy": "credit",
+    "public_vehicle": null,
+    "eu_short_name": "Cerberus Capital Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "egerton",
+    "name": "Egerton",
+    "cik": "0001354050",
+    "strategy": "equity_long_short",
+    "public_vehicle": null,
+    "eu_short_name": "Egerton Capital",
+    "aum_display": "$10B+"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "report_date": "2026-08-01",
+  "report_date": "2026-08-02",
   "contracts": [
     {
       "name": "S&P 500 E-mini",
@@ -35,6 +35,20 @@
       "net_position": "+94,800",
       "z_score": 1.92,
       "sentiment": "STRONGLY BULLISH"
+    },
+    {
+      "name": "Euro FX",
+      "category": "Currency",
+      "net_position": "+55,300",
+      "z_score": 0.85,
+      "sentiment": "MILDLY BULLISH"
+    },
+    {
+      "name": "Japanese Yen",
+      "category": "Currency",
+      "net_position": "-78,900",
+      "z_score": -1.45,
+      "sentiment": "BEARISH"
     }
   ],
   "sector_tilts": [
@@ -57,6 +71,11 @@
       "sector": "Materials / Gold",
       "tilt": "+0.92σ",
       "direction": "LONG"
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "tilt": "+0.31σ",
+      "direction": "NEUTRAL-LONG"
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hedge Fund Position Predictor v6 | GitHub Pages</title>
+  <title>Hedge Fund Position Predictor v6 | Premium Dashboard</title>
   <meta name="description" content="100% Free Data Hedge Fund Position Estimation Engine & Web Dashboard. 14 Free Data Channels, 11 Engines, Multi-Timeframe Fusion.">
   
   <!-- Fonts -->
@@ -29,6 +29,10 @@
       </div>
     </div>
     <div class="nav-links">
+      <div class="data-source-indicator">
+        <span class="live-pulse"></span>
+        <span id="dataSourceText">SEC EDGAR 13F</span>
+      </div>
       <a href="https://github.com/eljja/Hedge" target="_blank" class="btn-github">
         <i data-lucide="github"></i> GitHub Repository
       </a>
@@ -48,31 +52,38 @@
 
     <!-- Metrics Grid -->
     <section class="metrics-grid">
-      <div class="metric-card">
-        <div class="metric-label">Tracked AUM</div>
-        <div class="metric-value">$2.45 Trillion</div>
-        <div class="metric-sub">50+ Top Global Funds</div>
+      <div class="metric-card glass">
+        <div class="metric-label">Tracked Funds</div>
+        <div class="metric-value">50+</div>
+        <div class="metric-sub">Top Global Funds</div>
       </div>
-      <div class="metric-card">
+      <div class="metric-card glass">
         <div class="metric-label">Information Coefficient (IC)</div>
         <div class="metric-value" id="metricIC">+0.385</div>
         <div class="metric-sub">Spearman Rank Correlation</div>
       </div>
-      <div class="metric-card">
+      <div class="metric-card glass">
         <div class="metric-label">Brier Calibration Score</div>
         <div class="metric-value" id="metricBrier">0.082</div>
         <div class="metric-sub">Optimal Calibration (&lt; 0.15)</div>
       </div>
-      <div class="metric-card">
+      <div class="metric-card glass">
         <div class="metric-label">Top-3 Sector Hit Rate</div>
         <div class="metric-value" id="metricHit">84%</div>
         <div class="metric-sub" id="lastUpdated">Last Updated: Live</div>
       </div>
     </section>
 
+    <!-- Global Search -->
+    <div class="global-search-container">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" id="searchInput" class="search-box global-search" placeholder="Search across all tabs for ticker or company name...">
+    </div>
+
     <!-- Navigation Tabs -->
     <nav class="tabs-nav">
       <button class="tab-btn active" data-tab="tab-predictions">📊 Fund Position Estimates</button>
+      <button class="tab-btn" data-tab="tab-top-holdings">📈 Top Holdings Across All Funds</button>
       <button class="tab-btn" data-tab="tab-conviction">🌐 Conviction & Crowding</button>
       <button class="tab-btn" data-tab="tab-heatmap">🔥 Sector Exposure Heatmap</button>
       <button class="tab-btn" data-tab="tab-macro">🔮 CFTC Macro Futures Tilts</button>
@@ -81,23 +92,31 @@
 
     <!-- Tab 1: Predictions -->
     <main id="tab-predictions" class="tab-content active">
-      <div class="control-bar">
+      <div class="control-bar glass-bar">
+        <select id="strategySelect" class="select-fund">
+          <option value="all">All Strategies</option>
+          <!-- Populated by JS -->
+        </select>
         <select id="fundSelect" class="select-fund">
           <!-- Populated by JS -->
         </select>
-        <input type="text" id="searchInput" class="search-box" placeholder="Search ticker or company name...">
+        <div class="portfolio-value-display">
+          <span class="pv-label">Total Portfolio Value:</span>
+          <span class="pv-value" id="portfolioValue">$0.00</span>
+        </div>
       </div>
 
-      <div class="table-container">
-        <table>
+      <div class="table-container glass-table">
+        <table id="table-predictions">
           <thead>
             <tr>
-              <th>Ticker</th>
-              <th>Issuer Name</th>
-              <th>Sector</th>
-              <th>Est. Weight</th>
-              <th>Confidence</th>
-              <th>Rating</th>
+              <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="name">Issuer Name <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="type">Type <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="weight">Est. Weight <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="rating">Rating <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
           <tbody id="fundPositionsTable">
@@ -107,19 +126,40 @@
       </div>
     </main>
 
+    <!-- Tab 6: Top Holdings -->
+    <main id="tab-top-holdings" class="tab-content">
+      <h3 style="margin-bottom: 16px;">Most Commonly Held Assets Across Universe</h3>
+      <div class="table-container glass-table">
+        <table id="table-top-holdings">
+          <thead>
+            <tr>
+              <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="name">Company Name <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="count">Funds Holding <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="avgWeight">Avg Weight <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
+            </tr>
+          </thead>
+          <tbody id="topHoldingsTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
     <!-- Tab 2: Conviction & Crowding -->
     <main id="tab-conviction" class="tab-content">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div class="grid-2col">
         <div>
           <h3 style="margin-bottom: 16px; color: var(--accent-emerald);">🟢 Hidden Alpha Opportunities (High Conviction, Low Consensus)</h3>
-          <div class="table-container">
-            <table>
+          <div class="table-container glass-table">
+            <table id="table-hidden">
               <thead>
                 <tr>
-                  <th>Ticker</th>
-                  <th>Company</th>
-                  <th>Manager</th>
-                  <th>Confidence</th>
+                  <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="name">Company <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="manager">Manager <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
                   <th>Rationale</th>
                 </tr>
               </thead>
@@ -132,14 +172,14 @@
 
         <div>
           <h3 style="margin-bottom: 16px; color: var(--accent-rose);">🔴 Crowding Risk Alerts (Forced Selling Risk)</h3>
-          <div class="table-container">
-            <table>
+          <div class="table-container glass-table">
+            <table id="table-crowding">
               <thead>
                 <tr>
-                  <th>Ticker</th>
-                  <th>Company</th>
-                  <th>Holders</th>
-                  <th>Risk Level</th>
+                  <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="name">Company <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="holders">Holders <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="risk">Risk Level <i data-lucide="chevrons-up-down"></i></th>
                   <th>Rationale</th>
                 </tr>
               </thead>
@@ -155,18 +195,22 @@
     <!-- Tab 3: Heatmap -->
     <main id="tab-heatmap" class="tab-content">
       <h3 style="margin-bottom: 16px;">Top Hedge Funds Sector Weight Matrix (%)</h3>
-      <div class="table-container">
-        <table class="heatmap-table">
+      <div class="table-container glass-table heatmap-wrapper">
+        <table class="heatmap-table" id="table-heatmap">
           <thead>
             <tr>
-              <th>Manager</th>
-              <th>Tech</th>
-              <th>Financials</th>
-              <th>Health</th>
-              <th>Discretionary</th>
-              <th>Comm</th>
-              <th>Industrials</th>
-              <th>Energy</th>
+              <th data-sort="manager">Manager <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="tech">Tech <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="financials">Financials <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="health">Health <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="discretionary">Discretionary <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="comm">Comm <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="industrials">Industrials <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="energy">Energy <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="materials">Materials <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="realestate">Real Estate <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="staples">Staples <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="utilities">Utilities <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
           <tbody id="sectorHeatmapTable">
@@ -179,15 +223,15 @@
     <!-- Tab 4: CFTC Macro -->
     <main id="tab-macro" class="tab-content">
       <h3 style="margin-bottom: 16px;">CFTC Commitments of Traders (COT) Leveraged Funds Positioning</h3>
-      <div class="table-container">
-        <table>
+      <div class="table-container glass-table">
+        <table id="table-cftc">
           <thead>
             <tr>
-              <th>Contract</th>
-              <th>Category</th>
-              <th>Net Position</th>
-              <th>Z-Score</th>
-              <th>Macro Sentiment</th>
+              <th data-sort="contract">Contract <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="category">Category <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="position">Net Position <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="zscore">Z-Score <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="sentiment">Macro Sentiment <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
           <tbody id="cftcTable">
@@ -199,16 +243,39 @@
 
     <!-- Tab 5: Architecture -->
     <main id="tab-architecture" class="tab-content">
-      <div class="table-container" style="padding: 30px;">
+      <div class="architecture-container glass">
         <h2>System Architecture & Quantitative Methodology</h2>
-        <br>
-        <p>This application is powered by an institution-grade 11-engine quantitative ensemble using <strong>100% free regulatory and market data channels</strong>:</p>
-        <br>
-        <ul style="margin-left: 20px; line-height: 1.8;">
-          <li><strong>Data Channels (14)</strong>: SEC DERA 13F, 13D/13G, Form 4, 13F/A CT Reveal, N-PORT, N-PX, EU Short Register, Form 4 Insiders, SEC CORRESP Letters, yfinance, FF5, FRED, CFTC COT, OCC Options.</li>
-          <li><strong>Prediction Engines (11)</strong>: E1 Price Drift, E2 Kalman RBSA, E3 Bayesian Jump, E4 Options Delta, E5 Crowding Matrix, E6 NLP Sentiment, E7 CFTC Tilts, E8 Meta Return Gap, E9 GNN Herding, E10 Insider Boost, E11 SEC Scrutiny.</li>
-          <li><strong>Automated CI/CD Pipeline</strong>: GitHub Actions updates data daily and deploys directly to GitHub Pages (<code>https://eljja.github.io/Hedge</code>).</li>
-        </ul>
+        <p class="arch-subtitle">This application is powered by an institution-grade 11-engine quantitative ensemble using <strong>100% free regulatory and market data channels</strong>.</p>
+        
+        <div class="diagram">
+            <div class="diagram-layer">
+                <div class="diagram-box blue">
+                    <h4>Data Channels (14)</h4>
+                    <p>SEC DERA 13F, 13D/13G, Form 4, 13F/A CT Reveal, N-PORT, N-PX, EU Short Register, Form 4 Insiders, SEC CORRESP Letters, yfinance, FF5, FRED, CFTC COT, OCC Options</p>
+                </div>
+            </div>
+            <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
+            <div class="diagram-layer engine-grid">
+                <div class="diagram-box purple">E1 Price Drift</div>
+                <div class="diagram-box purple">E2 Kalman RBSA</div>
+                <div class="diagram-box purple">E3 Bayesian Jump</div>
+                <div class="diagram-box purple">E4 Options Delta</div>
+                <div class="diagram-box purple">E5 Crowding Matrix</div>
+                <div class="diagram-box purple">E6 NLP Sentiment</div>
+                <div class="diagram-box purple">E7 CFTC Tilts</div>
+                <div class="diagram-box purple">E8 Meta Return Gap</div>
+                <div class="diagram-box purple">E9 GNN Herding</div>
+                <div class="diagram-box purple">E10 Insider Boost</div>
+                <div class="diagram-box purple">E11 SEC Scrutiny</div>
+            </div>
+            <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
+            <div class="diagram-layer">
+                <div class="diagram-box emerald">
+                    <h4>Multi-Timeframe Fusion & Output</h4>
+                    <p>Automated CI/CD Pipeline updating via GitHub Actions directly to GitHub Pages</p>
+                </div>
+            </div>
+        </div>
       </div>
     </main>
 
