@@ -101,9 +101,17 @@
           <!-- Populated by JS -->
         </select>
         <div class="portfolio-value-display">
-          <span class="pv-label">Total Portfolio Value:</span>
+          <span class="pv-label">Total Est. Portfolio Value:</span>
           <span class="pv-value" id="portfolioValue">$0.00</span>
         </div>
+      </div>
+
+      <!-- Fund Exposure Summary Bar -->
+      <div id="fundExposureBar" class="exposure-bar glass-bar" style="margin-bottom: 16px; padding: 12px 20px; display: flex; gap: 24px; align-items: center; font-size: 0.9rem;">
+        <div>🟢 <strong>Long Capital:</strong> <span id="expLong">$0M (0%)</span></div>
+        <div>🔴 <strong>Short Capital:</strong> <span id="expShort">$0M (0%)</span></div>
+        <div>⚖️ <strong>Net Exposure:</strong> <span id="expNet">0%</span></div>
+        <div>📊 <strong>Gross Exposure:</strong> <span id="expGross">0%</span></div>
       </div>
 
       <div class="table-container glass-table">
@@ -114,6 +122,7 @@
               <th data-sort="name">Issuer Name <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="type">Type <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="value_m">Est. Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="weight">Est. Weight <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="rating">Rating <i data-lucide="chevrons-up-down"></i></th>
@@ -128,7 +137,7 @@
 
     <!-- Tab 6: Top Holdings -->
     <main id="tab-top-holdings" class="tab-content">
-      <h3 style="margin-bottom: 16px;">Most Commonly Held Assets Across Universe</h3>
+      <h3 style="margin-bottom: 16px;">Most Commonly Held Assets & Capital Intensity Across Universe</h3>
       <div class="table-container glass-table">
         <table id="table-top-holdings">
           <thead>
@@ -137,7 +146,9 @@
               <th data-sort="name">Company Name <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="count">Funds Holding <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="bias">Position Bias <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="totalValue">Total Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="avgWeight">Avg Weight <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="intensity">Conviction Intensity <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>

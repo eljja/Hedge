@@ -4,351 +4,571 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF",
       "sector": "Index",
-      "weight": 0.15,
-      "confidence": 70,
-      "rating": "MODERATE",
+      "weight": 0.145,
+      "confidence": 92.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4200.0
     },
     {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
-      "weight": 0.12,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.112,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3250.0
     },
     {
       "ticker": "TLT",
       "name": "iShares 20+ Year Treasury",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.098,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2840.0
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500",
+      "sector": "Index",
+      "weight": 0.085,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2460.0
     },
     {
       "ticker": "VWO",
       "name": "Vanguard FTSE Emerging",
       "sector": "Emerging Markets",
-      "weight": 0.08,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.064,
+      "confidence": 81.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1850.0
     }
   ],
   "citadel": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc",
       "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3160.0
     }
   ],
   "de_shaw": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "two_sigma": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "renaissance": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "millennium": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "point72": [
-    {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "elliott": [
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "sector": "Information Technology",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3160.0
+    }
+  ],
+  "point72": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "sector": "Information Technology",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 5800.0
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp",
+      "sector": "Information Technology",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "sector": "Information Technology",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3160.0
+    }
+  ],
+  "elliott": [
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1450.0
+    },
+    {
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "third_point": [
     {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
     }
   ],
   "pershing_square": [
     {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
     }
   ],
   "tci": [
     {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
     }
   ],
   "viking": [
@@ -356,31 +576,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "lone_pine": [
@@ -388,31 +628,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "tiger_global": [
@@ -420,31 +680,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "coatue": [
@@ -452,393 +732,613 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "baupost": [
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1450.0
     },
     {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "appaloosa": [
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1450.0
     },
     {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "greenlight": [
     {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 92.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 980.0
+    },
+    {
+      "ticker": "CNX",
+      "name": "CNX Resources Corp",
+      "sector": "Energy",
+      "weight": 0.124,
+      "confidence": 88.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 730.0
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "sector": "Materials",
+      "weight": 0.095,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 560.0
+    },
+    {
+      "ticker": "CC",
+      "name": "Chemours Co",
+      "sector": "Materials",
+      "weight": 0.078,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 460.0
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms Inc",
-      "sector": "Communication Services",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.045,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 370.0
     }
   ],
   "aqr": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "man_group": [
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "balyasny": [
-    {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "exoduspoint": [
-    {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "marshall_wace": [
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Information Technology",
+      "weight": 0.035,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1030.0
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 910.0
+    }
+  ],
+  "man_group": [
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1420.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Information Technology",
+      "weight": 0.035,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1030.0
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 910.0
+    }
+  ],
+  "balyasny": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "sector": "Information Technology",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.045,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "farallon": [
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "sector": "Information Technology",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3160.0
+    }
+  ],
+  "exoduspoint": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "sector": "Information Technology",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 5800.0
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp",
+      "sector": "Information Technology",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "sector": "Information Technology",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3160.0
+    }
+  ],
+  "marshall_wace": [
+    {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 92.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 980.0
+    },
+    {
+      "ticker": "CNX",
+      "name": "CNX Resources Corp",
+      "sector": "Energy",
+      "weight": 0.124,
+      "confidence": 88.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 730.0
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "sector": "Materials",
+      "weight": 0.095,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 560.0
+    },
+    {
+      "ticker": "CC",
+      "name": "Chemours Co",
+      "sector": "Materials",
+      "weight": 0.078,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 460.0
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "sector": "Information Technology",
+      "weight": 0.062,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 370.0
+    }
+  ],
+  "farallon": [
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1450.0
+    },
+    {
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "canyon_partners": [
     {
       "ticker": "HYG",
-      "name": "iShares High Yield Corp Bond",
+      "name": "iShares iBoxx $ High Yield Corp",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.185,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1250.0
     },
     {
       "ticker": "LQD",
       "name": "iShares Investment Grade Corp",
       "sector": "Fixed Income",
-      "weight": 0.08,
-      "confidence": 52,
-      "rating": "LOW",
+      "weight": 0.142,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 960.0
+    },
+    {
+      "ticker": "JNK",
+      "name": "SPDR Bloomberg High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.115,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 780.0
+    },
+    {
+      "ticker": "Canyon / Credit Basket",
+      "name": "Private Credit & Distressed Notes",
+      "sector": "Fixed Income",
+      "weight": 0.28,
+      "confidence": 75.0,
+      "rating": "MODERATE",
+      "type": "LONG",
+      "value_m": 1890.0
     }
   ],
   "sculptor": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc",
       "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3160.0
     }
   ],
   "tudor": [
@@ -846,41 +1346,51 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF",
       "sector": "Index",
-      "weight": 0.15,
-      "confidence": 70,
-      "rating": "MODERATE",
+      "weight": 0.145,
+      "confidence": 92.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4200.0
     },
     {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
-      "weight": 0.12,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.112,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3250.0
     },
     {
       "ticker": "TLT",
       "name": "iShares 20+ Year Treasury",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.098,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2840.0
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500",
+      "sector": "Index",
+      "weight": 0.085,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2460.0
     },
     {
       "ticker": "VWO",
       "name": "Vanguard FTSE Emerging",
       "sector": "Emerging Markets",
-      "weight": 0.08,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.064,
+      "confidence": 81.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1850.0
     }
   ],
   "soros": [
@@ -888,41 +1398,51 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF",
       "sector": "Index",
-      "weight": 0.15,
-      "confidence": 70,
-      "rating": "MODERATE",
+      "weight": 0.145,
+      "confidence": 92.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4200.0
     },
     {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
-      "weight": 0.12,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.112,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3250.0
     },
     {
       "ticker": "TLT",
       "name": "iShares 20+ Year Treasury",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.098,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2840.0
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500",
+      "sector": "Index",
+      "weight": 0.085,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2460.0
     },
     {
       "ticker": "VWO",
       "name": "Vanguard FTSE Emerging",
       "sector": "Emerging Markets",
-      "weight": 0.08,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.064,
+      "confidence": 81.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1850.0
     }
   ],
   "duquesne": [
@@ -930,253 +1450,353 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF",
       "sector": "Index",
-      "weight": 0.15,
-      "confidence": 70,
-      "rating": "MODERATE",
+      "weight": 0.145,
+      "confidence": 92.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4200.0
     },
     {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
-      "weight": 0.12,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.112,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3250.0
     },
     {
       "ticker": "TLT",
       "name": "iShares 20+ Year Treasury",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.098,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 2840.0
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500",
+      "sector": "Index",
+      "weight": 0.085,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2460.0
     },
     {
       "ticker": "VWO",
       "name": "Vanguard FTSE Emerging",
       "sector": "Emerging Markets",
-      "weight": 0.08,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.064,
+      "confidence": 81.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1850.0
     }
   ],
   "anchorage": [
     {
       "ticker": "HYG",
-      "name": "iShares High Yield Corp Bond",
+      "name": "iShares iBoxx $ High Yield Corp",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.185,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1250.0
     },
     {
       "ticker": "LQD",
       "name": "iShares Investment Grade Corp",
       "sector": "Fixed Income",
-      "weight": 0.08,
-      "confidence": 52,
-      "rating": "LOW",
+      "weight": 0.142,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 960.0
+    },
+    {
+      "ticker": "JNK",
+      "name": "SPDR Bloomberg High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.115,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 780.0
+    },
+    {
+      "ticker": "Canyon / Credit Basket",
+      "name": "Private Credit & Distressed Notes",
+      "sector": "Fixed Income",
+      "weight": 0.28,
+      "confidence": 75.0,
+      "rating": "MODERATE",
+      "type": "LONG",
+      "value_m": 1890.0
     }
   ],
   "schonfeld": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc",
       "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3160.0
     }
   ],
   "verition": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc",
       "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 3160.0
     }
   ],
   "walleye": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "hudson_bay": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "sector": "Index",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.088,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 5800.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.076,
+      "confidence": 91.5,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "magnetar": [
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 5010.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 87.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 4080.0
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.054,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3550.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc",
+      "sector": "Information Technology",
+      "weight": 0.048,
+      "confidence": 83.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 3160.0
+    }
+  ],
+  "magnetar": [
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1450.0
+    },
+    {
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "maverick": [
@@ -1184,31 +1804,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "whale_rock": [
@@ -1216,31 +1856,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "d1_capital": [
@@ -1248,31 +1908,51 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "matrix_capital": [
@@ -1280,313 +1960,603 @@
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.08,
-      "confidence": 68,
-      "rating": "MODERATE",
+      "weight": 0.142,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1950.0
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
       "sector": "Information Technology",
-      "weight": 0.07,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.118,
+      "confidence": 90.0,
+      "rating": "CONFIRMED",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1620.0
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
-      "weight": 0.06,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.095,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1300.0
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc",
+      "sector": "Financials",
+      "weight": 0.076,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1040.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "weight": 0.062,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
     }
   ],
   "steadfast": [
     {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 92.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 980.0
+    },
+    {
+      "ticker": "CNX",
+      "name": "CNX Resources Corp",
+      "sector": "Energy",
+      "weight": 0.124,
+      "confidence": 88.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 730.0
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "sector": "Materials",
+      "weight": 0.095,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 560.0
+    },
+    {
+      "ticker": "CC",
+      "name": "Chemours Co",
+      "sector": "Materials",
+      "weight": 0.078,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 460.0
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms Inc",
-      "sector": "Communication Services",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.045,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 370.0
     }
   ],
   "glenview": [
     {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 92.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 980.0
+    },
+    {
+      "ticker": "CNX",
+      "name": "CNX Resources Corp",
+      "sector": "Energy",
+      "weight": 0.124,
+      "confidence": 88.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 730.0
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "sector": "Materials",
+      "weight": 0.095,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 560.0
+    },
+    {
+      "ticker": "CC",
+      "name": "Chemours Co",
+      "sector": "Materials",
+      "weight": 0.078,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 460.0
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 370.0
+    }
+  ],
+  "icahn": [
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
+    }
+  ],
+  "valueact": [
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
+    }
+  ],
+  "jana_partners": [
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corp",
+      "sector": "Utilities",
+      "weight": 0.115,
+      "confidence": 89.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1450.0
+    },
+    {
+      "ticker": "VSAT",
+      "name": "Viasat Inc",
+      "sector": "Communication Services",
+      "weight": 0.092,
+      "confidence": 86.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1160.0
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "weight": 0.081,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1020.0
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco Corp",
+      "sector": "Consumer Staples",
+      "weight": 0.075,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 940.0
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital Corp",
+      "sector": "Information Technology",
+      "weight": 0.068,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 850.0
+    }
+  ],
+  "starboard": [
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "weight": 0.224,
+      "confidence": 96.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2850.0
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "sector": "Consumer Discretionary",
+      "weight": 0.182,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2310.0
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 94.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 2090.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "sector": "Communication Services",
+      "weight": 0.141,
+      "confidence": 91.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1790.0
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "sector": "Real Estate",
+      "weight": 0.128,
+      "confidence": 93.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 1620.0
+    }
+  ],
+  "winton": [
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1420.0
     },
     {
       "ticker": "META",
       "name": "Meta Platforms Inc",
       "sector": "Communication Services",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1240.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.045,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "icahn": [
-    {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "valueact": [
-    {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "jana_partners": [
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.05,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 1120.0
     },
     {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.04,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "starboard": [
-    {
-      "ticker": "—",
-      "name": "Concentrated position (undisclosed)",
-      "sector": "Other",
-      "weight": 0.2,
-      "confidence": 55,
-      "rating": "LOW",
-      "type": "LONG",
-      "value_m": 0
-    }
-  ],
-  "winton": [
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "worldquant": [
     {
-      "ticker": "NVDA",
-      "name": "NVIDIA Corp",
-      "sector": "Information Technology",
-      "weight": 0.04,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Health Care",
+      "weight": 0.048,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1420.0
     },
     {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
+      "ticker": "META",
+      "name": "Meta Platforms Inc",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.5,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1240.0
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "weight": 0.038,
+      "confidence": 74.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 1120.0
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
       "sector": "Information Technology",
       "weight": 0.035,
-      "confidence": 63,
-      "rating": "MODERATE",
+      "confidence": 76.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1030.0
     },
     {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
       "sector": "Information Technology",
-      "weight": 0.03,
-      "confidence": 60,
-      "rating": "MODERATE",
+      "weight": 0.031,
+      "confidence": 72.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon.com Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.028,
-      "confidence": 58,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 910.0
     }
   ],
   "king_street": [
     {
       "ticker": "HYG",
-      "name": "iShares High Yield Corp Bond",
+      "name": "iShares iBoxx $ High Yield Corp",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.185,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1250.0
     },
     {
       "ticker": "LQD",
       "name": "iShares Investment Grade Corp",
       "sector": "Fixed Income",
-      "weight": 0.08,
-      "confidence": 52,
-      "rating": "LOW",
+      "weight": 0.142,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 960.0
+    },
+    {
+      "ticker": "JNK",
+      "name": "SPDR Bloomberg High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.115,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 780.0
+    },
+    {
+      "ticker": "Canyon / Credit Basket",
+      "name": "Private Credit & Distressed Notes",
+      "sector": "Fixed Income",
+      "weight": 0.28,
+      "confidence": 75.0,
+      "rating": "MODERATE",
+      "type": "LONG",
+      "value_m": 1890.0
     }
   ],
   "cerberus": [
     {
       "ticker": "HYG",
-      "name": "iShares High Yield Corp Bond",
+      "name": "iShares iBoxx $ High Yield Corp",
       "sector": "Fixed Income",
-      "weight": 0.1,
-      "confidence": 55,
-      "rating": "MODERATE",
+      "weight": 0.185,
+      "confidence": 88.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 1250.0
     },
     {
       "ticker": "LQD",
       "name": "iShares Investment Grade Corp",
       "sector": "Fixed Income",
-      "weight": 0.08,
-      "confidence": 52,
-      "rating": "LOW",
+      "weight": 0.142,
+      "confidence": 85.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
+      "value_m": 960.0
+    },
+    {
+      "ticker": "JNK",
+      "name": "SPDR Bloomberg High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.115,
+      "confidence": 82.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 780.0
+    },
+    {
+      "ticker": "Canyon / Credit Basket",
+      "name": "Private Credit & Distressed Notes",
+      "sector": "Fixed Income",
+      "weight": 0.28,
+      "confidence": 75.0,
+      "rating": "MODERATE",
+      "type": "LONG",
+      "value_m": 1890.0
     }
   ],
   "egerton": [
     {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "sector": "Consumer Discretionary",
+      "weight": 0.165,
+      "confidence": 92.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "value_m": 980.0
+    },
+    {
+      "ticker": "CNX",
+      "name": "CNX Resources Corp",
+      "sector": "Energy",
+      "weight": 0.124,
+      "confidence": 88.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 730.0
+    },
+    {
+      "ticker": "TECK",
+      "name": "Teck Resources Ltd",
+      "sector": "Materials",
+      "weight": 0.095,
+      "confidence": 85.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 560.0
+    },
+    {
+      "ticker": "CC",
+      "name": "Chemours Co",
+      "sector": "Materials",
+      "weight": 0.078,
+      "confidence": 81.0,
+      "rating": "HIGH",
+      "type": "LONG",
+      "value_m": 460.0
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
-      "weight": 0.06,
-      "confidence": 65,
-      "rating": "MODERATE",
+      "weight": 0.062,
+      "confidence": 78.0,
+      "rating": "HIGH",
       "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms Inc",
-      "sector": "Communication Services",
-      "weight": 0.05,
-      "confidence": 62,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft Corp",
-      "sector": "Information Technology",
-      "weight": 0.045,
-      "confidence": 60,
-      "rating": "MODERATE",
-      "type": "LONG",
-      "value_m": 0
+      "value_m": 370.0
     }
   ]
 }

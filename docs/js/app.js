@@ -200,20 +200,47 @@ const App = {
     const positions = this.data.predictions[fundId] || [];
 
     if (positions.length === 0) {
-      container.innerHTML = `<tr><td colspan="7" style="text-align:center; color: var(--text-muted);">No estimated positions available for this manager.</td></tr>`;
+      container.innerHTML = `<tr><td colspan="8" style="text-align:center; color: var(--text-muted);">No estimated positions available for this manager.</td></tr>`;
       lucide.createIcons();
       return;
     }
 
+    // Calculate Exposure
+    let longVal = 0, shortVal = 0, longWeight = 0, shortWeight = 0;
+    positions.forEach(p => {
+      const isShort = (p.type === 'SHORT' || p.putCall === 'PUT');
+      const val = p.value_m || 0;
+      const w = p.weight || 0;
+      if (isShort) {
+        shortVal += val;
+        shortWeight += w;
+      } else {
+        longVal += val;
+        longWeight += w;
+      }
+    });
+
+    const expLong = document.getElementById("expLong");
+    const expShort = document.getElementById("expShort");
+    const expNet = document.getElementById("expNet");
+    const expGross = document.getElementById("expGross");
+
+    if (expLong) expLong.textContent = `$${Math.round(longVal).toLocaleString()}M (${(longWeight * 100).toFixed(1)}%)`;
+    if (expShort) expShort.textContent = `$${Math.round(shortVal).toLocaleString()}M (${(shortWeight * 100).toFixed(1)}%)`;
+    if (expNet) expNet.textContent = `${((longWeight - shortWeight) * 100).toFixed(1)}%`;
+    if (expGross) expGross.textContent = `${((longWeight + shortWeight) * 100).toFixed(1)}%`;
+
     let html = "";
     positions.forEach((p) => {
       const badgeClass = `badge-${p.rating ? p.rating.toLowerCase() : 'low'}`;
+      const valDisplay = p.value_m ? `$${Math.round(p.value_m).toLocaleString()}M` : '-';
       html += `
         <tr>
           <td><strong style="color: var(--accent-blue);">${p.ticker || '-'}</strong></td>
           <td>${p.name || '-'}</td>
           <td>${p.sector || '-'}</td>
           <td>${this.getTypeHtml(p.type, p.putCall)}</td>
+          <td><strong>${valDisplay}</strong></td>
           <td><strong>${p.weight ? (p.weight * 100).toFixed(2) : '0.00'}%</strong></td>
           <td>${p.confidence ? p.confidence.toFixed(1) : '0.0'}%</td>
           <td><span class="badge ${badgeClass}">${p.rating || '-'}</span></td>
@@ -243,26 +270,34 @@ const App = {
                       count: 0,
                       longCount: 0,
                       shortCount: 0,
-                      totalWeight: 0
+                      totalWeight: 0,
+                      totalValue: 0,
+                      longValue: 0,
+                      shortValue: 0,
                   };
               }
+              const isShort = (p.type === 'SHORT' || p.putCall === 'PUT');
+              const val = p.value_m || 0;
               holdingsMap[p.ticker].count += 1;
-              if (p.type === 'SHORT' || p.putCall === 'PUT') {
+              holdingsMap[p.ticker].totalWeight += (p.weight || 0);
+              holdingsMap[p.ticker].totalValue += val;
+              if (isShort) {
                   holdingsMap[p.ticker].shortCount += 1;
+                  holdingsMap[p.ticker].shortValue += val;
               } else {
                   holdingsMap[p.ticker].longCount += 1;
+                  holdingsMap[p.ticker].longValue += val;
               }
-              holdingsMap[p.ticker].totalWeight += (p.weight || 0);
           });
       });
 
       const holdingsList = Object.values(holdingsMap);
-      holdingsList.sort((a, b) => b.count - a.count); // sort by count desc
+      holdingsList.sort((a, b) => b.totalValue - a.totalValue); // sort by total capital desc
 
       const topHoldings = holdingsList.slice(0, 50); // top 50
 
       if (topHoldings.length === 0) {
-          container.innerHTML = `<tr><td colspan="6" style="text-align:center; color: var(--text-muted);">No holdings data.</td></tr>`;
+          container.innerHTML = `<tr><td colspan="8" style="text-align:center; color: var(--text-muted);">No holdings data.</td></tr>`;
           return;
       }
 
@@ -277,13 +312,21 @@ const App = {
           } else {
               biasBadge = `<span class="type-indicator type-long">LONG (${h.longCount})</span> / <span class="type-indicator type-short">SHORT (${h.shortCount})</span>`;
           }
+
+          // Conviction Intensity (0-100%)
+          const netBiasRatio = (h.longCount - h.shortCount) / h.count;
+          const intensityScore = Math.min(100, Math.round((h.count * 2) + (avgWeight * 8) + (netBiasRatio * 20)));
+          const intensityColor = intensityScore > 75 ? 'var(--accent-emerald)' : (intensityScore > 50 ? 'var(--accent-cyan)' : 'var(--accent-amber)');
+
           html += `
             <tr>
               <td><strong style="color: var(--accent-emerald);">${h.ticker}</strong></td>
               <td>${h.name}</td>
               <td><strong>${h.count}</strong> Funds</td>
               <td>${biasBadge}</td>
+              <td><strong>$${Math.round(h.totalValue).toLocaleString()}M</strong></td>
               <td>${avgWeight.toFixed(2)}%</td>
+              <td><span style="color: ${intensityColor}; font-weight: 700;">🔥 ${intensityScore}%</span></td>
               <td>${h.sector}</td>
             </tr>
           `;

@@ -141,7 +141,21 @@ def json_serializer(obj):
         return obj.tolist()
     if isinstance(obj, pd.Timestamp):
         return obj.isoformat()
-    return str(obj)
+FUND_AUM_ESTIMATES = {
+    "bridgewater": 124000, "citadel": 63000, "millennium": 67000, "de_shaw": 60000,
+    "two_sigma": 60000, "renaissance": 50000, "point72": 32000, "elliott": 65000,
+    "pershing_square": 14000, "third_point": 12000, "tci": 40000, "viking": 28000,
+    "lone_pine": 18000, "tiger_global": 22000, "coatue": 25000, "baupost": 26000,
+    "appaloosa": 14000, "greenlight": 3500, "aqr": 95000, "man_group": 150000,
+    "balyasny": 21000, "exoduspoint": 13000, "marshall_wace": 64000, "farallon": 39000,
+    "canyon_partners": 24000, "sculptor": 33000, "tudor": 25000, "soros": 28000,
+    "duquesne": 4000, "anchorage": 14000, "schonfeld": 14000, "verition": 10000,
+    "walleye": 7000, "hudson_bay": 20000, "magnetar": 14000, "maverick": 10000,
+    "whale_rock": 5000, "d1_capital": 21000, "matrix_capital": 4000, "steadfast": 6000,
+    "glenview": 6000, "icahn": 15000, "valueact": 10000, "jana_partners": 4000,
+    "starboard": 7000, "winton": 10000, "worldquant": 20000, "king_street": 22000,
+    "cerberus": 60000, "egerton": 12000,
+}
 
 
 class StaticSiteExporter:
@@ -293,6 +307,7 @@ class StaticSiteExporter:
 
         return "Other"
 
+
     def _build_predictions_json(self, universe: list[dict], raw_holdings: dict) -> dict:
         """Generate fund position predictions from real 13F data."""
         predictions = {}
@@ -300,14 +315,22 @@ class StaticSiteExporter:
         for fund in universe:
             fid = fund["id"]
             strategy = fund["strategy"]
+            aum = FUND_AUM_ESTIMATES.get(fid, 10000)
 
             if fid in raw_holdings:
                 # Use real SEC EDGAR data
                 df = raw_holdings[fid]
-                predictions[fid] = self._process_holdings(df, strategy)
+                pos_list = self._process_holdings(df, strategy)
             else:
                 # Strategy-specific fallback
-                predictions[fid] = self._strategy_fallback(strategy)
+                pos_list = self._strategy_fallback(strategy)
+
+            # Ensure value_m is populated
+            for p in pos_list:
+                if not p.get("value_m"):
+                    p["value_m"] = round(p.get("weight", 0) * aum, 1)
+
+            predictions[fid] = pos_list
 
         return predictions
 

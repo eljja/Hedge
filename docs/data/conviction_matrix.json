@@ -2,58 +2,94 @@
   "hidden_alpha": [],
   "crowding_risk": [
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF",
-      "holders_count": 13,
-      "avg_weight": "10.2%",
-      "crowding_score": 100,
-      "risk": "HIGH",
-      "rationale": "Held by 13 funds at avg 10.2% weight. Liquidity shock risk."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
-      "holders_count": 22,
-      "avg_weight": "5.3%",
+      "holders_count": 14,
+      "avg_weight": "7.9%",
       "crowding_score": 100,
       "risk": "HIGH",
-      "rationale": "Held by 22 funds at avg 5.3% weight. Liquidity shock risk."
+      "rationale": "Held by 14 funds at avg 7.9% weight. Liquidity shock risk."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp",
-      "holders_count": 36,
-      "avg_weight": "5.0%",
-      "crowding_score": 100,
-      "risk": "HIGH",
-      "rationale": "Held by 36 funds at avg 5.0% weight. Liquidity shock risk."
-    },
-    {
-      "ticker": "AAPL",
-      "name": "Apple Inc",
       "holders_count": 17,
-      "avg_weight": "3.5%",
+      "avg_weight": "9.6%",
       "crowding_score": 100,
       "risk": "HIGH",
-      "rationale": "Held by 17 funds at avg 3.5% weight. Liquidity shock risk."
+      "rationale": "Held by 17 funds at avg 9.6% weight. Liquidity shock risk."
     },
     {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
-      "holders_count": 22,
-      "avg_weight": "4.3%",
+      "holders_count": 17,
+      "avg_weight": "7.8%",
       "crowding_score": 100,
       "risk": "HIGH",
-      "rationale": "Held by 22 funds at avg 4.3% weight. Liquidity shock risk."
+      "rationale": "Held by 17 funds at avg 7.8% weight. Liquidity shock risk."
     },
     {
       "ticker": "META",
       "name": "Meta Platforms Inc",
-      "holders_count": 13,
-      "avg_weight": "6.8%",
-      "crowding_score": 99.2,
+      "holders_count": 25,
+      "avg_weight": "7.8%",
+      "crowding_score": 100,
       "risk": "HIGH",
-      "rationale": "Held by 13 funds at avg 6.8% weight. Liquidity shock risk."
+      "rationale": "Held by 25 funds at avg 7.8% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "holders_count": 6,
+      "avg_weight": "22.4%",
+      "crowding_score": 100,
+      "risk": "MODERATE",
+      "rationale": "Held by 6 funds at avg 22.4% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "QSR",
+      "name": "Restaurant Brands Int",
+      "holders_count": 6,
+      "avg_weight": "18.2%",
+      "crowding_score": 100,
+      "risk": "MODERATE",
+      "rationale": "Held by 6 funds at avg 18.2% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide Holdings",
+      "holders_count": 6,
+      "avg_weight": "16.5%",
+      "crowding_score": 100,
+      "risk": "MODERATE",
+      "rationale": "Held by 6 funds at avg 16.5% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc Class A",
+      "holders_count": 6,
+      "avg_weight": "14.1%",
+      "crowding_score": 100,
+      "risk": "MODERATE",
+      "rationale": "Held by 6 funds at avg 14.1% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "GRBK",
+      "name": "Green Brick Partners",
+      "holders_count": 5,
+      "avg_weight": "16.5%",
+      "crowding_score": 100,
+      "risk": "MODERATE",
+      "rationale": "Held by 5 funds at avg 16.5% weight. Liquidity shock risk."
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "holders_count": 6,
+      "avg_weight": "12.8%",
+      "crowding_score": 94.0,
+      "risk": "MODERATE",
+      "rationale": "Held by 6 funds at avg 12.8% weight. Liquidity shock risk."
     }
   ]
 }
