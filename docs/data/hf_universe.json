@@ -1,0 +1,272 @@
+[
+  {
+    "id": "bridgewater",
+    "name": "Bridgewater",
+    "cik": "0001350694",
+    "strategy": "global_macro",
+    "public_vehicle": null,
+    "eu_short_name": "Bridgewater Associates",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "citadel",
+    "name": "Citadel",
+    "cik": "0001423053",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Citadel Advisors",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "de_shaw",
+    "name": "De Shaw",
+    "cik": "0001009258",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "D. E. Shaw",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "two_sigma",
+    "name": "Two Sigma",
+    "cik": "0001179392",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "Two Sigma Investments",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "renaissance",
+    "name": "Renaissance",
+    "cik": "0001037389",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "Renaissance Technologies",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "millennium",
+    "name": "Millennium",
+    "cik": "0001273087",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Millennium Capital",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "point72",
+    "name": "Point72",
+    "cik": "0001603466",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Point72 Asset Management",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "elliott",
+    "name": "Elliott",
+    "cik": "0001048445",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "Elliott Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "third_point",
+    "name": "Third Point",
+    "cik": "0001040273",
+    "strategy": "concentrated_activist",
+    "public_vehicle": "TPOU",
+    "eu_short_name": "Third Point",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "pershing_square",
+    "name": "Pershing Square",
+    "cik": "0001336528",
+    "strategy": "concentrated_activist",
+    "public_vehicle": "PSH",
+    "eu_short_name": "Pershing Square",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "tci",
+    "name": "Tci",
+    "cik": "0001334978",
+    "strategy": "concentrated_activist",
+    "public_vehicle": null,
+    "eu_short_name": "TCI Fund Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "viking",
+    "name": "Viking",
+    "cik": "0001103804",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Viking Global",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "lone_pine",
+    "name": "Lone Pine",
+    "cik": "0001061165",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Lone Pine Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "tiger_global",
+    "name": "Tiger Global",
+    "cik": "0001167483",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Tiger Global",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "coatue",
+    "name": "Coatue",
+    "cik": "0001166559",
+    "strategy": "tiger_cub",
+    "public_vehicle": null,
+    "eu_short_name": "Coatue Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "baupost",
+    "name": "Baupost",
+    "cik": "0001061700",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "Baupost Group",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "appaloosa",
+    "name": "Appaloosa",
+    "cik": "0001006438",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "Appaloosa Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "greenlight",
+    "name": "Greenlight",
+    "cik": "0001079114",
+    "strategy": "equity_long_short",
+    "public_vehicle": null,
+    "eu_short_name": "Greenlight Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "aqr",
+    "name": "Aqr",
+    "cik": "0001167557",
+    "strategy": "quant_systematic",
+    "public_vehicle": null,
+    "eu_short_name": "AQR Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "man_group",
+    "name": "Man Group",
+    "cik": "0001416753",
+    "strategy": "quant_systematic",
+    "public_vehicle": "EMG",
+    "eu_short_name": "Man Group",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "balyasny",
+    "name": "Balyasny",
+    "cik": "0001264873",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Balyasny Asset Management",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "exoduspoint",
+    "name": "Exoduspoint",
+    "cik": "0001740286",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "ExodusPoint",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "marshall_wace",
+    "name": "Marshall Wace",
+    "cik": "0001383749",
+    "strategy": "equity_long_short",
+    "public_vehicle": null,
+    "eu_short_name": "Marshall Wace",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "farallon",
+    "name": "Farallon",
+    "cik": "0001089748",
+    "strategy": "event_driven",
+    "public_vehicle": null,
+    "eu_short_name": "Farallon Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "canyon_partners",
+    "name": "Canyon Partners",
+    "cik": "0001086208",
+    "strategy": "credit",
+    "public_vehicle": null,
+    "eu_short_name": "Canyon Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "sculptor",
+    "name": "Sculptor",
+    "cik": "0001403256",
+    "strategy": "multi_strategy",
+    "public_vehicle": null,
+    "eu_short_name": "Sculptor Capital",
+    "aum_display": "$25B+"
+  },
+  {
+    "id": "tudor",
+    "name": "Tudor",
+    "cik": "0000927702",
+    "strategy": "global_macro",
+    "public_vehicle": null,
+    "eu_short_name": "Tudor Capital",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "soros",
+    "name": "Soros",
+    "cik": "0001029160",
+    "strategy": "global_macro",
+    "public_vehicle": null,
+    "eu_short_name": "Soros Fund Management",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "duquesne",
+    "name": "Duquesne",
+    "cik": "0001534643",
+    "strategy": "global_macro",
+    "public_vehicle": null,
+    "eu_short_name": "Duquesne",
+    "aum_display": "$10B+"
+  },
+  {
+    "id": "anchorage",
+    "name": "Anchorage",
+    "cik": "0001275022",
+    "strategy": "credit",
+    "public_vehicle": null,
+    "eu_short_name": "Anchorage Capital",
+    "aum_display": "$10B+"
+  }
+]

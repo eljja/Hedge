@@ -1,0 +1,60 @@
+{
+  "hidden_alpha": [
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "conviction_fund": "Pershing Square",
+      "conviction_weight": "22.4%",
+      "consensus": "3.2%",
+      "confidence": 96.0,
+      "rationale": "High-conviction concentrated activist position with low institutional overlap"
+    },
+    {
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings",
+      "conviction_fund": "Pershing Square",
+      "conviction_weight": "12.8%",
+      "consensus": "1.5%",
+      "confidence": 93.0,
+      "rationale": "Deep value real estate holding concentrated in single manager"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "conviction_fund": "Renaissance",
+      "conviction_weight": "3.8%",
+      "consensus": "5.1%",
+      "confidence": 76.0,
+      "rationale": "Quant systematic accumulation with low consensus crowding"
+    }
+  ],
+  "crowding_risk": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "holders_count": 24,
+      "avg_weight": "7.8%",
+      "crowding_score": 94.5,
+      "risk": "HIGH",
+      "rationale": "Held by 80%+ of long/short and multi-strategy funds. Liquidity shock risk."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp",
+      "holders_count": 28,
+      "avg_weight": "8.2%",
+      "crowding_score": 91.0,
+      "risk": "HIGH",
+      "rationale": "Consensus core holding across quant and discretionary managers."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com Inc",
+      "holders_count": 21,
+      "avg_weight": "6.1%",
+      "crowding_score": 84.0,
+      "risk": "MODERATE",
+      "rationale": "High institutional ownership overlap."
+    }
+  ]
+}

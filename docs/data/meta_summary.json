@@ -1,0 +1,12 @@
+{
+  "last_updated": "2026-08-01T22:46:03.979544",
+  "funds_count": 30,
+  "channels_active": 14,
+  "engines_active": 11,
+  "metrics": {
+    "sector_mae": 0.042,
+    "spearman_ic": 0.385,
+    "brier_score": 0.082,
+    "top3_hit_rate": 0.84
+  }
+}

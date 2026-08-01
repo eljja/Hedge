@@ -1,0 +1,62 @@
+{
+  "report_date": "2026-08-01",
+  "contracts": [
+    {
+      "name": "S&P 500 E-mini",
+      "category": "Financial",
+      "net_position": "+142,500",
+      "z_score": 1.85,
+      "sentiment": "BULLISH"
+    },
+    {
+      "name": "Nasdaq 100 E-mini",
+      "category": "Financial",
+      "net_position": "+68,200",
+      "z_score": 1.42,
+      "sentiment": "BULLISH"
+    },
+    {
+      "name": "10-Year Treasury",
+      "category": "Financial",
+      "net_position": "-210,400",
+      "z_score": -1.65,
+      "sentiment": "BEARISH (Short Yields Up)"
+    },
+    {
+      "name": "Crude Oil (WTI)",
+      "category": "Commodity",
+      "net_position": "-42,100",
+      "z_score": -1.2,
+      "sentiment": "BEARISH"
+    },
+    {
+      "name": "Gold",
+      "category": "Commodity",
+      "net_position": "+94,800",
+      "z_score": 1.92,
+      "sentiment": "STRONGLY BULLISH"
+    }
+  ],
+  "sector_tilts": [
+    {
+      "sector": "Information Technology",
+      "tilt": "+0.74σ",
+      "direction": "LONG"
+    },
+    {
+      "sector": "Financials",
+      "tilt": "+0.44σ",
+      "direction": "NEUTRAL-LONG"
+    },
+    {
+      "sector": "Energy",
+      "tilt": "-0.76σ",
+      "direction": "SHORT"
+    },
+    {
+      "sector": "Materials / Gold",
+      "tilt": "+0.92σ",
+      "direction": "LONG"
+    }
+  ]
+}

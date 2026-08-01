@@ -22,7 +22,7 @@ wheels/
 *.egg
 
 # DuckDB & Local Data Caches
-data/
+/data/
 *.duckdb
 *.duckdb.wal
 *.csv
