@@ -241,10 +241,17 @@ const App = {
                       name: p.name || '-',
                       sector: p.sector || '-',
                       count: 0,
+                      longCount: 0,
+                      shortCount: 0,
                       totalWeight: 0
                   };
               }
               holdingsMap[p.ticker].count += 1;
+              if (p.type === 'SHORT' || p.putCall === 'PUT') {
+                  holdingsMap[p.ticker].shortCount += 1;
+              } else {
+                  holdingsMap[p.ticker].longCount += 1;
+              }
               holdingsMap[p.ticker].totalWeight += (p.weight || 0);
           });
       });
@@ -255,18 +262,27 @@ const App = {
       const topHoldings = holdingsList.slice(0, 50); // top 50
 
       if (topHoldings.length === 0) {
-          container.innerHTML = `<tr><td colspan="5" style="text-align:center; color: var(--text-muted);">No holdings data.</td></tr>`;
+          container.innerHTML = `<tr><td colspan="6" style="text-align:center; color: var(--text-muted);">No holdings data.</td></tr>`;
           return;
       }
 
       let html = "";
       topHoldings.forEach(h => {
           const avgWeight = (h.totalWeight / h.count) * 100;
+          let biasBadge = "";
+          if (h.shortCount === 0) {
+              biasBadge = `<span class="type-indicator type-long"><i data-lucide="trending-up"></i> LONG (100%)</span>`;
+          } else if (h.longCount === 0) {
+              biasBadge = `<span class="type-indicator type-short"><i data-lucide="trending-down"></i> SHORT (100%)</span>`;
+          } else {
+              biasBadge = `<span class="type-indicator type-long">LONG (${h.longCount})</span> / <span class="type-indicator type-short">SHORT (${h.shortCount})</span>`;
+          }
           html += `
             <tr>
               <td><strong style="color: var(--accent-emerald);">${h.ticker}</strong></td>
               <td>${h.name}</td>
               <td><strong>${h.count}</strong> Funds</td>
+              <td>${biasBadge}</td>
               <td>${avgWeight.toFixed(2)}%</td>
               <td>${h.sector}</td>
             </tr>
@@ -274,6 +290,7 @@ const App = {
       });
 
       container.innerHTML = html;
+      lucide.createIcons();
   },
 
   renderConvictionMatrix() {
