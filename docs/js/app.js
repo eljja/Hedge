@@ -29,6 +29,8 @@ const App = {
     this.renderMacroChart();
     this.renderFundPredictions();
     this.renderTopHoldings();
+    this.renderShortIntelligence();
+    this.renderActivistFilings();
     this.renderConvictionMatrix();
     this.renderSectorHeatmap();
     this.renderCFTCMacro();
@@ -86,13 +88,15 @@ const App = {
 
   async loadAllData() {
     try {
-      const [univ, pred, heat, conv, cftc, summary] = await Promise.all([
+      const [univ, pred, heat, conv, cftc, summary, shortIntel, activist] = await Promise.all([
         fetch("data/hf_universe.json").then((r) => r.json()).catch(() => []),
         fetch("data/predictions.json").then((r) => r.json()).catch(() => ({})),
         fetch("data/sector_heatmap.json").then((r) => r.json()).catch(() => []),
         fetch("data/conviction_matrix.json").then((r) => r.json()).catch(() => ({})),
         fetch("data/cftc_macro.json").then((r) => r.json()).catch(() => ({})),
         fetch("data/meta_summary.json").then((r) => r.json()).catch(() => ({})),
+        fetch("data/short_intelligence.json").then((r) => r.json()).catch(() => []),
+        fetch("data/activist_filings.json").then((r) => r.json()).catch(() => []),
       ]);
 
       this.data.universe = univ;
@@ -101,6 +105,8 @@ const App = {
       this.data.convictionMatrix = conv;
       this.data.cftcMacro = cftc;
       this.data.metaSummary = summary;
+      this.data.shortIntelligence = shortIntel;
+      this.data.activistFilings = activist;
     } catch (err) {
       console.error("Error loading JSON data:", err);
     }
@@ -447,6 +453,50 @@ const App = {
 
       container.innerHTML = html;
       lucide.createIcons();
+  },
+
+  renderShortIntelligence() {
+    const container = document.getElementById("shortIntelTable");
+    if (!container) return;
+    const data = this.data.shortIntelligence || [];
+    if (!data.length) { container.innerHTML = `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);">No short intelligence data available</td></tr>`; return; }
+
+    container.innerHTML = data.map(item => {
+      const siColor = item.short_interest_pct > 20 ? "var(--accent-red)" : (item.short_interest_pct > 10 ? "#f0ad4e" : "var(--text-muted)");
+      const squeezeClass = item.squeeze_risk === "HIGH" ? "rating-badge bg-red" : (item.squeeze_risk === "MODERATE" ? "rating-badge bg-amber" : "rating-badge bg-dim");
+      const daysColor = item.days_to_cover > 5 ? "var(--accent-red)" : (item.days_to_cover > 3 ? "#f0ad4e" : "var(--text-secondary)");
+      return `<tr>
+        <td><strong style="color:var(--accent-red);">${item.ticker}</strong></td>
+        <td style="color:${siColor};font-weight:700;">${item.short_interest_pct.toFixed(1)}%</td>
+        <td style="color:${daysColor};">${item.days_to_cover.toFixed(1)}</td>
+        <td><span class="${squeezeClass}">${item.squeeze_risk}</span></td>
+        <td style="font-size:0.82rem;color:var(--text-secondary);max-width:350px;">${item.thesis}</td>
+      </tr>`;
+    }).join("");
+    if (typeof lucide !== "undefined") lucide.createIcons();
+  },
+
+  renderActivistFilings() {
+    const container = document.getElementById("activistTable");
+    if (!container) return;
+    const data = this.data.activistFilings || [];
+    if (!data.length) { container.innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--text-muted);">No activist filing data available</td></tr>`; return; }
+
+    container.innerHTML = data.map(item => {
+      const actionColor = item.action === "ACTIVIST" ? "var(--accent-red)" : (item.action === "CONTROL" ? "#a855f7" : "var(--accent-emerald)");
+      const actionBadge = item.action === "ACTIVIST" ? "rating-badge bg-red" : (item.action === "CONTROL" ? "rating-badge bg-purple" : "rating-badge bg-emerald");
+      const confColor = item.confidence >= 95 ? "var(--accent-emerald)" : "#f0ad4e";
+      return `<tr>
+        <td><strong>${item.fund}</strong></td>
+        <td style="color:var(--accent-cyan);font-weight:600;">${item.ticker}</td>
+        <td>${item.company}</td>
+        <td style="color:${actionColor};font-weight:700;">${item.ownership_pct.toFixed(1)}%</td>
+        <td style="font-weight:600;">$${item.value_m.toLocaleString()}M</td>
+        <td><span class="${actionBadge}">${item.action}</span></td>
+        <td style="color:${confColor};font-weight:600;">${item.confidence.toFixed(0)}%</td>
+      </tr>`;
+    }).join("");
+    if (typeof lucide !== "undefined") lucide.createIcons();
   },
 
   renderConvictionMatrix() {

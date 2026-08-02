@@ -85,12 +85,14 @@
 
     <!-- Navigation Tabs -->
     <nav class="tabs-nav">
-      <button class="tab-btn active" data-tab="tab-predictions">📊 Fund Position Estimates</button>
-      <button class="tab-btn" data-tab="tab-top-holdings">📈 Top Holdings Across All Funds</button>
+      <button class="tab-btn active" data-tab="tab-predictions">📊 Fund Positions</button>
+      <button class="tab-btn" data-tab="tab-top-holdings">📈 Top Holdings</button>
+      <button class="tab-btn" data-tab="tab-short-intel">🔴 Short Intelligence</button>
+      <button class="tab-btn" data-tab="tab-activist">⚡ Activist Tracker</button>
       <button class="tab-btn" data-tab="tab-conviction">🌐 Conviction & Crowding</button>
-      <button class="tab-btn" data-tab="tab-heatmap">🔥 Sector Exposure Heatmap</button>
-      <button class="tab-btn" data-tab="tab-macro">🔮 CFTC Macro Futures Tilts</button>
-      <button class="tab-btn" data-tab="tab-architecture">🧪 System Architecture</button>
+      <button class="tab-btn" data-tab="tab-heatmap">🔥 Sector Heatmap</button>
+      <button class="tab-btn" data-tab="tab-macro">🔮 Macro Futures</button>
+      <button class="tab-btn" data-tab="tab-architecture">🧪 Architecture</button>
     </nav>
 
     <!-- Tab 1: Predictions -->
@@ -175,6 +177,52 @@
             </tr>
           </thead>
           <tbody id="topHoldingsTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tab: Short Intelligence -->
+    <main id="tab-short-intel" class="tab-content">
+      <h3 style="margin-bottom: 8px;">🔴 Short Position Intelligence — Hedge Fund Short Thesis Tracker</h3>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Aggregated from FINRA short interest reports, SEC Reg SHO threshold lists, 13F PUT option filings, and strategy-specific short thesis research. Ranked by short interest %.</p>
+      <div class="table-container glass-table">
+        <table id="table-short-intel">
+          <thead>
+            <tr>
+              <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="si_pct">Short Interest % <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="days">Days to Cover <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="squeeze">Squeeze Risk <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="thesis">Short Thesis <i data-lucide="chevrons-up-down"></i></th>
+            </tr>
+          </thead>
+          <tbody id="shortIntelTable">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tab: Activist Tracker -->
+    <main id="tab-activist" class="tab-content">
+      <h3 style="margin-bottom: 8px;">⚡ SEC 13D/G Activist Stake Tracker — Highest Confidence Signals</h3>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Mandatory SEC Schedule 13D (activist) and 13G (passive) filings for positions >5% ownership. These are CONFIRMED, legally-binding position disclosures — the gold standard of hedge fund tracking.</p>
+      <div class="table-container glass-table">
+        <table id="table-activist">
+          <thead>
+            <tr>
+              <th data-sort="fund">Fund <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="company">Company <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="ownership">Ownership % <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="value">Value ($M) <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="action">Action <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
+            </tr>
+          </thead>
+          <tbody id="activistTable">
             <!-- Populated by JS -->
           </tbody>
         </table>

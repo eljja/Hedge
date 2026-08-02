@@ -21,6 +21,12 @@ import pandas as pd
 
 from hedge_fund_predictor.config.entity_groups import ENTITY_GROUPS
 from hedge_fund_predictor.data_ingestion.sec_edgar.fetch_13f_holdings import SECEdgar13FFetcher
+from hedge_fund_predictor.data_ingestion.finra_short_interest import (
+    generate_short_intelligence_report, get_strategy_short_profile, HIGH_SHORT_INTEREST_UNIVERSE
+)
+from hedge_fund_predictor.data_ingestion.sec_13d_tracker import (
+    generate_13d_signal_report, get_activist_stakes
+)
 
 logger = logging.getLogger(__name__)
 
@@ -204,7 +210,15 @@ class StaticSiteExporter:
         cftc_data = self._build_cftc_macro_json()
         self._write_json("cftc_macro.json", cftc_data)
 
-        # 6. Meta Summary
+        # 6. Short Intelligence Report (NEW — FINRA Short Interest)
+        short_intel = generate_short_intelligence_report()
+        self._write_json("short_intelligence.json", short_intel)
+
+        # 7. Activist Filings Report (NEW — SEC 13D/G)
+        activist_data = generate_13d_signal_report()
+        self._write_json("activist_filings.json", activist_data)
+
+        # 8. Meta Summary
         total_value = sum(
             sum(p.get("value_m", 0) for p in positions)
             for positions in predictions_data.values()
@@ -213,8 +227,8 @@ class StaticSiteExporter:
             "last_updated": timestamp,
             "funds_count": len(universe_data),
             "funds_with_real_data": len(raw_holdings),
-            "channels_active": 14,
-            "engines_active": 11,
+            "channels_active": 16,
+            "engines_active": 13,
             "total_tracked_aum_billions": round(total_value / 1000, 1),
             "metrics": {
                 "sector_mae": 0.042,
