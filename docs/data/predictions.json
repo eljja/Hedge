@@ -12,13 +12,13 @@
     },
     {
       "ticker": "SPY (PUT)",
-      "name": "SPDR S&P 500 Put Option",
+      "name": "S&P 500 Tail-Risk Hedge",
       "sector": "Index",
-      "weight": 0.045,
-      "confidence": 84.0,
+      "weight": 0.055,
+      "confidence": 86.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 1300.0
+      "value_m": 1600.0
     },
     {
       "ticker": "GLD",
@@ -41,6 +41,16 @@
       "value_m": 2840.0
     },
     {
+      "ticker": "EWJ (PUT)",
+      "name": "Japan ETF Macro Short",
+      "sector": "International",
+      "weight": 0.032,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 920.0
+    },
+    {
       "ticker": "IVV",
       "name": "iShares Core S&P 500",
       "sector": "Index",
@@ -49,6 +59,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 2460.0
+    },
+    {
+      "ticker": "FXI (PUT)",
+      "name": "China Large-Cap Bear Hedge",
+      "sector": "International",
+      "weight": 0.028,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 810.0
     },
     {
       "ticker": "VWO",
@@ -84,13 +104,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -121,6 +141,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "de_shaw": [
@@ -156,13 +196,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -183,6 +223,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "two_sigma": [
@@ -218,13 +278,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -245,6 +305,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "renaissance": [
@@ -280,13 +360,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -307,6 +387,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "millennium": [
@@ -332,13 +432,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -369,6 +469,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "point72": [
@@ -394,13 +514,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -431,6 +551,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "elliott": [
@@ -483,6 +623,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "third_point": [
@@ -535,6 +695,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "pershing_square": [
@@ -587,6 +767,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "tci": [
@@ -639,6 +839,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "viking": [
@@ -691,6 +911,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "lone_pine": [
@@ -743,6 +993,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "tiger_global": [
@@ -795,6 +1075,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "coatue": [
@@ -847,6 +1157,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "baupost": [
@@ -899,6 +1239,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "appaloosa": [
@@ -951,6 +1311,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "greenlight": [
@@ -985,6 +1365,26 @@
       "value_m": 560.0
     },
     {
+      "ticker": "BYND (PUT)",
+      "name": "Beyond Meat Short Thesis",
+      "sector": "Consumer Staples",
+      "weight": 0.058,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 340.0
+    },
+    {
+      "ticker": "CVNA (PUT)",
+      "name": "Carvana Overvaluation Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.045,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 265.0
+    },
+    {
       "ticker": "CC",
       "name": "Chemours Co",
       "sector": "Materials",
@@ -1003,6 +1403,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 370.0
+    },
+    {
+      "ticker": "DASH (PUT)",
+      "name": "DoorDash Profitability Short",
+      "sector": "Information Technology",
+      "weight": 0.038,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 225.0
     }
   ],
   "aqr": [
@@ -1038,13 +1448,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -1065,6 +1475,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "man_group": [
@@ -1100,13 +1530,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -1127,6 +1557,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "balyasny": [
@@ -1152,13 +1602,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1189,6 +1639,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "exoduspoint": [
@@ -1214,13 +1684,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1251,6 +1721,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "marshall_wace": [
@@ -1285,6 +1775,26 @@
       "value_m": 560.0
     },
     {
+      "ticker": "BYND (PUT)",
+      "name": "Beyond Meat Short Thesis",
+      "sector": "Consumer Staples",
+      "weight": 0.058,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 340.0
+    },
+    {
+      "ticker": "CVNA (PUT)",
+      "name": "Carvana Overvaluation Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.045,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 265.0
+    },
+    {
       "ticker": "CC",
       "name": "Chemours Co",
       "sector": "Materials",
@@ -1303,6 +1813,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 370.0
+    },
+    {
+      "ticker": "DASH (PUT)",
+      "name": "DoorDash Profitability Short",
+      "sector": "Information Technology",
+      "weight": 0.038,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 225.0
     }
   ],
   "farallon": [
@@ -1355,6 +1875,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "canyon_partners": [
@@ -1379,6 +1919,16 @@
       "value_m": 960.0
     },
     {
+      "ticker": "HYG (PUT)",
+      "name": "High-Yield Spread-Widening Hedge",
+      "sector": "Fixed Income",
+      "weight": 0.065,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 440.0
+    },
+    {
       "ticker": "JNK",
       "name": "SPDR Bloomberg High Yield ETF",
       "sector": "Fixed Income",
@@ -1387,6 +1937,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 780.0
+    },
+    {
+      "ticker": "IYR (PUT)",
+      "name": "CRE / REIT Distress Short",
+      "sector": "Real Estate",
+      "weight": 0.048,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 325.0
     },
     {
       "ticker": "Canyon / Credit Basket",
@@ -1422,13 +1982,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1459,6 +2019,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "tudor": [
@@ -1474,13 +2054,13 @@
     },
     {
       "ticker": "SPY (PUT)",
-      "name": "SPDR S&P 500 Put Option",
+      "name": "S&P 500 Tail-Risk Hedge",
       "sector": "Index",
-      "weight": 0.045,
-      "confidence": 84.0,
+      "weight": 0.055,
+      "confidence": 86.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 1300.0
+      "value_m": 1600.0
     },
     {
       "ticker": "GLD",
@@ -1503,6 +2083,16 @@
       "value_m": 2840.0
     },
     {
+      "ticker": "EWJ (PUT)",
+      "name": "Japan ETF Macro Short",
+      "sector": "International",
+      "weight": 0.032,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 920.0
+    },
+    {
       "ticker": "IVV",
       "name": "iShares Core S&P 500",
       "sector": "Index",
@@ -1511,6 +2101,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 2460.0
+    },
+    {
+      "ticker": "FXI (PUT)",
+      "name": "China Large-Cap Bear Hedge",
+      "sector": "International",
+      "weight": 0.028,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 810.0
     },
     {
       "ticker": "VWO",
@@ -1536,13 +2136,13 @@
     },
     {
       "ticker": "SPY (PUT)",
-      "name": "SPDR S&P 500 Put Option",
+      "name": "S&P 500 Tail-Risk Hedge",
       "sector": "Index",
-      "weight": 0.045,
-      "confidence": 84.0,
+      "weight": 0.055,
+      "confidence": 86.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 1300.0
+      "value_m": 1600.0
     },
     {
       "ticker": "GLD",
@@ -1565,6 +2165,16 @@
       "value_m": 2840.0
     },
     {
+      "ticker": "EWJ (PUT)",
+      "name": "Japan ETF Macro Short",
+      "sector": "International",
+      "weight": 0.032,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 920.0
+    },
+    {
       "ticker": "IVV",
       "name": "iShares Core S&P 500",
       "sector": "Index",
@@ -1573,6 +2183,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 2460.0
+    },
+    {
+      "ticker": "FXI (PUT)",
+      "name": "China Large-Cap Bear Hedge",
+      "sector": "International",
+      "weight": 0.028,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 810.0
     },
     {
       "ticker": "VWO",
@@ -1598,13 +2218,13 @@
     },
     {
       "ticker": "SPY (PUT)",
-      "name": "SPDR S&P 500 Put Option",
+      "name": "S&P 500 Tail-Risk Hedge",
       "sector": "Index",
-      "weight": 0.045,
-      "confidence": 84.0,
+      "weight": 0.055,
+      "confidence": 86.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 1300.0
+      "value_m": 1600.0
     },
     {
       "ticker": "GLD",
@@ -1627,6 +2247,16 @@
       "value_m": 2840.0
     },
     {
+      "ticker": "EWJ (PUT)",
+      "name": "Japan ETF Macro Short",
+      "sector": "International",
+      "weight": 0.032,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 920.0
+    },
+    {
       "ticker": "IVV",
       "name": "iShares Core S&P 500",
       "sector": "Index",
@@ -1635,6 +2265,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 2460.0
+    },
+    {
+      "ticker": "FXI (PUT)",
+      "name": "China Large-Cap Bear Hedge",
+      "sector": "International",
+      "weight": 0.028,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 810.0
     },
     {
       "ticker": "VWO",
@@ -1669,6 +2309,16 @@
       "value_m": 960.0
     },
     {
+      "ticker": "HYG (PUT)",
+      "name": "High-Yield Spread-Widening Hedge",
+      "sector": "Fixed Income",
+      "weight": 0.065,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 440.0
+    },
+    {
       "ticker": "JNK",
       "name": "SPDR Bloomberg High Yield ETF",
       "sector": "Fixed Income",
@@ -1677,6 +2327,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 780.0
+    },
+    {
+      "ticker": "IYR (PUT)",
+      "name": "CRE / REIT Distress Short",
+      "sector": "Real Estate",
+      "weight": 0.048,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 325.0
     },
     {
       "ticker": "Canyon / Credit Basket",
@@ -1712,13 +2372,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1749,6 +2409,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "verition": [
@@ -1774,13 +2454,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1811,6 +2491,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "walleye": [
@@ -1846,13 +2546,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -1873,6 +2573,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "hudson_bay": [
@@ -1898,13 +2618,13 @@
     },
     {
       "ticker": "QQQ (PUT)",
-      "name": "Invesco QQQ Put Hedge",
+      "name": "Nasdaq Hedge Overlay",
       "sector": "Index",
-      "weight": 0.032,
-      "confidence": 80.0,
+      "weight": 0.038,
+      "confidence": 82.0,
       "rating": "HIGH",
       "type": "SHORT",
-      "value_m": 2100.0
+      "value_m": 2500.0
     },
     {
       "ticker": "AMZN",
@@ -1935,6 +2655,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 3160.0
+    },
+    {
+      "ticker": "XLE (PUT)",
+      "name": "Energy Sector Hedge",
+      "sector": "Energy",
+      "weight": 0.018,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 1190.0
+    },
+    {
+      "ticker": "COIN (PUT)",
+      "name": "Coinbase Crypto Vol Short",
+      "sector": "Financials",
+      "weight": 0.012,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 790.0
     }
   ],
   "magnetar": [
@@ -1987,6 +2727,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "maverick": [
@@ -2039,6 +2799,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "whale_rock": [
@@ -2091,6 +2881,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "d1_capital": [
@@ -2143,6 +2963,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "matrix_capital": [
@@ -2195,6 +3045,36 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "SNAP (PUT)",
+      "name": "Snap Inc Growth Short",
+      "sector": "Communication Services",
+      "weight": 0.035,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 480.0
+    },
+    {
+      "ticker": "PINS (PUT)",
+      "name": "Pinterest Relative Short",
+      "sector": "Communication Services",
+      "weight": 0.028,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 385.0
+    },
+    {
+      "ticker": "LYFT (PUT)",
+      "name": "Lyft Paired Short vs Uber",
+      "sector": "Information Technology",
+      "weight": 0.022,
+      "confidence": 68.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 300.0
     }
   ],
   "steadfast": [
@@ -2229,6 +3109,26 @@
       "value_m": 560.0
     },
     {
+      "ticker": "BYND (PUT)",
+      "name": "Beyond Meat Short Thesis",
+      "sector": "Consumer Staples",
+      "weight": 0.058,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 340.0
+    },
+    {
+      "ticker": "CVNA (PUT)",
+      "name": "Carvana Overvaluation Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.045,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 265.0
+    },
+    {
       "ticker": "CC",
       "name": "Chemours Co",
       "sector": "Materials",
@@ -2247,6 +3147,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 370.0
+    },
+    {
+      "ticker": "DASH (PUT)",
+      "name": "DoorDash Profitability Short",
+      "sector": "Information Technology",
+      "weight": 0.038,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 225.0
     }
   ],
   "glenview": [
@@ -2281,6 +3191,26 @@
       "value_m": 560.0
     },
     {
+      "ticker": "BYND (PUT)",
+      "name": "Beyond Meat Short Thesis",
+      "sector": "Consumer Staples",
+      "weight": 0.058,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 340.0
+    },
+    {
+      "ticker": "CVNA (PUT)",
+      "name": "Carvana Overvaluation Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.045,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 265.0
+    },
+    {
       "ticker": "CC",
       "name": "Chemours Co",
       "sector": "Materials",
@@ -2299,6 +3229,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 370.0
+    },
+    {
+      "ticker": "DASH (PUT)",
+      "name": "DoorDash Profitability Short",
+      "sector": "Information Technology",
+      "weight": 0.038,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 225.0
     }
   ],
   "icahn": [
@@ -2351,6 +3291,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "valueact": [
@@ -2403,6 +3363,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "jana_partners": [
@@ -2455,6 +3435,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 850.0
+    },
+    {
+      "ticker": "ATVI (PUT)",
+      "name": "M&A Arb Hedge Put",
+      "sector": "Communication Services",
+      "weight": 0.042,
+      "confidence": 76.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 530.0
+    },
+    {
+      "ticker": "WBA (PUT)",
+      "name": "Walgreens Restructuring Short",
+      "sector": "Consumer Staples",
+      "weight": 0.03,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 378.0
     }
   ],
   "starboard": [
@@ -2507,6 +3507,26 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 1620.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "Index Hedge Against Concentration",
+      "sector": "Index",
+      "weight": 0.065,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 825.0
+    },
+    {
+      "ticker": "KSS (PUT)",
+      "name": "Kohls Activist Short Target",
+      "sector": "Consumer Discretionary",
+      "weight": 0.035,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 445.0
     }
   ],
   "winton": [
@@ -2542,13 +3562,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -2569,6 +3589,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "worldquant": [
@@ -2604,13 +3644,13 @@
     },
     {
       "ticker": "TSLA (PUT)",
-      "name": "Tesla Inc Put Hedge",
+      "name": "Tesla Valuation Hedge",
       "sector": "Consumer Discretionary",
-      "weight": 0.022,
-      "confidence": 70.0,
+      "weight": 0.025,
+      "confidence": 72.0,
       "rating": "MODERATE",
       "type": "SHORT",
-      "value_m": 650.0
+      "value_m": 740.0
     },
     {
       "ticker": "PLTR",
@@ -2631,6 +3671,26 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 910.0
+    },
+    {
+      "ticker": "IWM (PUT)",
+      "name": "Russell 2000 Small-Cap Hedge",
+      "sector": "Index",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
+      "ticker": "RIVN (PUT)",
+      "name": "Rivian EV Growth Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.015,
+      "confidence": 66.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 440.0
     }
   ],
   "king_street": [
@@ -2655,6 +3715,16 @@
       "value_m": 960.0
     },
     {
+      "ticker": "HYG (PUT)",
+      "name": "High-Yield Spread-Widening Hedge",
+      "sector": "Fixed Income",
+      "weight": 0.065,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 440.0
+    },
+    {
       "ticker": "JNK",
       "name": "SPDR Bloomberg High Yield ETF",
       "sector": "Fixed Income",
@@ -2663,6 +3733,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 780.0
+    },
+    {
+      "ticker": "IYR (PUT)",
+      "name": "CRE / REIT Distress Short",
+      "sector": "Real Estate",
+      "weight": 0.048,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 325.0
     },
     {
       "ticker": "Canyon / Credit Basket",
@@ -2697,6 +3777,16 @@
       "value_m": 960.0
     },
     {
+      "ticker": "HYG (PUT)",
+      "name": "High-Yield Spread-Widening Hedge",
+      "sector": "Fixed Income",
+      "weight": 0.065,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 440.0
+    },
+    {
       "ticker": "JNK",
       "name": "SPDR Bloomberg High Yield ETF",
       "sector": "Fixed Income",
@@ -2705,6 +3795,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 780.0
+    },
+    {
+      "ticker": "IYR (PUT)",
+      "name": "CRE / REIT Distress Short",
+      "sector": "Real Estate",
+      "weight": 0.048,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 325.0
     },
     {
       "ticker": "Canyon / Credit Basket",
@@ -2749,6 +3849,26 @@
       "value_m": 560.0
     },
     {
+      "ticker": "BYND (PUT)",
+      "name": "Beyond Meat Short Thesis",
+      "sector": "Consumer Staples",
+      "weight": 0.058,
+      "confidence": 78.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 340.0
+    },
+    {
+      "ticker": "CVNA (PUT)",
+      "name": "Carvana Overvaluation Short",
+      "sector": "Consumer Discretionary",
+      "weight": 0.045,
+      "confidence": 74.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 265.0
+    },
+    {
       "ticker": "CC",
       "name": "Chemours Co",
       "sector": "Materials",
@@ -2767,6 +3887,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 370.0
+    },
+    {
+      "ticker": "DASH (PUT)",
+      "name": "DoorDash Profitability Short",
+      "sector": "Information Technology",
+      "weight": 0.038,
+      "confidence": 72.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 225.0
     }
   ]
 }
