@@ -11,6 +11,16 @@
       "value_m": 4200.0
     },
     {
+      "ticker": "SPY (PUT)",
+      "name": "SPDR S&P 500 Put Option",
+      "sector": "Index",
+      "weight": 0.045,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 1300.0
+    },
+    {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
@@ -71,6 +81,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -135,6 +155,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -185,6 +215,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 1120.0
+    },
+    {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
     },
     {
       "ticker": "PLTR",
@@ -239,6 +279,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -279,6 +329,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -331,6 +391,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -967,6 +1037,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -1019,6 +1099,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -1059,6 +1149,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -1111,6 +1211,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -1311,6 +1421,16 @@
       "value_m": 5010.0
     },
     {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
+    },
+    {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
@@ -1351,6 +1471,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 4200.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "SPDR S&P 500 Put Option",
+      "sector": "Index",
+      "weight": 0.045,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 1300.0
     },
     {
       "ticker": "GLD",
@@ -1405,6 +1535,16 @@
       "value_m": 4200.0
     },
     {
+      "ticker": "SPY (PUT)",
+      "name": "SPDR S&P 500 Put Option",
+      "sector": "Index",
+      "weight": 0.045,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 1300.0
+    },
+    {
       "ticker": "GLD",
       "name": "SPDR Gold Shares",
       "sector": "Commodities",
@@ -1455,6 +1595,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 4200.0
+    },
+    {
+      "ticker": "SPY (PUT)",
+      "name": "SPDR S&P 500 Put Option",
+      "sector": "Index",
+      "weight": 0.045,
+      "confidence": 84.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 1300.0
     },
     {
       "ticker": "GLD",
@@ -1561,6 +1711,16 @@
       "value_m": 5010.0
     },
     {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
+    },
+    {
       "ticker": "AMZN",
       "name": "Amazon.com Inc",
       "sector": "Consumer Discretionary",
@@ -1611,6 +1771,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -1675,6 +1845,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -1715,6 +1895,16 @@
       "rating": "CONFIRMED",
       "type": "LONG",
       "value_m": 5010.0
+    },
+    {
+      "ticker": "QQQ (PUT)",
+      "name": "Invesco QQQ Put Hedge",
+      "sector": "Index",
+      "weight": 0.032,
+      "confidence": 80.0,
+      "rating": "HIGH",
+      "type": "SHORT",
+      "value_m": 2100.0
     },
     {
       "ticker": "AMZN",
@@ -2351,6 +2541,16 @@
       "value_m": 1120.0
     },
     {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
+    },
+    {
       "ticker": "PLTR",
       "name": "Palantir Technologies",
       "sector": "Information Technology",
@@ -2401,6 +2601,16 @@
       "rating": "HIGH",
       "type": "LONG",
       "value_m": 1120.0
+    },
+    {
+      "ticker": "TSLA (PUT)",
+      "name": "Tesla Inc Put Hedge",
+      "sector": "Consumer Discretionary",
+      "weight": 0.022,
+      "confidence": 70.0,
+      "rating": "MODERATE",
+      "type": "SHORT",
+      "value_m": 650.0
     },
     {
       "ticker": "PLTR",

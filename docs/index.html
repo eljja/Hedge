@@ -16,8 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
   
-  <!-- Lucide Icons -->
+  <!-- Lucide Icons & Chart.js -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,33 +45,30 @@
     </div>
   </nav>
 
-  <!-- Container -->
-  <div class="container">
-    
-    <!-- Hero Section -->
-    <header class="hero-section">
-      <h1 class="hero-title">Institutional Hedge Fund Position Tracker</h1>
-      <p class="hero-subtitle">
-        100% Free Data • 14 Data Channels • 11 Prediction Engines • Multi-Timeframe Fusion • GNN Herding
-      </p>
-    </header>
+  <!-- Hero & Global Metrics -->
+  <header class="hero">
+    <h1 class="hero-title">Institutional Hedge Fund Position Estimation Engine</h1>
+    <p class="hero-subtitle">100% Free Data Pipeline • 14 Information Channels • 11 Quant Analytics Engines • Multi-Timeframe Fusion</p>
+  </header>
 
-    <!-- Metrics Grid -->
+  <div class="container">
+
+    <!-- Header Metric Cards -->
     <section class="metrics-grid">
       <div class="metric-card glass">
-        <div class="metric-label">Tracked Funds</div>
-        <div class="metric-value">50+</div>
-        <div class="metric-sub">Top Global Funds</div>
+        <div class="metric-label">Tracked Universe</div>
+        <div class="metric-value" id="metricFunds">50 Top Global Funds</div>
+        <div class="metric-sub">Quant, Macro, L/S & Activists</div>
       </div>
       <div class="metric-card glass">
-        <div class="metric-label">Information Coefficient (IC)</div>
-        <div class="metric-value" id="metricIC">+0.385</div>
-        <div class="metric-sub">Spearman Rank Correlation</div>
+        <div class="metric-label">Tracked Capital</div>
+        <div class="metric-value" id="metricAUM">$1,250B+</div>
+        <div class="metric-sub">Aggregated Portfolio AUM</div>
       </div>
       <div class="metric-card glass">
-        <div class="metric-label">Brier Calibration Score</div>
-        <div class="metric-value" id="metricBrier">0.082</div>
-        <div class="metric-sub">Optimal Calibration (&lt; 0.15)</div>
+        <div class="metric-label">Active Data Engines</div>
+        <div class="metric-value" id="metricEngines">11 Engines</div>
+        <div class="metric-sub">Multi-Model Ensemble</div>
       </div>
       <div class="metric-card glass">
         <div class="metric-label">Top-3 Sector Hit Rate</div>
@@ -97,6 +95,25 @@
 
     <!-- Tab 1: Predictions -->
     <main id="tab-predictions" class="tab-content active">
+
+      <!-- Universal Portfolio Visual Analytics Chart -->
+      <div class="chart-container glass-card" style="margin-bottom: 20px; padding: 20px; border-radius: 12px; background: var(--bg-card); border: 1px solid var(--border-color);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">📊 Universe Macro Position Visualizer</h3>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Real-time interactive capital distribution across 50 funds & 11 GICS sectors</span>
+          </div>
+          <div class="chart-btn-group" style="display: flex; gap: 8px;">
+            <button class="chart-toggle-btn active" data-chart="capital">Top 15 Assets Capital ($M)</button>
+            <button class="chart-toggle-btn" data-chart="sector">Sector Exposure (%)</button>
+            <button class="chart-toggle-btn" data-chart="strategy">AUM by Strategy</button>
+          </div>
+        </div>
+        <div style="position: relative; height: 320px; width: 100%;">
+          <canvas id="macroAnalyticsChart"></canvas>
+        </div>
+      </div>
+
       <div class="control-bar glass-bar">
         <select id="strategySelect" class="select-fund">
           <option value="all">All Strategies</option>

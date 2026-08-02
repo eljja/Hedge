@@ -119,6 +119,30 @@ body {
   margin-left: 8px;
 }
 
+/* Chart Controls */
+.chart-toggle-btn {
+  background: rgba(31, 38, 51, 0.6);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.chart-toggle-btn:hover {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--text-primary);
+  border-color: var(--accent-blue);
+}
+.chart-toggle-btn.active {
+  background: var(--accent-blue);
+  color: white;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
 .nav-links {
   display: flex;
   gap: 24px;

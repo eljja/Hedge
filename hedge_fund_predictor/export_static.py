@@ -391,6 +391,7 @@ class StaticSiteExporter:
         fallbacks = {
             "global_macro": [
                 {"ticker": "SPY", "name": "SPDR S&P 500 ETF", "sector": "Index", "weight": 0.145, "confidence": 92.5, "rating": "CONFIRMED", "type": "LONG", "value_m": 4200.0},
+                {"ticker": "SPY (PUT)", "name": "SPDR S&P 500 Put Option", "sector": "Index", "weight": 0.045, "confidence": 84.0, "rating": "HIGH", "type": "SHORT", "value_m": 1300.0},
                 {"ticker": "GLD", "name": "SPDR Gold Shares", "sector": "Commodities", "weight": 0.112, "confidence": 88.0, "rating": "HIGH", "type": "LONG", "value_m": 3250.0},
                 {"ticker": "TLT", "name": "iShares 20+ Year Treasury", "sector": "Fixed Income", "weight": 0.098, "confidence": 85.0, "rating": "HIGH", "type": "LONG", "value_m": 2840.0},
                 {"ticker": "IVV", "name": "iShares Core S&P 500", "sector": "Index", "weight": 0.085, "confidence": 90.0, "rating": "CONFIRMED", "type": "LONG", "value_m": 2460.0},
@@ -400,12 +401,14 @@ class StaticSiteExporter:
                 {"ticker": "NVO", "name": "Novo Nordisk A/S", "sector": "Health Care", "weight": 0.048, "confidence": 78.0, "rating": "HIGH", "type": "LONG", "value_m": 1420.0},
                 {"ticker": "META", "name": "Meta Platforms Inc", "sector": "Communication Services", "weight": 0.042, "confidence": 76.5, "rating": "HIGH", "type": "LONG", "value_m": 1240.0},
                 {"ticker": "VRTX", "name": "Vertex Pharmaceuticals", "sector": "Health Care", "weight": 0.038, "confidence": 74.0, "rating": "HIGH", "type": "LONG", "value_m": 1120.0},
+                {"ticker": "TSLA (PUT)", "name": "Tesla Inc Put Hedge", "sector": "Consumer Discretionary", "weight": 0.022, "confidence": 70.0, "rating": "MODERATE", "type": "SHORT", "value_m": 650.0},
                 {"ticker": "PLTR", "name": "Palantir Technologies", "sector": "Information Technology", "weight": 0.035, "confidence": 76.0, "rating": "HIGH", "type": "LONG", "value_m": 1030.0},
                 {"ticker": "AMD", "name": "Advanced Micro Devices", "sector": "Information Technology", "weight": 0.031, "confidence": 72.0, "rating": "HIGH", "type": "LONG", "value_m": 910.0},
             ],
             "multi_strategy": [
                 {"ticker": "NVDA", "name": "NVIDIA Corp", "sector": "Information Technology", "weight": 0.088, "confidence": 94.0, "rating": "CONFIRMED", "type": "LONG", "value_m": 5800.0},
                 {"ticker": "MSFT", "name": "Microsoft Corp", "sector": "Information Technology", "weight": 0.076, "confidence": 91.5, "rating": "CONFIRMED", "type": "LONG", "value_m": 5010.0},
+                {"ticker": "QQQ (PUT)", "name": "Invesco QQQ Put Hedge", "sector": "Index", "weight": 0.032, "confidence": 80.0, "rating": "HIGH", "type": "SHORT", "value_m": 2100.0},
                 {"ticker": "AMZN", "name": "Amazon.com Inc", "sector": "Consumer Discretionary", "weight": 0.062, "confidence": 87.0, "rating": "HIGH", "type": "LONG", "value_m": 4080.0},
                 {"ticker": "META", "name": "Meta Platforms Inc", "sector": "Communication Services", "weight": 0.054, "confidence": 85.0, "rating": "HIGH", "type": "LONG", "value_m": 3550.0},
                 {"ticker": "AAPL", "name": "Apple Inc", "sector": "Information Technology", "weight": 0.048, "confidence": 83.0, "rating": "HIGH", "type": "LONG", "value_m": 3160.0},

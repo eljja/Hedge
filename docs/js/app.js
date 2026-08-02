@@ -15,8 +15,8 @@ const App = {
     convictionMatrix: {},
     cftcMacro: {},
     metaSummary: {},
-  },
-  currentSort: { column: null, asc: true },
+  macroChart: null,
+  currentChartType: "capital",
 
   async init() {
     this.bindEvents();
@@ -24,6 +24,7 @@ const App = {
     this.renderHeaderMetrics();
     this.populateStrategySelector();
     this.populateFundSelector();
+    this.renderMacroChart();
     this.renderFundPredictions();
     this.renderTopHoldings();
     this.renderConvictionMatrix();
@@ -32,6 +33,17 @@ const App = {
   },
 
   bindEvents() {
+    // Chart toggle buttons
+    const chartBtns = document.querySelectorAll(".chart-toggle-btn");
+    chartBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        chartBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        this.currentChartType = btn.getAttribute("data-chart");
+        this.renderMacroChart();
+      });
+    });
+
     // Tabs
     const tabBtns = document.querySelectorAll(".tab-btn");
     tabBtns.forEach((btn) => {
@@ -166,6 +178,105 @@ const App = {
       if (!strategy) return "";
       const display = strategy.replace(/_/g, " ").toUpperCase();
       return `<span class="strat-badge strat-${strategy}">${display}</span>`;
+  },
+
+  renderMacroChart() {
+    const canvas = document.getElementById("macroAnalyticsChart");
+    if (!canvas || typeof Chart === "undefined" || !this.data.predictions) return;
+
+    if (this.macroChart) {
+      this.macroChart.destroy();
+    }
+
+    const type = this.currentChartType || "capital";
+    let chartData = { labels: [], datasets: [] };
+    let chartOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "#8B949E" } },
+        tooltip: { mode: "index", intersect: false }
+      },
+      scales: {
+        x: { ticks: { color: "#8B949E" }, grid: { color: "rgba(48, 54, 61, 0.4)" } },
+        y: { ticks: { color: "#8B949E" }, grid: { color: "rgba(48, 54, 61, 0.4)" } }
+      }
+    };
+
+    if (type === "capital") {
+      // Top 15 Assets Capital ($M) Horizontal Bar
+      const map = {};
+      Object.values(this.data.predictions).forEach(positions => {
+        positions.forEach(p => {
+          if (!p.ticker) return;
+          if (!map[p.ticker]) map[p.ticker] = { ticker: p.ticker, val: 0, isShort: (p.type === 'SHORT' || p.putCall === 'PUT') };
+          map[p.ticker].val += (p.value_m || 0);
+        });
+      });
+      const sorted = Object.values(map).sort((a, b) => b.val - a.val).slice(0, 15);
+      chartData = {
+        labels: sorted.map(s => s.ticker),
+        datasets: [{
+          label: "Total Est. Capital ($M)",
+          data: sorted.map(s => Math.round(s.val)),
+          backgroundColor: sorted.map(s => s.isShort ? "rgba(244, 63, 94, 0.8)" : "rgba(16, 185, 129, 0.8)"),
+          borderColor: sorted.map(s => s.isShort ? "#F43F5E" : "#10B981"),
+          borderWidth: 1,
+          borderRadius: 6,
+        }]
+      };
+      chartOptions.indexAxis = "y";
+
+    } else if (type === "sector") {
+      // Sector Capital ($M) across all funds
+      const secMap = {};
+      Object.values(this.data.predictions).forEach(positions => {
+        positions.forEach(p => {
+          const s = p.sector || "Other";
+          if (!secMap[s]) secMap[s] = 0;
+          secMap[s] += (p.value_m || 0);
+        });
+      });
+      const sortedSecs = Object.entries(secMap).sort((a, b) => b[1] - a[1]);
+      const colors = ["#3B82F6", "#10B981", "#8B5CF6", "#F59E0B", "#06B6D4", "#F43F5E", "#EC4899", "#F97316", "#64748B", "#14B8A6", "#A855F7"];
+      chartData = {
+        labels: sortedSecs.map(s => s[0]),
+        datasets: [{
+          label: "Capital Allocated ($M)",
+          data: sortedSecs.map(s => Math.round(s[1])),
+          backgroundColor: colors.slice(0, sortedSecs.length),
+          borderRadius: 6
+        }]
+      };
+
+    } else if (type === "strategy") {
+      // AUM per Strategy ($M)
+      const stratMap = {};
+      this.data.universe.forEach(f => {
+        const strat = f.strategy ? f.strategy.replace(/_/g, " ").toUpperCase() : "OTHER";
+        const positions = this.data.predictions[f.id] || [];
+        const totalVal = positions.reduce((sum, p) => sum + (p.value_m || 0), 0);
+        stratMap[strat] = (stratMap[strat] || 0) + totalVal;
+      });
+      const sortedStrats = Object.entries(stratMap).sort((a, b) => b[1] - a[1]);
+      const stratColors = ["#8B5CF6", "#10B981", "#F97316", "#F59E0B", "#F43F5E", "#3B82F6", "#06B6D4", "#EC4899"];
+      chartData = {
+        labels: sortedStrats.map(s => s[0]),
+        datasets: [{
+          label: "Total Strategy Capital ($M)",
+          data: sortedStrats.map(s => Math.round(s[1])),
+          backgroundColor: stratColors.slice(0, sortedStrats.length),
+          borderRadius: 6
+        }]
+      };
+    }
+
+    const ctx = canvas.getContext("2d");
+    this.macroChart = new Chart(ctx, {
+      type: "bar",
+      data: chartData,
+      options: chartOptions
+    });
   },
 
   getTypeHtml(type, putCall) {
