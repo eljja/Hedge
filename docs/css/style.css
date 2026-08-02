@@ -207,8 +207,8 @@ body {
   padding: 0 24px;
 }
 
-.hero-section {
-  padding: 50px 0 30px;
+.hero, .hero-section {
+  padding: 40px 20px 20px;
   text-align: center;
 }
 
