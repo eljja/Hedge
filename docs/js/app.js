@@ -15,6 +15,8 @@ const App = {
     convictionMatrix: {},
     cftcMacro: {},
     metaSummary: {},
+  },
+  currentSort: { column: null, asc: true },
   macroChart: null,
   currentChartType: "capital",
 
