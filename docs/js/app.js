@@ -196,12 +196,12 @@ const App = {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: { labels: { color: "#8B949E" } },
+        legend: { labels: { color: "#8B949E", font: { size: 12 } } },
         tooltip: { mode: "index", intersect: false }
       },
       scales: {
-        x: { ticks: { color: "#8B949E" }, grid: { color: "rgba(48, 54, 61, 0.4)" } },
-        y: { ticks: { color: "#8B949E" }, grid: { color: "rgba(48, 54, 61, 0.4)" } }
+        x: { ticks: { color: "#8B949E", autoSkip: false }, grid: { color: "rgba(48, 54, 61, 0.4)" } },
+        y: { ticks: { color: "#8B949E", autoSkip: false, font: { size: 11 } }, grid: { color: "rgba(48, 54, 61, 0.4)" } }
       }
     };
 
