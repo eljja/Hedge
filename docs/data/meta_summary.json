@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-02T12:02:09.568377",
+  "last_updated": "2026-08-02T20:24:20.796432",
   "funds_count": 50,
   "funds_with_real_data": 0,
-  "channels_active": 14,
-  "engines_active": 11,
+  "channels_active": 16,
+  "engines_active": 13,
   "total_tracked_aum_billions": 582.0,
   "metrics": {
     "sector_mae": 0.042,

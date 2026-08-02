@@ -1,0 +1,233 @@
+[
+  {
+    "ticker": "FFIE",
+    "short_interest_pct": 42.0,
+    "days_to_cover": 8.2,
+    "thesis": "Going concern, minimal revenue",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "BBBY",
+    "short_interest_pct": 35.0,
+    "days_to_cover": 6.1,
+    "thesis": "Bankruptcy/restructuring risk",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "BYND",
+    "short_interest_pct": 32.1,
+    "days_to_cover": 7.5,
+    "thesis": "Revenue decline, plant-based trend fading",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "NKLA",
+    "short_interest_pct": 28.4,
+    "days_to_cover": 5.8,
+    "thesis": "Execution risk, questionable demand",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "UPST",
+    "short_interest_pct": 25.3,
+    "days_to_cover": 5.2,
+    "thesis": "AI lending model unproven in downturn",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "GME",
+    "short_interest_pct": 22.5,
+    "days_to_cover": 4.2,
+    "thesis": "Retail squeeze target, institutional short thesis on fundamental overvaluation",
+    "squeeze_risk": "HIGH"
+  },
+  {
+    "ticker": "MPW",
+    "short_interest_pct": 19.8,
+    "days_to_cover": 5.0,
+    "thesis": "Hospital REIT tenant credit risk",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "AMC",
+    "short_interest_pct": 18.3,
+    "days_to_cover": 2.8,
+    "thesis": "Theater chain structural decline, debt overhang",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "KSS",
+    "short_interest_pct": 18.0,
+    "days_to_cover": 4.5,
+    "thesis": "Department store secular decline",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "PARA",
+    "short_interest_pct": 16.5,
+    "days_to_cover": 4.0,
+    "thesis": "Legacy media decline, streaming losses",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "RIVN",
+    "short_interest_pct": 15.8,
+    "days_to_cover": 3.5,
+    "thesis": "Cash burn rate unsustainable, production ramp risk",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "VNO",
+    "short_interest_pct": 14.8,
+    "days_to_cover": 4.2,
+    "thesis": "Office REIT CRE stress, work-from-home structural shift",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "LCID",
+    "short_interest_pct": 14.2,
+    "days_to_cover": 3.1,
+    "thesis": "Demand uncertainty, valuation premium vs deliveries",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "CVNA",
+    "short_interest_pct": 12.5,
+    "days_to_cover": 3.8,
+    "thesis": "Debt load, used car market normalization",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "SLG",
+    "short_interest_pct": 12.3,
+    "days_to_cover": 3.5,
+    "thesis": "NYC office vacancy rates, refinancing risk",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "NIO",
+    "short_interest_pct": 11.5,
+    "days_to_cover": 3.2,
+    "thesis": "China EV overcapacity, cash burn",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "WBA",
+    "short_interest_pct": 11.2,
+    "days_to_cover": 3.0,
+    "thesis": "Pharmacy margin pressure, store closures",
+    "squeeze_risk": "MODERATE"
+  },
+  {
+    "ticker": "COIN",
+    "short_interest_pct": 9.8,
+    "days_to_cover": 2.8,
+    "thesis": "Crypto regulatory risk, revenue volatility",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "DG",
+    "short_interest_pct": 9.5,
+    "days_to_cover": 2.6,
+    "thesis": "Margin compression, labor cost increases",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "SNAP",
+    "short_interest_pct": 8.5,
+    "days_to_cover": 2.5,
+    "thesis": "Ad revenue weakness, user growth stalling",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "PINS",
+    "short_interest_pct": 7.2,
+    "days_to_cover": 2.0,
+    "thesis": "Monetization challenges vs META competition",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "DASH",
+    "short_interest_pct": 6.8,
+    "days_to_cover": 2.2,
+    "thesis": "Path to profitability unclear, gig economy regulatory risk",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "FXI",
+    "short_interest_pct": 6.5,
+    "days_to_cover": 1.8,
+    "thesis": "China macro bearish hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "PDD",
+    "short_interest_pct": 5.2,
+    "days_to_cover": 1.8,
+    "thesis": "Temu economics unsustainable, China exposure",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "BABA",
+    "short_interest_pct": 4.5,
+    "days_to_cover": 1.5,
+    "thesis": "China regulatory risk, geopolitical tension",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "IYR",
+    "short_interest_pct": 4.0,
+    "days_to_cover": 1.2,
+    "thesis": "Commercial real estate distress hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "EWJ",
+    "short_interest_pct": 3.8,
+    "days_to_cover": 1.0,
+    "thesis": "Japan yen weakness / BOJ policy risk",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "XLE",
+    "short_interest_pct": 3.5,
+    "days_to_cover": 1.0,
+    "thesis": "Energy sector macro hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "TSLA",
+    "short_interest_pct": 3.2,
+    "days_to_cover": 1.1,
+    "thesis": "Margin compression, competition intensifying",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "IWM",
+    "short_interest_pct": 2.8,
+    "days_to_cover": 0.8,
+    "thesis": "Small-cap economic sensitivity hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "HYG",
+    "short_interest_pct": 2.2,
+    "days_to_cover": 0.6,
+    "thesis": "Credit spread widening hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "QQQ",
+    "short_interest_pct": 1.5,
+    "days_to_cover": 0.4,
+    "thesis": "Tech concentration risk hedge",
+    "squeeze_risk": "LOW"
+  },
+  {
+    "ticker": "SPY",
+    "short_interest_pct": 1.2,
+    "days_to_cover": 0.3,
+    "thesis": "Portfolio tail-risk hedge via PUT options",
+    "squeeze_risk": "LOW"
+  }
+]
