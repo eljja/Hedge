@@ -116,15 +116,27 @@ const App = {
     const s = this.data.metaSummary;
     if (s.metrics) {
       const lastUp = document.getElementById("lastUpdated");
-      // Use meta_summary.json date, fallback to live
-      let dateText = s.last_updated ? new Date(s.last_updated).toLocaleDateString() : 'Live';
+      let dateObj = s.last_updated ? new Date(s.last_updated) : new Date();
+      let dateText = dateObj.toLocaleDateString();
       
-      const sourceText = document.getElementById("dataSourceText");
-      if (sourceText) {
-          sourceText.innerText = `SEC EDGAR 13F (Updated: ${dateText})`;
+      // Calculate days difference from current client load time (Weekly cycle: 7 days)
+      const now = new Date();
+      const diffMs = now - dateObj;
+      const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+      
+      let statusBadge = "";
+      if (diffDays <= 7) {
+        statusBadge = `<span style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.4); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-left: 8px;">✓ Up to Date</span>`;
+      } else {
+        statusBadge = `<span style="background: rgba(239, 68, 68, 0.15); color: var(--accent-red); border: 1px solid rgba(239, 68, 68, 0.4); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-left: 8px; cursor: pointer;" title="Last updated ${diffDays} days ago (Weekly Update Recommended)">⚠️ Update Needed (${diffDays}d ago)</span>`;
       }
 
-      if (lastUp) lastUp.innerText = `Last Updated: ${dateText}`;
+      const sourceText = document.getElementById("dataSourceText");
+      if (sourceText) {
+        sourceText.innerHTML = `SEC EDGAR 13F (Updated: ${dateText}) ${statusBadge}`;
+      }
+
+      if (lastUp) lastUp.innerHTML = `Last Updated: ${dateText} ${statusBadge}`;
 
       const icMetric = document.getElementById("metricIC");
       if (icMetric) icMetric.innerText = `+${s.metrics.spearman_ic}`;
