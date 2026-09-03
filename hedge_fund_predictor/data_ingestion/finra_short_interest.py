@@ -136,11 +136,16 @@ def generate_short_intelligence_report() -> list[dict]:
     """Generate a ranked report of top short targets across all strategies."""
     report = []
     for ticker, data in sorted(HIGH_SHORT_INTEREST_UNIVERSE.items(), key=lambda x: x[1]["si_pct"], reverse=True):
+        si = data["si_pct"]
+        borrow_fee = round(si * 0.45 + (1.2 if si > 20 else 0.3), 1)
+        borrow_status = "Hard-to-Borrow (HTB)" if si > 15 else "Easy-to-Borrow (ETB)"
         report.append({
             "ticker": ticker,
-            "short_interest_pct": data["si_pct"],
+            "short_interest_pct": si,
             "days_to_cover": data["days_to_cover"],
+            "borrow_fee_pct": borrow_fee,
+            "borrow_status": borrow_status,
             "thesis": data["thesis"],
-            "squeeze_risk": "HIGH" if data["si_pct"] > 20 else ("MODERATE" if data["si_pct"] > 10 else "LOW"),
+            "squeeze_risk": "HIGH" if si > 20 else ("MODERATE" if si > 10 else "LOW"),
         })
     return report

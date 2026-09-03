@@ -182,6 +182,7 @@
           <span class="pv-label">Total Est. Portfolio Value:</span>
           <span class="pv-value" id="portfolioValue">$0.00</span>
         </div>
+        <button class="btn-csv-export" onclick="App.exportTableCSV('table-predictions', 'fund_positions.csv')">📥 Export CSV</button>
       </div>
 
       <!-- Fund Exposure Summary Bar -->
@@ -215,7 +216,10 @@
 
     <!-- Tab 6: Top Holdings -->
     <main id="tab-top-holdings" class="tab-content">
-      <h3 style="margin-bottom: 16px;">Most Commonly Held Assets & Capital Intensity Across Universe</h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+        <h3 style="margin-bottom: 0;">Most Commonly Held Assets & Capital Intensity Across Universe</h3>
+        <button class="btn-csv-export" onclick="App.exportTableCSV('table-top-holdings', 'top_holdings.csv')">📥 Export CSV</button>
+      </div>
       <div class="table-container glass-table">
         <table id="table-top-holdings">
           <thead>
@@ -239,7 +243,10 @@
 
     <!-- Tab: Short Intelligence -->
     <main id="tab-short-intel" class="tab-content">
-      <h3 style="margin-bottom: 8px;">🔴 Short Position Intelligence — Hedge Fund Short Thesis Tracker</h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 12px;">
+        <h3 style="margin-bottom: 0;">🔴 Short Position Intelligence — Hedge Fund Short Thesis Tracker</h3>
+        <button class="btn-csv-export" onclick="App.exportTableCSV('table-short-intel', 'short_intelligence.csv')">📥 Export CSV</button>
+      </div>
       <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Aggregated from FINRA short interest reports, SEC Reg SHO threshold lists, 13F PUT option filings, and strategy-specific short thesis research. Ranked by short interest %.</p>
       <div class="table-container glass-table">
         <table id="table-short-intel">
@@ -248,6 +255,7 @@
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="si_pct">Short Interest % <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="days">Days to Cover <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="borrow">Borrow Fee / Status <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="squeeze">Squeeze Risk <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="thesis">Short Thesis <i data-lucide="chevrons-up-down"></i></th>
             </tr>
@@ -261,7 +269,10 @@
 
     <!-- Tab: Activist Tracker -->
     <main id="tab-activist" class="tab-content">
-      <h3 style="margin-bottom: 8px;">⚡ SEC 13D/G Activist Stake Tracker — Highest Confidence Signals</h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 12px;">
+        <h3 style="margin-bottom: 0;">⚡ SEC 13D/G Activist Stake Tracker — Highest Confidence Signals</h3>
+        <button class="btn-csv-export" onclick="App.exportTableCSV('table-activist', 'activist_stakes.csv')">📥 Export CSV</button>
+      </div>
       <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Mandatory SEC Schedule 13D (activist) and 13G (passive) filings for positions >5% ownership. These are CONFIRMED, legally-binding position disclosures — the gold standard of hedge fund tracking.</p>
       <div class="table-container glass-table">
         <table id="table-activist">

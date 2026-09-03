@@ -471,16 +471,19 @@ const App = {
     const container = document.getElementById("shortIntelTable");
     if (!container) return;
     const data = this.data.shortIntelligence || [];
-    if (!data.length) { container.innerHTML = `<tr><td colspan="5" style="text-align:center;color:var(--text-muted);">No short intelligence data available</td></tr>`; return; }
+    if (!data.length) { container.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--text-muted);">No short intelligence data available</td></tr>`; return; }
 
     container.innerHTML = data.map(item => {
       const siColor = item.short_interest_pct > 20 ? "var(--accent-red)" : (item.short_interest_pct > 10 ? "#f0ad4e" : "var(--text-muted)");
       const squeezeClass = item.squeeze_risk === "HIGH" ? "rating-badge bg-red" : (item.squeeze_risk === "MODERATE" ? "rating-badge bg-amber" : "rating-badge bg-dim");
       const daysColor = item.days_to_cover > 5 ? "var(--accent-red)" : (item.days_to_cover > 3 ? "#f0ad4e" : "var(--text-secondary)");
+      const feeDisplay = item.borrow_fee_pct ? `${item.borrow_fee_pct.toFixed(1)}% (${item.borrow_status || 'HTB'})` : 'N/A';
+      const feeColor = (item.borrow_fee_pct && item.borrow_fee_pct > 5) ? "var(--accent-red)" : "var(--text-secondary)";
       return `<tr>
         <td><strong style="color:var(--accent-red);">${item.ticker}</strong></td>
         <td style="color:${siColor};font-weight:700;">${item.short_interest_pct.toFixed(1)}%</td>
         <td style="color:${daysColor};">${item.days_to_cover.toFixed(1)}</td>
+        <td style="color:${feeColor};font-size:0.85rem;font-weight:600;">${feeDisplay}</td>
         <td><span class="${squeezeClass}">${item.squeeze_risk}</span></td>
         <td style="font-size:0.82rem;color:var(--text-secondary);max-width:350px;">${item.thesis}</td>
       </tr>`;
@@ -615,8 +618,8 @@ const App = {
   globalSearch(query) {
     const q = query.toLowerCase().trim();
     
-    // Search across all tab tables
-    const tables = ["fundPositionsTable", "topHoldingsTable", "hiddenAlphaTable", "crowdingRiskTable", "sectorHeatmapTable", "cftcTable"];
+    // Search across all 8 tab tables
+    const tables = ["fundPositionsTable", "topHoldingsTable", "shortIntelTable", "activistTable", "hiddenAlphaTable", "crowdingRiskTable", "sectorHeatmapTable", "cftcTable"];
     
     tables.forEach(tableId => {
         const rows = document.querySelectorAll(`#${tableId} tr`);
@@ -625,6 +628,27 @@ const App = {
             row.style.display = text.includes(q) ? "" : "none";
         });
     });
+  },
+
+  exportTableCSV(tableId, filename) {
+    const table = document.getElementById(tableId);
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));
+    const csvContent = rows.map(row => {
+      const cols = Array.from(row.querySelectorAll('th, td'));
+      return cols.map(c => `"${c.innerText.replace(/"/g, '""').trim()}"`).join(',');
+    }).join('\n');
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.setAttribute('href', url);
+    link.setAttribute('download', filename || 'export.csv');
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   },
 
   handleSort(th) {
