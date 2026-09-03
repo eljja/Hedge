@@ -3,6 +3,8 @@
     "ticker": "FFIE",
     "short_interest_pct": 42.0,
     "days_to_cover": 8.2,
+    "borrow_fee_pct": 20.1,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Going concern, minimal revenue",
     "squeeze_risk": "HIGH"
   },
@@ -10,6 +12,8 @@
     "ticker": "BBBY",
     "short_interest_pct": 35.0,
     "days_to_cover": 6.1,
+    "borrow_fee_pct": 16.9,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Bankruptcy/restructuring risk",
     "squeeze_risk": "HIGH"
   },
@@ -17,6 +21,8 @@
     "ticker": "BYND",
     "short_interest_pct": 32.1,
     "days_to_cover": 7.5,
+    "borrow_fee_pct": 15.6,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Revenue decline, plant-based trend fading",
     "squeeze_risk": "HIGH"
   },
@@ -24,6 +30,8 @@
     "ticker": "NKLA",
     "short_interest_pct": 28.4,
     "days_to_cover": 5.8,
+    "borrow_fee_pct": 14.0,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Execution risk, questionable demand",
     "squeeze_risk": "HIGH"
   },
@@ -31,6 +39,8 @@
     "ticker": "UPST",
     "short_interest_pct": 25.3,
     "days_to_cover": 5.2,
+    "borrow_fee_pct": 12.6,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "AI lending model unproven in downturn",
     "squeeze_risk": "HIGH"
   },
@@ -38,6 +48,8 @@
     "ticker": "GME",
     "short_interest_pct": 22.5,
     "days_to_cover": 4.2,
+    "borrow_fee_pct": 11.3,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Retail squeeze target, institutional short thesis on fundamental overvaluation",
     "squeeze_risk": "HIGH"
   },
@@ -45,6 +57,8 @@
     "ticker": "MPW",
     "short_interest_pct": 19.8,
     "days_to_cover": 5.0,
+    "borrow_fee_pct": 9.2,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Hospital REIT tenant credit risk",
     "squeeze_risk": "MODERATE"
   },
@@ -52,6 +66,8 @@
     "ticker": "AMC",
     "short_interest_pct": 18.3,
     "days_to_cover": 2.8,
+    "borrow_fee_pct": 8.5,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Theater chain structural decline, debt overhang",
     "squeeze_risk": "MODERATE"
   },
@@ -59,6 +75,8 @@
     "ticker": "KSS",
     "short_interest_pct": 18.0,
     "days_to_cover": 4.5,
+    "borrow_fee_pct": 8.4,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Department store secular decline",
     "squeeze_risk": "MODERATE"
   },
@@ -66,6 +84,8 @@
     "ticker": "PARA",
     "short_interest_pct": 16.5,
     "days_to_cover": 4.0,
+    "borrow_fee_pct": 7.7,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Legacy media decline, streaming losses",
     "squeeze_risk": "MODERATE"
   },
@@ -73,6 +93,8 @@
     "ticker": "RIVN",
     "short_interest_pct": 15.8,
     "days_to_cover": 3.5,
+    "borrow_fee_pct": 7.4,
+    "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Cash burn rate unsustainable, production ramp risk",
     "squeeze_risk": "MODERATE"
   },
@@ -80,6 +102,8 @@
     "ticker": "VNO",
     "short_interest_pct": 14.8,
     "days_to_cover": 4.2,
+    "borrow_fee_pct": 7.0,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Office REIT CRE stress, work-from-home structural shift",
     "squeeze_risk": "MODERATE"
   },
@@ -87,6 +111,8 @@
     "ticker": "LCID",
     "short_interest_pct": 14.2,
     "days_to_cover": 3.1,
+    "borrow_fee_pct": 6.7,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Demand uncertainty, valuation premium vs deliveries",
     "squeeze_risk": "MODERATE"
   },
@@ -94,6 +120,8 @@
     "ticker": "CVNA",
     "short_interest_pct": 12.5,
     "days_to_cover": 3.8,
+    "borrow_fee_pct": 5.9,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Debt load, used car market normalization",
     "squeeze_risk": "MODERATE"
   },
@@ -101,6 +129,8 @@
     "ticker": "SLG",
     "short_interest_pct": 12.3,
     "days_to_cover": 3.5,
+    "borrow_fee_pct": 5.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "NYC office vacancy rates, refinancing risk",
     "squeeze_risk": "MODERATE"
   },
@@ -108,6 +138,8 @@
     "ticker": "NIO",
     "short_interest_pct": 11.5,
     "days_to_cover": 3.2,
+    "borrow_fee_pct": 5.5,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China EV overcapacity, cash burn",
     "squeeze_risk": "MODERATE"
   },
@@ -115,6 +147,8 @@
     "ticker": "WBA",
     "short_interest_pct": 11.2,
     "days_to_cover": 3.0,
+    "borrow_fee_pct": 5.3,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Pharmacy margin pressure, store closures",
     "squeeze_risk": "MODERATE"
   },
@@ -122,6 +156,8 @@
     "ticker": "COIN",
     "short_interest_pct": 9.8,
     "days_to_cover": 2.8,
+    "borrow_fee_pct": 4.7,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Crypto regulatory risk, revenue volatility",
     "squeeze_risk": "LOW"
   },
@@ -129,6 +165,8 @@
     "ticker": "DG",
     "short_interest_pct": 9.5,
     "days_to_cover": 2.6,
+    "borrow_fee_pct": 4.6,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Margin compression, labor cost increases",
     "squeeze_risk": "LOW"
   },
@@ -136,6 +174,8 @@
     "ticker": "SNAP",
     "short_interest_pct": 8.5,
     "days_to_cover": 2.5,
+    "borrow_fee_pct": 4.1,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Ad revenue weakness, user growth stalling",
     "squeeze_risk": "LOW"
   },
@@ -143,6 +183,8 @@
     "ticker": "PINS",
     "short_interest_pct": 7.2,
     "days_to_cover": 2.0,
+    "borrow_fee_pct": 3.5,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Monetization challenges vs META competition",
     "squeeze_risk": "LOW"
   },
@@ -150,6 +192,8 @@
     "ticker": "DASH",
     "short_interest_pct": 6.8,
     "days_to_cover": 2.2,
+    "borrow_fee_pct": 3.4,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Path to profitability unclear, gig economy regulatory risk",
     "squeeze_risk": "LOW"
   },
@@ -157,6 +201,8 @@
     "ticker": "FXI",
     "short_interest_pct": 6.5,
     "days_to_cover": 1.8,
+    "borrow_fee_pct": 3.2,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China macro bearish hedge",
     "squeeze_risk": "LOW"
   },
@@ -164,6 +210,8 @@
     "ticker": "PDD",
     "short_interest_pct": 5.2,
     "days_to_cover": 1.8,
+    "borrow_fee_pct": 2.6,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Temu economics unsustainable, China exposure",
     "squeeze_risk": "LOW"
   },
@@ -171,6 +219,8 @@
     "ticker": "BABA",
     "short_interest_pct": 4.5,
     "days_to_cover": 1.5,
+    "borrow_fee_pct": 2.3,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China regulatory risk, geopolitical tension",
     "squeeze_risk": "LOW"
   },
@@ -178,6 +228,8 @@
     "ticker": "IYR",
     "short_interest_pct": 4.0,
     "days_to_cover": 1.2,
+    "borrow_fee_pct": 2.1,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Commercial real estate distress hedge",
     "squeeze_risk": "LOW"
   },
@@ -185,6 +237,8 @@
     "ticker": "EWJ",
     "short_interest_pct": 3.8,
     "days_to_cover": 1.0,
+    "borrow_fee_pct": 2.0,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Japan yen weakness / BOJ policy risk",
     "squeeze_risk": "LOW"
   },
@@ -192,6 +246,8 @@
     "ticker": "XLE",
     "short_interest_pct": 3.5,
     "days_to_cover": 1.0,
+    "borrow_fee_pct": 1.9,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Energy sector macro hedge",
     "squeeze_risk": "LOW"
   },
@@ -199,6 +255,8 @@
     "ticker": "TSLA",
     "short_interest_pct": 3.2,
     "days_to_cover": 1.1,
+    "borrow_fee_pct": 1.7,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Margin compression, competition intensifying",
     "squeeze_risk": "LOW"
   },
@@ -206,6 +264,8 @@
     "ticker": "IWM",
     "short_interest_pct": 2.8,
     "days_to_cover": 0.8,
+    "borrow_fee_pct": 1.6,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Small-cap economic sensitivity hedge",
     "squeeze_risk": "LOW"
   },
@@ -213,6 +273,8 @@
     "ticker": "HYG",
     "short_interest_pct": 2.2,
     "days_to_cover": 0.6,
+    "borrow_fee_pct": 1.3,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Credit spread widening hedge",
     "squeeze_risk": "LOW"
   },
@@ -220,6 +282,8 @@
     "ticker": "QQQ",
     "short_interest_pct": 1.5,
     "days_to_cover": 0.4,
+    "borrow_fee_pct": 1.0,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Tech concentration risk hedge",
     "squeeze_risk": "LOW"
   },
@@ -227,6 +291,8 @@
     "ticker": "SPY",
     "short_interest_pct": 1.2,
     "days_to_cover": 0.3,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Portfolio tail-risk hedge via PUT options",
     "squeeze_risk": "LOW"
   }
