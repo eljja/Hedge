@@ -28,10 +28,15 @@ from hedge_fund_predictor.data_ingestion.sec_edgar.fetch_13f_holdings import (
     SEC_USER_AGENT,
 )
 from hedge_fund_predictor.data_ingestion.finra_short_interest import (
+    EU_UK_STATUTORY_SHORTS,
+    FUND_NEWS_LETTER_CATALYSTS,
+    classify_probability_tier,
     generate_short_intelligence_report,
+    synthesize_fund_short_book,
 )
 from hedge_fund_predictor.data_ingestion.sec_13d_tracker import (
     generate_13d_signal_report,
+    get_activist_stakes,
 )
 
 logger = logging.getLogger(__name__)
@@ -769,9 +774,12 @@ class StaticSiteExporter:
         return "Other"
 
     def _build_predictions_json(self, universe: list[dict], raw_holdings: dict) -> dict:
-        """Generate fund position estimates from real 13F data (with strategy fallback if unavailable)."""
-        predictions = {}
+        """Generate fund position estimates combining live 13F-HR, 13D stakes, and 7-vector short inference."""
+        raw_predictions = {}
+        strategy_short_peers: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+        global_short_peers: dict[str, int] = defaultdict(int)
 
+        # Pass 1: Extract raw 13F holdings + confirmed 13D stakes & build peer short network graph
         for fund in universe:
             fid = fund["id"]
             strategy = fund["strategy"]
@@ -785,10 +793,73 @@ class StaticSiteExporter:
                 for p in pos_list:
                     if not p.get("value_m"):
                         p["value_m"] = round(p.get("weight", 0) * aum, 1)
-                    p.setdefault("instrument", "PUT" if p["type"] == "SHORT" else "EQUITY")
+                    p.setdefault("instrument", "13F PUT" if p["type"] == "SHORT" else "EQUITY")
                     p.setdefault("source", "Model Est.")
 
-            predictions[fid] = pos_list
+            # Merge any confirmed SEC 13D/G stakes not already in top 13F rows
+            existing_long_tickers = {p["ticker"] for p in pos_list if p.get("type") != "SHORT"}
+            total_m = max(fund.get("total_13f_value_m", 0.0), aum, 1000.0)
+            for stake in get_activist_stakes(fid):
+                st_ticker = stake["ticker"]
+                if st_ticker not in existing_long_tickers:
+                    _, _, st_sector = self._cusip_to_ticker_sector("", stake["company"])
+                    val_m = float(stake.get("value_m", 500.0))
+                    pos_list.append({
+                        "ticker": st_ticker,
+                        "name": stake["company"],
+                        "sector": TICKER_TO_SECTOR.get(st_ticker, st_sector),
+                        "weight": round(min(0.25, val_m / total_m), 5),
+                        "confidence": 98.0 if stake.get("filing_type") == "13D" else 94.0,
+                        "rating": "CONFIRMED",
+                        "prob_tier": "T1 • 100%",
+                        "apply_factor": 1.0,
+                        "type": "LONG",
+                        "instrument": f"SEC {stake.get('filing_type', '13D')}",
+                        "putCall": None,
+                        "raw_value_m": val_m,
+                        "value_m": val_m,
+                        "signals": [f"SEC {stake.get('filing_type', '13D')} ({stake.get('ownership_pct', 5.0)}% Stake)"],
+                        "thesis": f"Confirmed SEC Schedule {stake.get('filing_type', '13D')} {stake.get('action', 'ACTIVIST')} disclosure ({stake.get('ownership_pct', 5.0)}% ownership)",
+                        "source": "SEC 13D/G",
+                    })
+                else:
+                    # Upgrade existing 13F long with 13D signal badge
+                    for p in pos_list:
+                        if p["ticker"] == st_ticker and p.get("type") != "SHORT":
+                            p["confidence"] = max(p.get("confidence", 95.0), 98.0)
+                            p["rating"] = "CONFIRMED"
+                            p["signals"] = ["SEC 13F-HR", f"SEC {stake.get('filing_type', '13D')} ({stake.get('ownership_pct', 5.0)}%)"]
+                            p["thesis"] = f"Confirmed 13F-HR + Schedule {stake.get('filing_type', '13D')} {stake.get('action', 'ACTIVIST')} position ({stake.get('ownership_pct', 5.0)}% ownership)"
+
+            raw_predictions[fid] = pos_list
+
+            # Record peer short signals for Vector 4 (GNN Network Propagation)
+            fund_short_set = {p["ticker"] for p in pos_list if p.get("type") == "SHORT"}
+            for eu in EU_UK_STATUTORY_SHORTS.get(fid, []):
+                fund_short_set.add(eu["ticker"])
+            for cat in FUND_NEWS_LETTER_CATALYSTS.get(fid, []):
+                fund_short_set.add(cat["ticker"])
+            for st in fund_short_set:
+                strategy_short_peers[strategy][st] += 1
+                global_short_peers[st] += 1
+
+        # Pass 2: Synthesize 7-vector probability-tiered short book for every fund
+        predictions = {}
+        for fund in universe:
+            fid = fund["id"]
+            strategy = fund["strategy"]
+            total_13f_m = max(fund.get("total_13f_value_m", 0.0), float(FUND_AUM_ESTIMATES.get(fid, 10000)))
+            peer_counts = {
+                t: strategy_short_peers[strategy].get(t, 0) + (global_short_peers.get(t, 0) // 2)
+                for t in global_short_peers
+            }
+            predictions[fid] = synthesize_fund_short_book(
+                fund_id=fid,
+                strategy=strategy,
+                existing_positions=raw_predictions[fid],
+                total_fund_value_m=total_13f_m,
+                peer_short_counts=peer_counts,
+            )
 
         return predictions
 
@@ -1017,52 +1088,108 @@ class StaticSiteExporter:
         }
 
     def _build_short_intelligence_json(self, predictions: dict, universe: list[dict]) -> list[dict]:
-        """Enrich FINRA short intelligence report with live 13F disclosed PUT option cross-references."""
+        """Enrich FINRA short intelligence report with live 13F PUTs + 7-vector inferred short positions."""
         name_map = {f["id"]: f["name"] for f in universe}
-        put_map = defaultdict(list)
+        disclosed_put_map = defaultdict(list)
+        inferred_short_map = defaultdict(list)
+        all_short_map = defaultdict(list)
+        signal_set_map = defaultdict(set)
 
         for fid, positions in predictions.items():
+            fname = name_map.get(fid, fid)
             for p in positions:
                 if p.get("type") == "SHORT":
-                    put_map[p["ticker"]].append({
-                        "fund": name_map.get(fid, fid),
-                        "value_m": p.get("value_m", 0),
-                    })
+                    t = p["ticker"]
+                    entry = {
+                        "fund": fname,
+                        "fund_id": fid,
+                        "value_m": p.get("value_m", 0.0),
+                        "raw_value_m": p.get("raw_value_m", p.get("value_m", 0.0)),
+                        "confidence": p.get("confidence", 75.0),
+                        "prob_tier": p.get("prob_tier", "T2 • 75%"),
+                        "instrument": p.get("instrument", "SHORT"),
+                        "source": p.get("source", "13F-HR"),
+                    }
+                    all_short_map[t].append(entry)
+                    if p.get("source") == "13F-HR":
+                        disclosed_put_map[t].append(entry)
+                    else:
+                        inferred_short_map[t].append(entry)
+                    for sig in p.get("signals", []):
+                        clean_sig = sig.split("(")[0].strip()
+                        if clean_sig:
+                            signal_set_map[t].add(clean_sig)
 
         base_report = generate_short_intelligence_report()
         seen_tickers = set()
         for item in base_report:
             t = item["ticker"]
             seen_tickers.add(t)
-            puts = sorted(put_map.get(t, []), key=lambda x: x["value_m"], reverse=True)
+            puts = sorted(disclosed_put_map.get(t, []), key=lambda x: x["value_m"], reverse=True)
+            inferred = sorted(inferred_short_map.get(t, []), key=lambda x: x["value_m"], reverse=True)
+            all_s = sorted(all_short_map.get(t, []), key=lambda x: x["value_m"], reverse=True)
+
             item["put_funds_count"] = len(puts)
             item["put_total_m"] = round(sum(x["value_m"] for x in puts), 1)
             item["put_top_funds"] = [x["fund"] for x in puts[:3]]
+            item["inferred_funds_count"] = len(inferred)
+            item["total_short_funds"] = len(all_s)
+            item["total_short_m"] = round(sum(x["value_m"] for x in all_s), 1)
+            item["top_short_funds"] = [x["fund"] for x in all_s[:4]]
 
-        # Also add top 13F PUT-hedged tickers that have significant disclosed PUT capital across >= 3 funds
-        for t, puts in sorted(put_map.items(), key=lambda x: sum(i["value_m"] for i in x[1]), reverse=True):
-            if t in seen_tickers or len(puts) < 3:
+            if all_s:
+                max_conf = max(x["confidence"] for x in all_s)
+                boosted_prob = round(min(97.5, max(item.get("ensemble_prob", 70.0), max_conf)), 1)
+                rating, tier_label, apply_factor = classify_probability_tier(boosted_prob)
+                item["ensemble_prob"] = boosted_prob
+                item["prob_tier"] = tier_label
+                item["apply_factor"] = apply_factor
+                item["rating"] = rating
+
+            merged_vecs = list(dict.fromkeys(list(item.get("vectors", [])) + sorted(signal_set_map.get(t, set()))))
+            item["vectors"] = merged_vecs[:5]
+
+        # Add top 13F PUT-hedged tickers that have significant disclosed PUT capital across >= 3 funds
+        for t, all_s in sorted(all_short_map.items(), key=lambda x: sum(i["value_m"] for i in x[1]), reverse=True):
+            if t in seen_tickers or len(all_s) < 3:
                 continue
-            total_m = round(sum(x["value_m"] for x in puts), 1)
-            if total_m < 500:
+            total_m = round(sum(x["value_m"] for x in all_s), 1)
+            if total_m < 400:
                 continue
-            puts_sorted = sorted(puts, key=lambda x: x["value_m"], reverse=True)
+            puts = disclosed_put_map.get(t, [])
+            inferred = inferred_short_map.get(t, [])
+            all_sorted = sorted(all_s, key=lambda x: x["value_m"], reverse=True)
+            max_conf = max((x["confidence"] for x in all_s), default=92.0)
+            rating, tier_label, apply_factor = classify_probability_tier(max_conf)
+            _, clean_nm, sec_guess = self._cusip_to_ticker_sector("", t)
             base_report.append({
                 "ticker": t,
-                "short_interest_pct": 4.2,
-                "days_to_cover": 1.4,
-                "borrow_fee_pct": 0.8,
+                "name": CUSIP_TO_TICKER.get(t, (t, clean_nm, sec_guess))[1],
+                "sector": TICKER_TO_SECTOR.get(t, sec_guess),
+                "short_interest_pct": 5.4,
+                "days_to_cover": 1.6,
+                "borrow_fee_pct": 0.9,
                 "borrow_status": "Easy-to-Borrow (ETB)",
+                "ensemble_prob": round(max_conf, 1),
+                "prob_tier": tier_label,
+                "apply_factor": apply_factor,
+                "rating": rating,
+                "vectors": list(signal_set_map.get(t, {"13F-HR PUT"}))[:4],
                 "squeeze_risk": "LOW",
-                "thesis": f"Active institutional 13F PUT hedge across {len(puts)} funds (${total_m:,.0f}M notional)",
+                "thesis": f"Active institutional 13F PUT & multi-vector short across {len(all_s)} funds (${total_m:,.0f}M effective notional)",
                 "put_funds_count": len(puts),
-                "put_total_m": total_m,
-                "put_top_funds": [x["fund"] for x in puts_sorted[:3]],
+                "put_total_m": round(sum(x["value_m"] for x in puts), 1),
+                "put_top_funds": [x["fund"] for x in all_sorted[:3]],
+                "inferred_funds_count": len(inferred),
+                "total_short_funds": len(all_s),
+                "total_short_m": total_m,
+                "top_short_funds": [x["fund"] for x in all_sorted[:4]],
             })
             seen_tickers.add(t)
-            if len(base_report) >= 42:
+            if len(base_report) >= 48:
                 break
 
+        base_report.sort(key=lambda x: (x.get("ensemble_prob", 0), x.get("total_short_m", 0)), reverse=True)
         return base_report
 
     def _build_cftc_macro_json(self) -> dict:

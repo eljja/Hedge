@@ -22,6 +22,7 @@ const App = {
     activeTab: "tab-predictions",
     chartType: "capital",
     posSideFilter: "all",
+    probMinFilter: 0,
     topHoldingsFilter: "all",
     shortRiskFilter: "all",
     heatmapStrategy: "all",
@@ -118,6 +119,17 @@ const App = {
         document.querySelectorAll("#posSideFilters .filter-pill").forEach((p) => p.classList.remove("active"));
         pill.classList.add("active");
         this.state.posSideFilter = pill.getAttribute("data-side");
+        this.renderFundPredictions();
+        this.applyGlobalSearch();
+      });
+    });
+
+    // Probability Threshold filter pills
+    document.querySelectorAll("#probTierFilters .filter-pill").forEach((pill) => {
+      pill.addEventListener("click", () => {
+        document.querySelectorAll("#probTierFilters .filter-pill").forEach((p) => p.classList.remove("active"));
+        pill.classList.add("active");
+        this.state.probMinFilter = Number(pill.getAttribute("data-prob") || 0);
         this.renderFundPredictions();
         this.applyGlobalSearch();
       });
@@ -697,6 +709,12 @@ const App = {
     return `<span class="type-indicator type-short"><i data-lucide="trending-down"></i> SHORT${instBadge}</span>`;
   },
 
+  getTierBadgeHtml(probTier, confidence) {
+    const tier = probTier || (confidence >= 90 ? "T1 • 100%" : confidence >= 78 ? "T2 • 75%" : confidence >= 65 ? "T3 • 50%" : "T4 • 25%");
+    const cls = tier.startsWith("T1") ? "tier-t1" : tier.startsWith("T2") ? "tier-t2" : tier.startsWith("T3") ? "tier-t3" : "tier-t4";
+    return `<span class="tier-tag ${cls}" title="Probability-graduated application factor">${this.esc(tier)}</span>`;
+  },
+
   renderFundPredictions() {
     const select = document.getElementById("fundSelect");
     const container = document.getElementById("fundPositionsTable");
@@ -705,7 +723,9 @@ const App = {
     const fundId = select.value;
     select.setAttribute("data-prev", fundId);
     const fundObj = this.data.universe.find((f) => f.id === fundId);
-    const allPositions = this.data.predictions[fundId] || [];
+    const rawPositions = this.data.predictions[fundId] || [];
+    const minProb = Number(this.state.probMinFilter || 0);
+    const allPositions = rawPositions.filter((p) => (p.confidence || 0) >= minProb);
 
     // Update fund identity header
     const nameEl = document.getElementById("selectedFundName");
@@ -720,7 +740,7 @@ const App = {
     if (stratEl) stratEl.innerHTML = fundObj ? this.getStrategyBadgeHtml(fundObj.strategy) : "";
     if (srcEl && fundObj) {
       const isReal = fundObj.data_source === "SEC 13F-HR";
-      srcEl.textContent = isReal ? "✓ Live SEC 13F-HR" : "Model Estimate";
+      srcEl.textContent = isReal ? "✓ Live SEC 13F-HR + Multi-Vector Short" : "Model Estimate";
       srcEl.classList.toggle("estimated", !isReal);
     }
     if (repEl) {
@@ -736,7 +756,7 @@ const App = {
     if (pvEl) pvEl.textContent = fundObj?.aum_display || "N/A";
     if (secLink && fundObj?.sec_url) secLink.href = fundObj.sec_url;
 
-    // Exposure calculation over all positions of this fund
+    // Exposure calculation over thresholded positions of this fund
     let longVal = 0, shortVal = 0, longWeight = 0, shortWeight = 0;
     allPositions.forEach((p) => {
       const isShort = p.type === "SHORT" || p.putCall === "PUT";
@@ -775,7 +795,7 @@ const App = {
     });
 
     if (filtered.length === 0) {
-      container.innerHTML = `<tr class="empty-row"><td colspan="8" style="text-align:center; padding: 28px; color: var(--text-muted);">No ${side === "SHORT" ? "disclosed 13F PUT / Short" : ""} positions for this manager.</td></tr>`;
+      container.innerHTML = `<tr class="empty-row"><td colspan="8" style="text-align:center; padding: 28px; color: var(--text-muted);">No positions match the current side / probability filter (P &ge; ${minProb}%).</td></tr>`;
       return;
     }
 
@@ -789,22 +809,36 @@ const App = {
         const barW = Math.min(100, (p.weight / maxWeight) * 100);
         const tickerCls = isShort ? "ticker-btn ticker-short" : "ticker-btn";
         const valM = p.value_m || 0;
+        const conf = p.confidence || 0;
+        const sigs = Array.isArray(p.signals) ? p.signals : [];
+        const showSigs = isShort || sigs.some((s) => s.includes("13D") || s.includes("13G"));
+        const sigHtml = showSigs && sigs.length
+          ? `<div class="sig-chips-row">${sigs.map((s) => `<span class="sig-chip ${isShort ? "sig-short" : ""}">${this.esc(s)}</span>`).join("")}</div>`
+          : "";
+        const rawNote = p.apply_factor && p.apply_factor < 1 && p.raw_value_m
+          ? ` title="Raw notional: ${this.formatMoneyM(p.raw_value_m)} × ${(p.apply_factor * 100).toFixed(0)}% tier factor"`
+          : "";
 
-        return `<tr>
+        return `<tr title="${this.esc(p.thesis || "")}">
           <td data-sort-val="${this.esc(p.ticker)}">
             <button class="${tickerCls}" data-open-ticker="${this.esc(p.ticker)}" title="Inspect ${this.esc(p.ticker)} across all 50 funds">${this.esc(p.ticker)}</button>
           </td>
-          <td>${this.esc(p.name || "-")}</td>
+          <td>
+            <div>${this.esc(p.name || "-")}</div>
+            ${sigHtml}
+          </td>
           <td style="color: var(--text-secondary);">${this.esc(p.sector || "-")}</td>
           <td data-sort-val="${isShort ? "SHORT" : "LONG"}">${this.getTypeHtml(p.type, p.putCall, p.instrument)}</td>
-          <td class="num-col" data-sort-val="${valM}"><strong>${this.formatMoneyM(valM)}</strong></td>
+          <td class="num-col" data-sort-val="${valM}"${rawNote}><strong>${this.formatMoneyM(valM)}</strong></td>
           <td class="num-col" data-sort-val="${wPct}">
             <div class="bar-cell">
               <strong>${wPct.toFixed(2)}%</strong>
               <div class="micro-bar-track"><div class="micro-bar-fill ${isShort ? "fill-rose" : "fill-emerald"}" style="width:${barW.toFixed(1)}%"></div></div>
             </div>
           </td>
-          <td class="num-col" data-sort-val="${p.confidence || 0}">${(p.confidence || 0).toFixed(0)}%</td>
+          <td class="num-col" data-sort-val="${conf}">
+            <strong>${conf.toFixed(1)}%</strong>${this.getTierBadgeHtml(p.prob_tier, conf)}
+          </td>
           <td><span class="badge ${badgeClass}">${this.esc(p.rating || "-")}</span></td>
         </tr>`;
       })
@@ -932,7 +966,7 @@ const App = {
     if (elTot) elTot.textContent = allData.length;
     if (elHigh) elHigh.textContent = allData.filter((x) => x.squeeze_risk === "HIGH").length;
     if (elHtb) elHtb.textContent = allData.filter((x) => (x.borrow_status || "").includes("HTB")).length;
-    if (elPuts) elPuts.textContent = allData.filter((x) => (x.put_funds_count || 0) > 0).length;
+    if (elPuts) elPuts.textContent = allData.filter((x) => (x.total_short_funds || x.put_funds_count || 0) > 0).length;
 
     const filter = this.state.shortRiskFilter;
     const data = allData.filter((item) => {
@@ -942,7 +976,7 @@ const App = {
     });
 
     if (!data.length) {
-      container.innerHTML = `<tr class="empty-row"><td colspan="7" style="text-align:center; padding: 28px; color:var(--text-muted);">No short intelligence targets match this filter.</td></tr>`;
+      container.innerHTML = `<tr class="empty-row"><td colspan="8" style="text-align:center; padding: 28px; color:var(--text-muted);">No short intelligence targets match this filter.</td></tr>`;
       return;
     }
 
@@ -951,8 +985,11 @@ const App = {
         const si = Number(item.short_interest_pct || 0);
         const days = Number(item.days_to_cover || 0);
         const fee = Number(item.borrow_fee_pct || 0);
+        const prob = Number(item.ensemble_prob || 80);
+        const totFunds = Number(item.total_short_funds ?? item.put_funds_count ?? 0);
         const putsCnt = Number(item.put_funds_count || 0);
-        const putsM = Number(item.put_total_m || 0);
+        const infCnt = Number(item.inferred_funds_count || 0);
+        const totM = Number(item.total_short_m ?? item.put_total_m ?? 0);
 
         const siColor = si > 20 ? "var(--accent-red)" : si > 10 ? "var(--accent-amber)" : "var(--text-secondary)";
         const squeezeClass = item.squeeze_risk === "HIGH" ? "rating-badge bg-red" : item.squeeze_risk === "MODERATE" ? "rating-badge bg-amber" : "rating-badge bg-dim";
@@ -960,22 +997,34 @@ const App = {
         const isHTB = (item.borrow_status || "").includes("HTB");
         const feeColor = fee > 5 ? "var(--accent-red)" : "var(--text-secondary)";
 
-        const putsCell = putsCnt > 0
-          ? `<span class="text-rose" style="font-weight:700;">${putsCnt} funds</span> <span class="text-muted">(${this.formatMoneyM(putsM)})</span>`
+        const fundsTooltip = `Disclosed 13F PUT: ${putsCnt} funds • Multi-Vector Inferred: ${infCnt} funds`;
+        const fundsCell = totFunds > 0
+          ? `<div title="${this.esc(fundsTooltip)}"><span class="text-rose" style="font-weight:700;">${totFunds} funds</span> <span class="text-muted">(${this.formatMoneyM(totM)})</span></div>`
           : `<span class="text-muted">—</span>`;
+
+        const vecs = Array.isArray(item.vectors) ? item.vectors : [];
+        const vecHtml = vecs.length
+          ? `<div class="sig-chips-row">${vecs.map((v) => `<span class="sig-chip sig-short">${this.esc(v)}</span>`).join("")}</div>`
+          : "";
 
         return `<tr>
           <td data-sort-val="${this.esc(item.ticker)}">
             <button class="ticker-btn ticker-short" data-open-ticker="${this.esc(item.ticker)}">${this.esc(item.ticker)}</button>
+          </td>
+          <td class="num-col" data-sort-val="${prob}">
+            <strong>${prob.toFixed(1)}%</strong>${this.getTierBadgeHtml(item.prob_tier, prob)}
           </td>
           <td class="num-col" data-sort-val="${si}" style="color:${siColor}; font-weight:700;">${si.toFixed(1)}%</td>
           <td class="num-col" data-sort-val="${days}" style="color:${daysColor};">${days.toFixed(1)}d</td>
           <td class="num-col" data-sort-val="${fee}" style="color:${feeColor}; font-weight:600;">
             ${fee.toFixed(1)}% <span class="badge ${isHTB ? "bg-red" : "bg-dim"}" style="margin-left:4px;">${isHTB ? "HTB" : "ETB"}</span>
           </td>
-          <td class="num-col" data-sort-val="${putsM}">${putsCell}</td>
+          <td class="num-col" data-sort-val="${totM}">${fundsCell}</td>
           <td><span class="${squeezeClass}">${this.esc(item.squeeze_risk)}</span></td>
-          <td style="font-size:0.82rem; color:var(--text-secondary); max-width:340px;">${this.esc(item.thesis)}</td>
+          <td style="font-size:0.82rem; color:var(--text-secondary); max-width:360px;">
+            <div>${this.esc(item.thesis)}</div>
+            ${vecHtml}
+          </td>
         </tr>`;
       })
       .join("");
@@ -1233,6 +1282,8 @@ const App = {
             value_m: p.value_m || 0,
             weight: p.weight || 0,
             confidence: p.confidence || 0,
+            prob_tier: p.prob_tier || "",
+            signals: p.signals || [],
           });
         }
       });
@@ -1297,9 +1348,10 @@ const App = {
               <tr>
                 <th>Hedge Fund Manager</th>
                 <th>Strategy</th>
-                <th>Position</th>
+                <th>Position / Signals</th>
                 <th class="num-col">Capital ($M)</th>
                 <th class="num-col">Weight</th>
+                <th class="num-col">Prob / Tier</th>
               </tr>
             </thead>
             <tbody>
@@ -1308,9 +1360,13 @@ const App = {
                   (h) => `<tr>
                     <td><button class="fund-link-btn" data-jump-fund="${this.esc(h.fundId)}">${this.esc(h.fundName)}</button></td>
                     <td>${this.getStrategyBadgeHtml(h.strategy)}</td>
-                    <td>${this.getTypeHtml(h.type, h.instrument === "PUT" ? "PUT" : null, h.instrument)}</td>
+                    <td>
+                      <div>${this.getTypeHtml(h.type, h.instrument.includes("PUT") ? "PUT" : null, h.instrument)}</div>
+                      ${h.signals.length ? `<div class="sig-chips-row">${h.signals.map((s) => `<span class="sig-chip ${h.type === "SHORT" ? "sig-short" : ""}">${this.esc(s)}</span>`).join("")}</div>` : ""}
+                    </td>
                     <td class="num-col"><strong>${this.formatMoneyM(h.value_m)}</strong></td>
                     <td class="num-col">${(h.weight * 100).toFixed(2)}%</td>
+                    <td class="num-col"><strong>${h.confidence.toFixed(1)}%</strong>${this.getTierBadgeHtml(h.prob_tier, h.confidence)}</td>
                   </tr>`
                 )
                 .join("")}

@@ -262,6 +262,14 @@
             <button class="filter-pill" data-side="SHORT">Short / PUT</button>
           </div>
         </div>
+        <div class="control-group">
+          <span class="control-label">Probability Threshold</span>
+          <div class="pill-filter-group" id="probTierFilters">
+            <button class="filter-pill active" data-prob="0" title="Include all probability-weighted tiers (T1: 100%, T2: 75%, T3: 50%, T4: 25%)">All Tiers</button>
+            <button class="filter-pill" data-prob="78" title="Tier 1 & Tier 2 only (P >= 78%)">High (&ge;78%)</button>
+            <button class="filter-pill" data-prob="90" title="Tier 1 Confirmed only (P >= 90%)">Confirmed (&ge;90%)</button>
+          </div>
+        </div>
         <div class="control-actions">
           <a id="fundSecLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open official SEC EDGAR 13F filings">
             <i data-lucide="external-link"></i>
@@ -424,12 +432,13 @@
           <thead>
             <tr>
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="prob" class="num-col">Short Prob / Tier <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="si_pct" class="num-col">Short Interest % <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="days" class="num-col">Days to Cover <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="borrow" class="num-col">Borrow Fee / Status <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="puts" class="num-col">13F PUT Funds <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="borrow" class="num-col">Borrow Fee <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="puts" class="num-col">Est. Short Funds <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="squeeze">Squeeze Risk <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="thesis">Short Thesis <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="thesis">Short Thesis &amp; Active Signals <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
           <tbody id="shortIntelTable"></tbody>
@@ -637,41 +646,36 @@
     <!-- ==================== TAB 8: SYSTEM ARCHITECTURE ==================== -->
     <section id="tab-architecture" class="tab-content">
       <div class="architecture-container glass">
-        <h2>System Architecture &amp; Quantitative Methodology</h2>
-        <p class="arch-subtitle">Institutional-grade <strong>13-engine quantitative ensemble</strong> powered by <strong>16 100% free regulatory &amp; public market data channels</strong>, automatically refreshed via GitHub Actions.</p>
+        <h2>System Architecture Overview</h2>
+        <p class="arch-subtitle">Multi-engine quantitative analytics pipeline processing regulatory disclosures and market data into probability-tiered portfolio views.</p>
 
         <div class="diagram">
           <div class="diagram-layer">
             <div class="diagram-box blue">
-              <h4>Data Ingestion Layer — 16 Free Public Channels</h4>
-              <p>SEC EDGAR 13F-HR &amp; 13F-NT • SEC Schedule 13D/13G • SEC Company Tickers (10,399+) • Form 4 Insiders • Form N-PORT/N-PX • FINRA Short Interest • SEC Reg SHO Threshold • CFTC COT Futures • EU Short Registers • Options Put/Call Ratio • Fama-French 5-Factor • FRED Macro • Pair-Trade Short Mapping • Tail-Risk Hedge Signals • Credit/CRE Distress Indicators • GICS Sector Classification</p>
+              <h4>Data Ingestion Layer</h4>
+              <p>Regulatory Filings • Institutional Ownership Disclosures • Public Short Interest &amp; Market Positioning • Macro Derivatives</p>
             </div>
           </div>
 
           <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
 
           <div class="diagram-layer engine-grid">
-            <div class="diagram-box purple"><span>E1</span> Adaptive Price Drift</div>
-            <div class="diagram-box purple"><span>E2</span> Kalman Filter RBSA</div>
-            <div class="diagram-box purple"><span>E3</span> Bayesian 13D Jump</div>
-            <div class="diagram-box purple"><span>E4</span> Options Delta Model</div>
-            <div class="diagram-box purple"><span>E5</span> Conviction-Crowding</div>
-            <div class="diagram-box purple"><span>E6</span> Letter NLP Sentiment</div>
-            <div class="diagram-box purple"><span>E7</span> CFTC Macro Tilts</div>
-            <div class="diagram-box purple"><span>E8</span> 13F Meta Return Gap</div>
-            <div class="diagram-box purple"><span>E9</span> GNN Herding Graph</div>
-            <div class="diagram-box purple"><span>E10</span> Insider Boost</div>
-            <div class="diagram-box purple"><span>E11</span> SEC Scrutiny Scan</div>
-            <div class="diagram-box purple"><span>E12</span> Short Squeeze Scorer</div>
-            <div class="diagram-box purple"><span>E13</span> Exposure Aggregator</div>
+            <div class="diagram-box purple"><span>01</span> Portfolio Normalization</div>
+            <div class="diagram-box purple"><span>02</span> Factor Decomposition</div>
+            <div class="diagram-box purple"><span>03</span> Event Probability Model</div>
+            <div class="diagram-box purple"><span>04</span> Derivatives Exposure</div>
+            <div class="diagram-box purple"><span>05</span> Conviction &amp; Crowding</div>
+            <div class="diagram-box purple"><span>06</span> Macro Positioning</div>
+            <div class="diagram-box purple"><span>07</span> Risk &amp; Tier Calibration</div>
+            <div class="diagram-box purple"><span>08</span> Ensemble Aggregation</div>
           </div>
 
           <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
 
           <div class="diagram-layer">
             <div class="diagram-box emerald">
-              <h4>Multi-Timeframe Fusion &amp; Automated Static Delivery</h4>
-              <p>Aggregates sub-manager 13F filings with real-time 13D &amp; FINRA short overlays → Static JSON build → Zero-latency GitHub Pages deployment</p>
+              <h4>Probability-Tiered Output &amp; Static Delivery</h4>
+              <p>Tiered confidence calibration → Static JSON build → Zero-latency GitHub Pages deployment</p>
             </div>
           </div>
         </div>

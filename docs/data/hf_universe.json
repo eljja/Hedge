@@ -14,9 +14,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001423053&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 187602.7,
-    "top_short_m": 166249.0,
-    "net_exposure_pct": 2.4,
-    "short_positions_count": 17
+    "top_short_m": 177982.1,
+    "net_exposure_pct": 1.1,
+    "short_positions_count": 24
   },
   {
     "id": "aqr",
@@ -33,9 +33,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001167557&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 68123.7,
-    "top_short_m": 0,
-    "net_exposure_pct": 20.2,
-    "short_positions_count": 0
+    "top_short_m": 20171.0,
+    "net_exposure_pct": 14.2,
+    "short_positions_count": 7
   },
   {
     "id": "millennium",
@@ -52,9 +52,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001273087&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 33135.5,
-    "top_short_m": 65109.3,
-    "net_exposure_pct": -10.6,
-    "short_positions_count": 20
+    "top_short_m": 67197.0,
+    "net_exposure_pct": -11.3,
+    "short_positions_count": 26
   },
   {
     "id": "de_shaw",
@@ -71,9 +71,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001009207&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 40517.7,
-    "top_short_m": 8558.9,
-    "net_exposure_pct": 15.3,
-    "short_positions_count": 9
+    "top_short_m": 14857.1,
+    "net_exposure_pct": 12.3,
+    "short_positions_count": 15
   },
   {
     "id": "two_sigma",
@@ -90,9 +90,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001179392&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 24166.2,
-    "top_short_m": 395.5,
-    "net_exposure_pct": 16.8,
-    "short_positions_count": 6
+    "top_short_m": 5965.5,
+    "net_exposure_pct": 12.8,
+    "short_positions_count": 13
   },
   {
     "id": "marshall_wace",
@@ -109,9 +109,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318757&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 49344.6,
-    "top_short_m": 1667.1,
-    "net_exposure_pct": 41.7,
-    "short_positions_count": 6
+    "top_short_m": 14579.4,
+    "net_exposure_pct": 30.4,
+    "short_positions_count": 12
   },
   {
     "id": "walleye",
@@ -128,9 +128,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001758720&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 16175.5,
-    "top_short_m": 19060.6,
-    "net_exposure_pct": -2.7,
-    "short_positions_count": 18
+    "top_short_m": 20278.5,
+    "net_exposure_pct": -3.8,
+    "short_positions_count": 24
   },
   {
     "id": "point72",
@@ -147,9 +147,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001603466&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 14036.2,
-    "top_short_m": 2730.9,
-    "net_exposure_pct": 12.6,
-    "short_positions_count": 7
+    "top_short_m": 7892.1,
+    "net_exposure_pct": 6.8,
+    "short_positions_count": 14
   },
   {
     "id": "balyasny",
@@ -166,9 +166,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001218710&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 7038.7,
-    "top_short_m": 17095.7,
-    "net_exposure_pct": -11.7,
-    "short_positions_count": 21
+    "top_short_m": 18576.0,
+    "net_exposure_pct": -13.5,
+    "short_positions_count": 27
   },
   {
     "id": "tudor",
@@ -185,9 +185,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000923093&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 12079.4,
-    "top_short_m": 25032.9,
-    "net_exposure_pct": -16.9,
-    "short_positions_count": 23
+    "top_short_m": 26211.1,
+    "net_exposure_pct": -18.4,
+    "short_positions_count": 28
   },
   {
     "id": "renaissance",
@@ -204,9 +204,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037389&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 15415.8,
-    "top_short_m": 0,
-    "net_exposure_pct": 21.0,
-    "short_positions_count": 0
+    "top_short_m": 4751.8,
+    "net_exposure_pct": 14.5,
+    "short_positions_count": 4
   },
   {
     "id": "man_group",
@@ -223,9 +223,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001637460&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 15956.2,
-    "top_short_m": 2137.6,
-    "net_exposure_pct": 20.4,
-    "short_positions_count": 8
+    "top_short_m": 8303.7,
+    "net_exposure_pct": 11.3,
+    "short_positions_count": 15
   },
   {
     "id": "coatue",
@@ -242,9 +242,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001135730&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 49577.2,
-    "top_short_m": 0,
-    "net_exposure_pct": 91.0,
-    "short_positions_count": 0
+    "top_short_m": 9227.8,
+    "net_exposure_pct": 74.0,
+    "short_positions_count": 6
   },
   {
     "id": "tci",
@@ -260,10 +260,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001647251&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 49583.7,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_long_m": 58183.7,
+    "top_short_m": 7739.6,
+    "net_exposure_pct": 104.0,
+    "short_positions_count": 6
   },
   {
     "id": "hudson_bay",
@@ -280,9 +280,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001393825&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 6644.6,
-    "top_short_m": 8197.2,
-    "net_exposure_pct": -4.7,
-    "short_positions_count": 18
+    "top_short_m": 8960.2,
+    "net_exposure_pct": -7.0,
+    "short_positions_count": 25
   },
   {
     "id": "viking",
@@ -299,9 +299,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001103804&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 21329.9,
-    "top_short_m": 0,
-    "net_exposure_pct": 65.2,
-    "short_positions_count": 0
+    "top_short_m": 3948.6,
+    "net_exposure_pct": 53.1,
+    "short_positions_count": 6
   },
   {
     "id": "worldquant",
@@ -318,9 +318,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001745981&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 12845.3,
-    "top_short_m": 0,
-    "net_exposure_pct": 39.8,
-    "short_positions_count": 0
+    "top_short_m": 3342.6,
+    "net_exposure_pct": 29.4,
+    "short_positions_count": 7
   },
   {
     "id": "d1_capital",
@@ -337,9 +337,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001747057&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 29496.9,
-    "top_short_m": 0,
-    "net_exposure_pct": 92.7,
-    "short_positions_count": 0
+    "top_short_m": 5166.7,
+    "net_exposure_pct": 76.5,
+    "short_positions_count": 5
   },
   {
     "id": "pershing_square",
@@ -355,10 +355,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002026053&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 30796.6,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_long_m": 37526.6,
+    "top_short_m": 4170.1,
+    "net_exposure_pct": 110.7,
+    "short_positions_count": 6
   },
   {
     "id": "elliott",
@@ -374,10 +374,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001791786&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 16478.6,
-    "top_short_m": 11111.7,
-    "net_exposure_pct": 18.7,
-    "short_positions_count": 14
+    "top_long_m": 26478.6,
+    "top_short_m": 12350.7,
+    "net_exposure_pct": 29.8,
+    "short_positions_count": 19
   },
   {
     "id": "schonfeld",
@@ -394,9 +394,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001665241&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 5279.7,
-    "top_short_m": 3426.2,
-    "net_exposure_pct": 6.9,
-    "short_positions_count": 14
+    "top_short_m": 4745.2,
+    "net_exposure_pct": 2.0,
+    "short_positions_count": 20
   },
   {
     "id": "farallon",
@@ -413,9 +413,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000909661&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 15968.2,
-    "top_short_m": 4024.3,
-    "net_exposure_pct": 51.5,
-    "short_positions_count": 2
+    "top_short_m": 5152.9,
+    "net_exposure_pct": 46.6,
+    "short_positions_count": 8
   },
   {
     "id": "bridgewater",
@@ -432,9 +432,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001350694&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 8974.8,
-    "top_short_m": 0,
-    "net_exposure_pct": 39.0,
-    "short_positions_count": 0
+    "top_short_m": 1791.7,
+    "net_exposure_pct": 31.3,
+    "short_positions_count": 6
   },
   {
     "id": "tiger_global",
@@ -451,9 +451,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001167483&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 19242.5,
-    "top_short_m": 0,
-    "net_exposure_pct": 95.4,
-    "short_positions_count": 0
+    "top_short_m": 3616.9,
+    "net_exposure_pct": 77.5,
+    "short_positions_count": 6
   },
   {
     "id": "exoduspoint",
@@ -470,9 +470,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001736225&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 5607.7,
-    "top_short_m": 2100.1,
-    "net_exposure_pct": 18.5,
-    "short_positions_count": 12
+    "top_short_m": 3254.3,
+    "net_exposure_pct": 12.4,
+    "short_positions_count": 19
   },
   {
     "id": "verition",
@@ -489,9 +489,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001454027&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 4824.1,
-    "top_short_m": 1205.4,
-    "net_exposure_pct": 20.1,
-    "short_positions_count": 12
+    "top_short_m": 2434.5,
+    "net_exposure_pct": 13.3,
+    "short_positions_count": 18
   },
   {
     "id": "lone_pine",
@@ -508,9 +508,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001061165&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 14710.3,
-    "top_short_m": 0,
-    "net_exposure_pct": 96.0,
-    "short_positions_count": 0
+    "top_short_m": 2729.8,
+    "net_exposure_pct": 78.2,
+    "short_positions_count": 6
   },
   {
     "id": "maverick",
@@ -527,9 +527,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000934639&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 10249.8,
-    "top_short_m": 81.4,
-    "net_exposure_pct": 79.3,
-    "short_positions_count": 1
+    "top_short_m": 1959.1,
+    "net_exposure_pct": 64.7,
+    "short_positions_count": 7
   },
   {
     "id": "whale_rock",
@@ -546,9 +546,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001387322&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 10529.1,
-    "top_short_m": 0,
-    "net_exposure_pct": 92.0,
-    "short_positions_count": 0
+    "top_short_m": 1949.3,
+    "net_exposure_pct": 74.9,
+    "short_positions_count": 6
   },
   {
     "id": "sculptor",
@@ -565,9 +565,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001054587&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 4030.9,
-    "top_short_m": 832.0,
-    "net_exposure_pct": 30.7,
-    "short_positions_count": 9
+    "top_short_m": 1525.6,
+    "net_exposure_pct": 24.0,
+    "short_positions_count": 16
   },
   {
     "id": "magnetar",
@@ -584,9 +584,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001352851&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 5801.2,
-    "top_short_m": 0,
-    "net_exposure_pct": 56.8,
-    "short_positions_count": 0
+    "top_short_m": 863.5,
+    "net_exposure_pct": 48.3,
+    "short_positions_count": 6
   },
   {
     "id": "egerton",
@@ -603,9 +603,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001581811&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 9819.9,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 2700.4,
+    "net_exposure_pct": 72.5,
+    "short_positions_count": 6
   },
   {
     "id": "icahn",
@@ -621,10 +621,10 @@
     "filing_date": "2026-11-13",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000921669&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 9428.0,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_long_m": 11948.0,
+    "top_short_m": 1333.6,
+    "net_exposure_pct": 105.6,
+    "short_positions_count": 6
   },
   {
     "id": "soros",
@@ -641,9 +641,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001029160&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 3485.9,
-    "top_short_m": 1302.8,
-    "net_exposure_pct": 25.7,
-    "short_positions_count": 6
+    "top_short_m": 1561.2,
+    "net_exposure_pct": 22.6,
+    "short_positions_count": 12
   },
   {
     "id": "appaloosa",
@@ -660,9 +660,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001656456&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 7559.7,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 1132.0,
+    "net_exposure_pct": 85.0,
+    "short_positions_count": 6
   },
   {
     "id": "valueact",
@@ -678,10 +678,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001418814&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 6177.3,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_long_m": 6557.3,
+    "top_short_m": 730.0,
+    "net_exposure_pct": 92.7,
+    "short_positions_count": 6
   },
   {
     "id": "glenview",
@@ -698,9 +698,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001138995&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 4783.8,
-    "top_short_m": 462.1,
-    "net_exposure_pct": 70.5,
-    "short_positions_count": 4
+    "top_short_m": 1353.4,
+    "net_exposure_pct": 56.0,
+    "short_positions_count": 10
   },
   {
     "id": "baupost",
@@ -717,9 +717,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001061768&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 5046.0,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 760.1,
+    "net_exposure_pct": 84.9,
+    "short_positions_count": 6
   },
   {
     "id": "starboard",
@@ -735,10 +735,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001517137&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 4670.3,
-    "top_short_m": 1.7,
-    "net_exposure_pct": 99.9,
-    "short_positions_count": 1
+    "top_long_m": 6120.3,
+    "top_short_m": 474.0,
+    "net_exposure_pct": 112.9,
+    "short_positions_count": 4
   },
   {
     "id": "third_point",
@@ -754,10 +754,10 @@
     "filing_date": "2026-11-16",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001040273&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 4440.7,
-    "top_short_m": 46.5,
-    "net_exposure_pct": 95.7,
-    "short_positions_count": 1
+    "top_long_m": 8890.7,
+    "top_short_m": 1026.1,
+    "net_exposure_pct": 121.8,
+    "short_positions_count": 7
   },
   {
     "id": "duquesne",
@@ -774,9 +774,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001536411&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 3775.8,
-    "top_short_m": 0,
-    "net_exposure_pct": 84.5,
-    "short_positions_count": 0
+    "top_short_m": 654.6,
+    "net_exposure_pct": 69.8,
+    "short_positions_count": 6
   },
   {
     "id": "greenlight",
@@ -793,9 +793,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001489933&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 2962.6,
-    "top_short_m": 0,
-    "net_exposure_pct": 83.4,
-    "short_positions_count": 0
+    "top_short_m": 642.9,
+    "net_exposure_pct": 67.3,
+    "short_positions_count": 6
   },
   {
     "id": "steadfast",
@@ -812,9 +812,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001214822&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 2141.9,
-    "top_short_m": 0,
-    "net_exposure_pct": 66.1,
-    "short_positions_count": 0
+    "top_short_m": 465.2,
+    "net_exposure_pct": 54.5,
+    "short_positions_count": 6
   },
   {
     "id": "winton",
@@ -831,9 +831,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001612063&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 745.1,
-    "top_short_m": 0,
-    "net_exposure_pct": 28.9,
-    "short_positions_count": 0
+    "top_short_m": 504.0,
+    "net_exposure_pct": 16.3,
+    "short_positions_count": 7
   },
   {
     "id": "cerberus",
@@ -850,9 +850,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001525907&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 1789.5,
-    "top_short_m": 1.4,
-    "net_exposure_pct": 99.8,
-    "short_positions_count": 1
+    "top_short_m": 334.2,
+    "net_exposure_pct": 91.5,
+    "short_positions_count": 7
   },
   {
     "id": "jana_partners",
@@ -868,10 +868,10 @@
     "filing_date": "2026-11-13",
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001998597&type=13F&dateb=&owner=include&count=10",
-    "top_long_m": 1589.1,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_long_m": 2489.1,
+    "top_short_m": 349.6,
+    "net_exposure_pct": 113.8,
+    "short_positions_count": 5
   },
   {
     "id": "canyon_partners",
@@ -888,9 +888,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001074034&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 750.0,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 334.5,
+    "net_exposure_pct": 91.6,
+    "short_positions_count": 6
   },
   {
     "id": "king_street",
@@ -907,9 +907,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001218199&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 479.7,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 334.5,
+    "net_exposure_pct": 91.6,
+    "short_positions_count": 6
   },
   {
     "id": "anchorage",
@@ -926,9 +926,9 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001300714&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 448.4,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 334.0,
+    "net_exposure_pct": 91.7,
+    "short_positions_count": 6
   },
   {
     "id": "matrix_capital",
@@ -945,8 +945,8 @@
     "data_source": "SEC 13F-HR",
     "sec_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001410830&type=13F&dateb=&owner=include&count=10",
     "top_long_m": 46.3,
-    "top_short_m": 0,
-    "net_exposure_pct": 100.0,
-    "short_positions_count": 0
+    "top_short_m": 333.5,
+    "net_exposure_pct": 91.7,
+    "short_positions_count": 6
   }
 ]

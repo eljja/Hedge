@@ -1076,6 +1076,46 @@ tbody tr:hover td { background: rgba(59, 130, 246, 0.055); }
   margin-left: 4px;
 }
 
+.tier-tag {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(59, 130, 246, 0.14);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  color: #93C5FD;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+.tier-tag.tier-t1 { background: rgba(16, 185, 129, 0.14); border-color: rgba(16, 185, 129, 0.35); color: #34D399; }
+.tier-tag.tier-t2 { background: rgba(59, 130, 246, 0.14); border-color: rgba(59, 130, 246, 0.35); color: #93C5FD; }
+.tier-tag.tier-t3 { background: rgba(245, 158, 11, 0.14); border-color: rgba(245, 158, 11, 0.35); color: #FBBF24; }
+.tier-tag.tier-t4 { background: rgba(244, 63, 94, 0.14); border-color: rgba(244, 63, 94, 0.35); color: #FB7185; }
+
+.sig-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.sig-chip {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.sig-chip.sig-short {
+  background: rgba(244, 63, 94, 0.09);
+  border-color: rgba(244, 63, 94, 0.28);
+  color: #FDA4AF;
+}
+
 /* Strategy Badges */
 .strat-badge {
   display: inline-block;
