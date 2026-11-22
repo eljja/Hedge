@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hedge Fund Position Predictor | Institutional Quant Analytics Dashboard</title>
-  <meta name="description" content="Institutional Hedge Fund Position Estimation Engine. Track 50+ top global hedge funds (Citadel, Bridgewater, Renaissance, Millennium), SEC 13F filings, FINRA short interest, SEC 13D activist stakes, and CFTC macro tilts. 100% free open-source data pipeline.">
+  <meta name="description" content="Institutional Hedge Fund Position Estimation Engine. Track 50 top global hedge funds (Citadel, Bridgewater, Renaissance, Millennium, Point72), live SEC 13F-HR filings, FINRA short interest, SEC 13D activist stakes, and CFTC macro tilts. 100% free open-source data pipeline.">
   <meta name="keywords" content="Hedge Fund Predictor, 13F Filings Analytics, FINRA Short Interest, Hedge Fund Position Estimator, SEC 13D Activist Stakes, Quantitative Hedge Fund Analytics, Citadel Positions, Bridgewater Portfolio, Hedge Fund Portfolio Tracker, Stock Short Interest, CFTC Futures Tilts, Crowding Risk Analysis">
   <meta name="author" content="eljja">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eljja.github.io/Hedge/">
   <meta property="og:title" content="Hedge Fund Position Predictor | Institutional Quant Dashboard">
-  <meta property="og:description" content="Real-time institutional hedge fund position estimation, FINRA short interest analytics, SEC 13D/G activist stake tracking, and multi-engine portfolio fusion.">
+  <meta property="og:description" content="Live SEC EDGAR 13F-HR institutional hedge fund position analytics, FINRA short interest intelligence, SEC 13D activist stake tracking, and multi-engine portfolio fusion.">
   <meta property="og:image" content="https://eljja.github.io/Hedge/favicon.jpg">
   <meta property="og:image:alt" content="Hedge Fund Position Predictor Logo">
   <meta property="og:site_name" content="Hedge Fund Position Predictor">
@@ -25,17 +25,17 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://eljja.github.io/Hedge/">
   <meta name="twitter:title" content="Hedge Fund Position Predictor | Quant Analytics Engine">
-  <meta name="twitter:description" content="Track 50+ top global hedge funds, SEC 13F/13D filings, FINRA short interest, and sector exposure matrices.">
+  <meta name="twitter:description" content="Track 50 top global hedge funds, live SEC 13F/13D filings, FINRA short interest, and sector exposure matrices.">
   <meta name="twitter:image" content="https://eljja.github.io/Hedge/favicon.jpg">
 
-  <!-- JSON-LD Structured Data (Schema.org) for Google Search Rich Snippets -->
+  <!-- JSON-LD Structured Data (Schema.org) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Hedge Fund Position Predictor",
     "url": "https://eljja.github.io/Hedge/",
-    "description": "Institutional Hedge Fund Position Estimation Engine & Web Dashboard using SEC 13F/13D filings, FINRA short interest, and CFTC macro tilts.",
+    "description": "Institutional Hedge Fund Position Estimation Engine & Web Dashboard using live SEC EDGAR 13F-HR/13D filings, FINRA short interest, and CFTC macro tilts.",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "All",
     "author": {
@@ -50,16 +50,16 @@
       "priceCurrency": "USD"
     },
     "featureList": [
-      "Track 50+ Global Hedge Funds (Citadel, Bridgewater, Renaissance, etc.)",
-      "SEC 13F Holdings & Option Exposure Analytics",
+      "Track 50 Global Hedge Funds (Citadel, Millennium, Bridgewater, Renaissance, Point72, etc.)",
+      "Live SEC EDGAR 13F-HR Holdings & Disclosed PUT/CALL Option Analytics",
       "SEC 13D/G Activist Stake Tracking",
-      "FINRA Short Interest & Short Squeeze Risk Rating",
+      "FINRA Short Interest, Borrow Fee & Short Squeeze Risk Rating",
       "11 GICS Sector Exposure Heatmap",
-      "CFTC Macro Futures Positioning & Tilts"
+      "CFTC Macro Futures Positioning & Sector Tilts"
     ]
   }
   </script>
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -68,280 +68,514 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
   <!-- Lucide Icons & Chart.js -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Sticky Glass Navbar -->
   <nav class="navbar">
     <div class="logo-group">
-      <img src="favicon.png" alt="Hedge Fund Predictor Logo" class="brand-logo-img" style="width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); object-fit: cover;">
-      <div>
-        <span class="brand-title">Hedge Fund Position Predictor</span>
-        <span class="version-tag">v6 Quant</span>
+      <img src="favicon.png" alt="Hedge Fund Predictor Logo" class="brand-logo-img">
+      <div class="brand-text-wrap">
+        <div class="brand-title-row">
+          <span class="brand-title">Hedge Fund Position Predictor</span>
+          <span class="version-tag">v6.5 Quant</span>
+        </div>
+        <span class="brand-sub">Institutional 13F • Short Intelligence • Activist Signals</span>
       </div>
     </div>
     <div class="nav-links">
-      <div class="data-source-indicator">
-        <span class="live-pulse"></span>
-        <span id="dataSourceText">SEC EDGAR 13F</span>
+      <div class="data-source-indicator" id="dataSourcePill">
+        <span class="live-pulse" id="livePulseDot"></span>
+        <span id="dataSourceText">Loading SEC EDGAR 13F...</span>
       </div>
-      <a href="https://github.com/eljja/Hedge" target="_blank" class="btn-github">
-        <i data-lucide="github"></i> GitHub Repository
+      <a href="https://github.com/eljja/Hedge" target="_blank" rel="noopener noreferrer" class="btn-github">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <span>GitHub</span>
       </a>
     </div>
   </nav>
 
-  <!-- Hero & Global Metrics -->
+  <!-- Hero Section -->
   <header class="hero">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span id="heroFilingQuarter">Live SEC EDGAR 13F-HR Pipeline</span>
+    </div>
     <h1 class="hero-title">Institutional Hedge Fund Position Estimation Engine</h1>
-    <p class="hero-subtitle">100% Free Data Pipeline • 14 Information Channels • 11 Quant Analytics Engines • Multi-Timeframe Fusion</p>
+    <p class="hero-subtitle" id="heroSubtitle">100% Free Public Data Pipeline • 16 Information Channels • 13 Quant Analytics Engines • Multi-Timeframe Fusion</p>
   </header>
 
   <div class="container">
 
-    <!-- Header Metric Cards -->
+    <!-- Top KPI Metric Grid (Dynamically synced from meta_summary.json) -->
     <section class="metrics-grid">
       <div class="metric-card glass">
-        <div class="metric-label">Tracked Universe</div>
-        <div class="metric-value" id="metricFunds">50 Top Global Funds</div>
-        <div class="metric-sub">Quant, Macro, L/S & Activists</div>
+        <div class="metric-head">
+          <span class="metric-label">Tracked Universe</span>
+          <i data-lucide="building-2" class="metric-icon icon-blue"></i>
+        </div>
+        <div class="metric-value" id="metricFunds">50 Funds</div>
+        <div class="metric-sub" id="metricRealCoverage">Loading live SEC 13F coverage...</div>
       </div>
       <div class="metric-card glass">
-        <div class="metric-label">Tracked Capital</div>
-        <div class="metric-value" id="metricAUM">$1,250B+</div>
-        <div class="metric-sub">Aggregated Portfolio AUM</div>
+        <div class="metric-head">
+          <span class="metric-label">Tracked 13F Capital</span>
+          <i data-lucide="landmark" class="metric-icon icon-emerald"></i>
+        </div>
+        <div class="metric-value" id="metricAUM">--</div>
+        <div class="metric-sub" id="metricAUMSub">Aggregated Disclosed 13F Portfolio Value</div>
       </div>
       <div class="metric-card glass">
-        <div class="metric-label">Active Data Engines</div>
-        <div class="metric-value" id="metricEngines">11 Engines</div>
-        <div class="metric-sub">Multi-Model Ensemble</div>
+        <div class="metric-head">
+          <span class="metric-label">Quant Pipeline</span>
+          <i data-lucide="cpu" class="metric-icon icon-purple"></i>
+        </div>
+        <div class="metric-value" id="metricEngines">13 Engines</div>
+        <div class="metric-sub" id="metricChannels">16 Active Data Channels • Fusion</div>
       </div>
       <div class="metric-card glass">
-        <div class="metric-label">Top-3 Sector Hit Rate</div>
+        <div class="metric-head">
+          <span class="metric-label">Model Accuracy & Freshness</span>
+          <i data-lucide="activity" class="metric-icon icon-cyan"></i>
+        </div>
         <div class="metric-value" id="metricHit">84%</div>
-        <div class="metric-sub" id="lastUpdated">Last Updated: Live</div>
+        <div class="metric-sub" id="lastUpdated">Last Updated: --</div>
       </div>
     </section>
 
-    <!-- Global Search -->
-    <div class="global-search-container">
+    <!-- Command-Bar Global Search + Quick Ticker Chips -->
+    <section class="search-section">
+      <div class="global-search-container">
         <i data-lucide="search" class="search-icon"></i>
-        <input type="text" id="searchInput" class="search-box global-search" placeholder="Search across all tabs for ticker or company name...">
-    </div>
+        <input type="text" id="searchInput" class="global-search" autocomplete="off"
+               placeholder="Search any ticker, company, fund, or sector across all 8 tabs...">
+        <button id="searchClearBtn" class="search-clear-btn hidden" title="Clear search (Esc)" aria-label="Clear search">
+          <i data-lucide="x"></i>
+        </button>
+        <kbd class="search-kbd">/</kbd>
+      </div>
+      <div class="quick-search-row">
+        <span class="quick-label">Quick inspect:</span>
+        <button class="quick-chip" data-inspect="NVDA">NVDA</button>
+        <button class="quick-chip" data-inspect="MSFT">MSFT</button>
+        <button class="quick-chip" data-inspect="META">META</button>
+        <button class="quick-chip" data-inspect="AMZN">AMZN</button>
+        <button class="quick-chip" data-inspect="GOOGL">GOOGL</button>
+        <button class="quick-chip" data-inspect="TSLA">TSLA</button>
+        <button class="quick-chip" data-inspect="SPY">SPY</button>
+        <button class="quick-chip" data-inspect="QQQ">QQQ</button>
+        <span class="quick-hint">Click any ticker in any table for full cross-fund drill-down</span>
+      </div>
+    </section>
 
-    <!-- Navigation Tabs -->
-    <nav class="tabs-nav">
-      <button class="tab-btn active" data-tab="tab-predictions">📊 Fund Positions</button>
-      <button class="tab-btn" data-tab="tab-top-holdings">📈 Top Holdings</button>
-      <button class="tab-btn" data-tab="tab-short-intel">🔴 Short Intelligence</button>
-      <button class="tab-btn" data-tab="tab-activist">⚡ Activist Tracker</button>
-      <button class="tab-btn" data-tab="tab-conviction">🌐 Conviction & Crowding</button>
-      <button class="tab-btn" data-tab="tab-heatmap">🔥 Sector Heatmap</button>
-      <button class="tab-btn" data-tab="tab-macro">🔮 Macro Futures</button>
-      <button class="tab-btn" data-tab="tab-architecture">🧪 Architecture</button>
+    <!-- Primary Navigation Tabs with Live Search Match Badges -->
+    <nav class="tabs-nav" role="tablist">
+      <button class="tab-btn active" data-tab="tab-predictions" role="tab">
+        <i data-lucide="bar-chart-3"></i>
+        <span>Fund Positions</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-predictions">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-top-holdings" role="tab">
+        <i data-lucide="trending-up"></i>
+        <span>Top Holdings</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-top-holdings">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-short-intel" role="tab">
+        <i data-lucide="shield-alert"></i>
+        <span>Short Intelligence</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-short-intel">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-activist" role="tab">
+        <i data-lucide="zap"></i>
+        <span>Activist 13D</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-activist">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-conviction" role="tab">
+        <i data-lucide="crosshair"></i>
+        <span>Alpha &amp; Crowding</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-conviction">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-heatmap" role="tab">
+        <i data-lucide="grid-3x3"></i>
+        <span>Sector Heatmap</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-heatmap">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-macro" role="tab">
+        <i data-lucide="globe"></i>
+        <span>Macro Futures</span>
+        <span class="tab-match-badge hidden" data-badge-for="tab-macro">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-architecture" role="tab">
+        <i data-lucide="layers"></i>
+        <span>Architecture</span>
+      </button>
     </nav>
 
-    <!-- Tab 1: Predictions -->
-    <main id="tab-predictions" class="tab-content active">
+    <main>
+    <!-- ==================== TAB 1: FUND POSITIONS ==================== -->
+    <section id="tab-predictions" class="tab-content active">
 
-      <!-- Universal Portfolio Visual Analytics Chart -->
-      <div class="chart-container glass-card" style="margin-bottom: 20px; padding: 20px; border-radius: 12px; background: var(--bg-card); border: 1px solid var(--border-color);">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+      <!-- Universe Macro Visualizer Card -->
+      <section class="chart-card glass">
+        <div class="chart-card-header">
           <div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary);">📊 Universe Macro Position Visualizer</h3>
-            <span style="font-size: 0.8rem; color: var(--text-muted);">Real-time interactive capital distribution across 50 funds & 11 GICS sectors</span>
+            <h2 class="section-title">Universe Macro Position Visualizer</h2>
+            <p class="section-desc" id="chartSubtitle">Aggregated capital distribution across all 50 tracked hedge funds (Long Equity/Call vs. Disclosed PUT Hedges)</p>
           </div>
-          <div class="chart-btn-group" style="display: flex; gap: 8px;">
-            <button class="chart-toggle-btn active" data-chart="capital">Top 15 Assets Capital ($M)</button>
-            <button class="chart-toggle-btn" data-chart="sector">Sector Exposure (%)</button>
-            <button class="chart-toggle-btn" data-chart="strategy">AUM by Strategy</button>
+          <div class="chart-btn-group">
+            <button class="chart-toggle-btn active" data-chart="capital">Top 15 Assets (Long vs Short)</button>
+            <button class="chart-toggle-btn" data-chart="sector">Sector Allocation ($B &amp; %)</button>
+            <button class="chart-toggle-btn" data-chart="strategy">Capital by Strategy</button>
+            <button class="chart-toggle-btn" data-chart="strategy_ls">Long vs Short by Strategy</button>
           </div>
         </div>
-        <div style="position: relative; height: 420px; width: 100%;">
+        <div class="chart-canvas-wrap">
           <canvas id="macroAnalyticsChart"></canvas>
         </div>
-      </div>
+      </section>
 
-      <div class="control-bar glass-bar">
-        <select id="strategySelect" class="select-fund">
-          <option value="all">All Strategies</option>
-          <!-- Populated by JS -->
-        </select>
-        <select id="fundSelect" class="select-fund">
-          <!-- Populated by JS -->
-        </select>
-        <div class="portfolio-value-display">
-          <span class="pv-label">Total Est. Portfolio Value:</span>
-          <span class="pv-value" id="portfolioValue">$0.00</span>
+      <!-- Fund Selector & Filter Control Bar -->
+      <section class="control-bar glass-bar">
+        <div class="control-group">
+          <label class="control-label" for="strategySelect">Strategy</label>
+          <select id="strategySelect" class="select-fund">
+            <option value="all">All Strategies (50)</option>
+          </select>
         </div>
-        <button class="btn-csv-export" onclick="App.exportTableCSV('table-predictions', 'fund_positions.csv')">📥 Export CSV</button>
-      </div>
+        <div class="control-group control-group-wide">
+          <label class="control-label" for="fundSelect">Hedge Fund Manager</label>
+          <select id="fundSelect" class="select-fund"></select>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Position Side</span>
+          <div class="pill-filter-group" id="posSideFilters">
+            <button class="filter-pill active" data-side="all">All</button>
+            <button class="filter-pill" data-side="LONG">Long</button>
+            <button class="filter-pill" data-side="SHORT">Short / PUT</button>
+          </div>
+        </div>
+        <div class="control-actions">
+          <a id="fundSecLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open official SEC EDGAR 13F filings">
+            <i data-lucide="external-link"></i>
+            <span>SEC EDGAR</span>
+          </a>
+          <button class="btn-csv-export" onclick="App.exportTableCSV('table-predictions', 'fund_positions.csv')">
+            <i data-lucide="download"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </section>
 
-      <!-- Fund Exposure Summary Bar -->
-      <div id="fundExposureBar" class="exposure-bar glass-bar" style="margin-bottom: 16px; padding: 12px 20px; display: flex; gap: 24px; align-items: center; font-size: 0.9rem;">
-        <div>🟢 <strong>Long Capital:</strong> <span id="expLong">$0M (0%)</span></div>
-        <div>🔴 <strong>Short Capital:</strong> <span id="expShort">$0M (0%)</span></div>
-        <div>⚖️ <strong>Net Exposure:</strong> <span id="expNet">0%</span></div>
-        <div>📊 <strong>Gross Exposure:</strong> <span id="expGross">0%</span></div>
-      </div>
+      <!-- Selected Fund Intelligence & Exposure Bar -->
+      <section id="fundExposureBar" class="exposure-panel glass-bar">
+        <div class="fund-identity-strip">
+          <div class="fund-identity-left">
+            <h3 id="selectedFundName" class="fund-heading">--</h3>
+            <span id="selectedFundStratBadge"></span>
+            <span id="selectedFundSourceBadge" class="source-pill">SEC 13F-HR</span>
+          </div>
+          <div class="fund-identity-right">
+            <span class="meta-chip" id="selectedFundReportDate">Report: --</span>
+            <span class="meta-chip" id="selectedFundTotalPositions">Holdings: --</span>
+            <div class="portfolio-value-display">
+              <span class="pv-label">Total 13F Value</span>
+              <span class="pv-value" id="portfolioValue">--</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="exposure-metrics-row">
+          <div class="exp-stat">
+            <span class="exp-label"><span class="dot dot-emerald"></span> Top Disclosed Long</span>
+            <span class="exp-val text-emerald" id="expLong">$0M (0%)</span>
+          </div>
+          <div class="exp-stat">
+            <span class="exp-label"><span class="dot dot-rose"></span> Disclosed PUT / Short</span>
+            <span class="exp-val text-rose" id="expShort">$0M (0%)</span>
+          </div>
+          <div class="exp-stat">
+            <span class="exp-label">Net Exposure (Top Book)</span>
+            <span class="exp-val" id="expNet">0%</span>
+          </div>
+          <div class="exp-stat">
+            <span class="exp-label">Gross Coverage</span>
+            <span class="exp-val" id="expGross">0%</span>
+          </div>
+        </div>
+
+        <!-- Visual Long vs Short Split Bar -->
+        <div class="exposure-split-track" title="Long vs Short/PUT capital split in displayed top holdings">
+          <div class="exposure-split-long" id="expSplitLong" style="width: 85%;"></div>
+          <div class="exposure-split-short" id="expSplitShort" style="width: 15%;"></div>
+        </div>
+      </section>
+
+      <!-- Fund Positions Table -->
       <div class="table-container glass-table">
         <table id="table-predictions">
           <thead>
             <tr>
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="name">Issuer Name <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="type">Type <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="value_m">Est. Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="weight">Est. Weight <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="rating">Rating <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="sector">GICS Sector <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="type">Position / Instrument <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="value_m" class="num-col">Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="weight" class="num-col">Portfolio Weight <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="confidence" class="num-col">Confidence <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="rating">Signal <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="fundPositionsTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="fundPositionsTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab 6: Top Holdings -->
-    <main id="tab-top-holdings" class="tab-content">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
-        <h3 style="margin-bottom: 0;">Most Commonly Held Assets & Capital Intensity Across Universe</h3>
-        <button class="btn-csv-export" onclick="App.exportTableCSV('table-top-holdings', 'top_holdings.csv')">📥 Export CSV</button>
+    <!-- ==================== TAB 2: TOP HOLDINGS ==================== -->
+    <section id="tab-top-holdings" class="tab-content">
+      <div class="tab-header-bar">
+        <div>
+          <h2 class="section-title">Most Commonly Held Assets &amp; Capital Intensity</h2>
+          <p class="section-desc">Top 60 equities, ETFs, and hedges ranked by aggregated institutional capital across all 50 hedge funds</p>
+        </div>
+        <div class="tab-header-controls">
+          <div class="pill-filter-group" id="topHoldingsFilters">
+            <button class="filter-pill active" data-th-filter="all">All</button>
+            <button class="filter-pill" data-th-filter="long">Pure Long</button>
+            <button class="filter-pill" data-th-filter="hedged">Long &amp; Short/PUT</button>
+            <button class="filter-pill" data-th-filter="short">Short Dominated</button>
+          </div>
+          <button class="btn-csv-export" onclick="App.exportTableCSV('table-top-holdings', 'top_holdings.csv')">
+            <i data-lucide="download"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
       </div>
+
       <div class="table-container glass-table">
         <table id="table-top-holdings">
           <thead>
             <tr>
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="name">Company Name <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="count">Funds Holding <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="bias">Position Bias <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="totalValue">Total Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="avgWeight">Avg Weight <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="intensity">Conviction Intensity <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="name">Company / Security <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="count" class="num-col">Funds <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="bias">Long / Short Split <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="totalValue" class="num-col">Total Capital ($M) <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="avgWeight" class="num-col">Avg Weight <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="intensity" class="num-col">Conviction <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="sector">Sector <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="topHoldingsTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="topHoldingsTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab: Short Intelligence -->
-    <main id="tab-short-intel" class="tab-content">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 12px;">
-        <h3 style="margin-bottom: 0;">🔴 Short Position Intelligence — Hedge Fund Short Thesis Tracker</h3>
-        <button class="btn-csv-export" onclick="App.exportTableCSV('table-short-intel', 'short_intelligence.csv')">📥 Export CSV</button>
+    <!-- ==================== TAB 3: SHORT INTELLIGENCE ==================== -->
+    <section id="tab-short-intel" class="tab-content">
+      <div class="tab-header-bar">
+        <div>
+          <h2 class="section-title">Short Position Intelligence &amp; 13F PUT Cross-Reference</h2>
+          <p class="section-desc">Combines FINRA short interest %, Days-to-Cover, estimated borrow fees (HTB/ETB), and live disclosed 13F PUT options across the 50-fund universe</p>
+        </div>
+        <div class="tab-header-controls">
+          <div class="pill-filter-group" id="shortRiskFilters">
+            <button class="filter-pill active" data-risk="all">All</button>
+            <button class="filter-pill" data-risk="HIGH">High Squeeze</button>
+            <button class="filter-pill" data-risk="MODERATE">Moderate</button>
+            <button class="filter-pill" data-risk="PUTS">Has 13F PUTs</button>
+          </div>
+          <button class="btn-csv-export" onclick="App.exportTableCSV('table-short-intel', 'short_intelligence.csv')">
+            <i data-lucide="download"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Aggregated from FINRA short interest reports, SEC Reg SHO threshold lists, 13F PUT option filings, and strategy-specific short thesis research. Ranked by short interest %.</p>
+
+      <!-- Mini KPI Strip for Short Intelligence -->
+      <div class="mini-kpi-grid" id="shortKpiStrip">
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Tracked Short Targets</span>
+          <span class="mini-kpi-val" id="kpiShortTotal">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">High Squeeze Risk</span>
+          <span class="mini-kpi-val text-rose" id="kpiShortHigh">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Hard-to-Borrow (HTB)</span>
+          <span class="mini-kpi-val text-amber" id="kpiShortHTB">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Disclosed 13F PUT Matches</span>
+          <span class="mini-kpi-val text-cyan" id="kpiShortPuts">--</span>
+        </div>
+      </div>
+
       <div class="table-container glass-table">
         <table id="table-short-intel">
           <thead>
             <tr>
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="si_pct">Short Interest % <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="days">Days to Cover <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="borrow">Borrow Fee / Status <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="si_pct" class="num-col">Short Interest % <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="days" class="num-col">Days to Cover <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="borrow" class="num-col">Borrow Fee / Status <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="puts" class="num-col">13F PUT Funds <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="squeeze">Squeeze Risk <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="thesis">Short Thesis <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="shortIntelTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="shortIntelTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab: Activist Tracker -->
-    <main id="tab-activist" class="tab-content">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 12px;">
-        <h3 style="margin-bottom: 0;">⚡ SEC 13D/G Activist Stake Tracker — Highest Confidence Signals</h3>
-        <button class="btn-csv-export" onclick="App.exportTableCSV('table-activist', 'activist_stakes.csv')">📥 Export CSV</button>
+    <!-- ==================== TAB 4: ACTIVIST TRACKER ==================== -->
+    <section id="tab-activist" class="tab-content">
+      <div class="tab-header-bar">
+        <div>
+          <h2 class="section-title">SEC Schedule 13D/G Activist Stake Tracker</h2>
+          <p class="section-desc">Mandatory SEC 13D disclosures for &gt;5% activist stakes — legally binding, highest-conviction institutional signals</p>
+        </div>
+        <div class="tab-header-controls">
+          <button class="btn-csv-export" onclick="App.exportTableCSV('table-activist', 'activist_stakes.csv')">
+            <i data-lucide="download"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px;">Mandatory SEC Schedule 13D (activist) and 13G (passive) filings for positions >5% ownership. These are CONFIRMED, legally-binding position disclosures — the gold standard of hedge fund tracking.</p>
+
+      <!-- Mini KPI Strip for Activist Tracker -->
+      <div class="mini-kpi-grid" id="activistKpiStrip">
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Active 13D Campaigns</span>
+          <span class="mini-kpi-val" id="kpiActCount">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Total Activist Capital</span>
+          <span class="mini-kpi-val text-emerald" id="kpiActCapital">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Avg Ownership Stake</span>
+          <span class="mini-kpi-val text-cyan" id="kpiActAvgOwn">--</span>
+        </div>
+        <div class="mini-kpi glass">
+          <span class="mini-kpi-label">Signal Confidence</span>
+          <span class="mini-kpi-val text-purple" id="kpiActConf">98%</span>
+        </div>
+      </div>
+
       <div class="table-container glass-table">
         <table id="table-activist">
           <thead>
             <tr>
               <th data-sort="fund">Fund <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="company">Company <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="ownership">Ownership % <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="value">Value ($M) <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="company">Target Company <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="ownership" class="num-col">Ownership % <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="value" class="num-col">Stake Value ($M) <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="date">Filing Date <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="action">Action <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="confidence" class="num-col">Confidence <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="activistTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="activistTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab 2: Conviction & Crowding -->
-    <main id="tab-conviction" class="tab-content">
+    <!-- ==================== TAB 5: CONVICTION & CROWDING ==================== -->
+    <section id="tab-conviction" class="tab-content">
       <div class="grid-2col">
-        <div>
-          <h3 style="margin-bottom: 16px; color: var(--accent-emerald);">🟢 Hidden Alpha Opportunities (High Conviction, Low Consensus)</h3>
+        <div class="matrix-col">
+          <div class="tab-header-bar compact">
+            <div>
+              <h2 class="section-title text-emerald">Hidden Alpha Opportunities</h2>
+              <p class="section-desc">High-conviction single-stock stakes (&ge;4% weight) with low institutional overlap (1–3 funds)</p>
+            </div>
+            <button class="btn-csv-export" onclick="App.exportTableCSV('table-hidden', 'hidden_alpha.csv')">
+              <i data-lucide="download"></i>
+              <span>CSV</span>
+            </button>
+          </div>
           <div class="table-container glass-table">
             <table id="table-hidden">
               <thead>
                 <tr>
                   <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
                   <th data-sort="name">Company <i data-lucide="chevrons-up-down"></i></th>
-                  <th data-sort="manager">Manager <i data-lucide="chevrons-up-down"></i></th>
-                  <th data-sort="confidence">Confidence <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="manager">Lead Manager <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="weight" class="num-col">Stake <i data-lucide="chevrons-up-down"></i></th>
                   <th>Rationale</th>
                 </tr>
               </thead>
-              <tbody id="hiddenAlphaTable">
-                <!-- Populated by JS -->
-              </tbody>
+              <tbody id="hiddenAlphaTable"></tbody>
             </table>
           </div>
         </div>
 
-        <div>
-          <h3 style="margin-bottom: 16px; color: var(--accent-rose);">🔴 Crowding Risk Alerts (Forced Selling Risk)</h3>
+        <div class="matrix-col">
+          <div class="tab-header-bar compact">
+            <div>
+              <h2 class="section-title text-rose">Crowding Risk Alerts</h2>
+              <p class="section-desc">Heavily overlapped positions exposed to synchronized hedge fund de-grossing shocks</p>
+            </div>
+            <button class="btn-csv-export" onclick="App.exportTableCSV('table-crowding', 'crowding_risk.csv')">
+              <i data-lucide="download"></i>
+              <span>CSV</span>
+            </button>
+          </div>
           <div class="table-container glass-table">
             <table id="table-crowding">
               <thead>
                 <tr>
                   <th data-sort="ticker">Ticker <i data-lucide="chevrons-up-down"></i></th>
                   <th data-sort="name">Company <i data-lucide="chevrons-up-down"></i></th>
-                  <th data-sort="holders">Holders <i data-lucide="chevrons-up-down"></i></th>
+                  <th data-sort="holders" class="num-col">Holders <i data-lucide="chevrons-up-down"></i></th>
                   <th data-sort="risk">Risk Level <i data-lucide="chevrons-up-down"></i></th>
                   <th>Rationale</th>
                 </tr>
               </thead>
-              <tbody id="crowdingRiskTable">
-                <!-- Populated by JS -->
-              </tbody>
+              <tbody id="crowdingRiskTable"></tbody>
             </table>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab 3: Heatmap -->
-    <main id="tab-heatmap" class="tab-content">
-      <h3 style="margin-bottom: 16px;">Top Hedge Funds Sector Weight Matrix (%)</h3>
+    <!-- ==================== TAB 6: SECTOR HEATMAP ==================== -->
+    <section id="tab-heatmap" class="tab-content">
+      <div class="tab-header-bar">
+        <div>
+          <h2 class="section-title">Top 50 Hedge Funds — 11 GICS Sector Exposure Matrix (%)</h2>
+          <p class="section-desc">Normalized GICS sector weights derived from live 13F portfolios. Click any manager row to inspect full positions.</p>
+        </div>
+        <div class="tab-header-controls">
+          <select id="heatmapStrategyFilter" class="select-fund select-compact">
+            <option value="all">All Strategies</option>
+          </select>
+          <div class="heatmap-legend">
+            <span>0%</span>
+            <span class="leg-box leg-1"></span>
+            <span class="leg-box leg-2"></span>
+            <span class="leg-box leg-3"></span>
+            <span class="leg-box leg-4"></span>
+            <span>35%+</span>
+          </div>
+          <button class="btn-csv-export" onclick="App.exportTableCSV('table-heatmap', 'sector_heatmap.csv')">
+            <i data-lucide="download"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </div>
+
       <div class="table-container glass-table heatmap-wrapper">
         <table class="heatmap-table" id="table-heatmap">
           <thead>
@@ -360,81 +594,139 @@
               <th data-sort="utilities">Utilities <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="sectorHeatmapTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="sectorHeatmapTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab 4: CFTC Macro -->
-    <main id="tab-macro" class="tab-content">
-      <h3 style="margin-bottom: 16px;">CFTC Commitments of Traders (COT) Leveraged Funds Positioning</h3>
+    <!-- ==================== TAB 7: MACRO FUTURES (CFTC) ==================== -->
+    <section id="tab-macro" class="tab-content">
+      <div class="tab-header-bar">
+        <div>
+          <h2 class="section-title">CFTC Commitments of Traders (COT) — Leveraged Funds Positioning</h2>
+          <p class="section-desc" id="cftcReportDate">Macro futures net positioning, Z-score extremity, and implied GICS sector tilts</p>
+        </div>
+        <button class="btn-csv-export" onclick="App.exportTableCSV('table-cftc', 'cftc_macro.csv')">
+          <i data-lucide="download"></i>
+          <span>Export CSV</span>
+        </button>
+      </div>
+
+      <!-- Implied Sector Tilts Strip (Previously unrendered in JSON!) -->
+      <section class="macro-tilts-section">
+        <h3 class="sub-section-title">Implied Macro Sector Tilts</h3>
+        <div class="macro-tilts-grid" id="cftcSectorTiltsGrid"></div>
+      </section>
+
       <div class="table-container glass-table">
         <table id="table-cftc">
           <thead>
             <tr>
-              <th data-sort="contract">Contract <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="category">Category <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="position">Net Position <i data-lucide="chevrons-up-down"></i></th>
-              <th data-sort="zscore">Z-Score <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="contract">Futures Contract <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="category">Asset Class <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="position" class="num-col">Net Position <i data-lucide="chevrons-up-down"></i></th>
+              <th data-sort="zscore" class="num-col">Z-Score <span style="text-transform:none;">(&sigma;)</span> <i data-lucide="chevrons-up-down"></i></th>
               <th data-sort="sentiment">Macro Sentiment <i data-lucide="chevrons-up-down"></i></th>
             </tr>
           </thead>
-          <tbody id="cftcTable">
-            <!-- Populated by JS -->
-          </tbody>
+          <tbody id="cftcTable"></tbody>
         </table>
       </div>
-    </main>
+    </section>
 
-    <!-- Tab 5: Architecture -->
-    <main id="tab-architecture" class="tab-content">
+    <!-- ==================== TAB 8: SYSTEM ARCHITECTURE ==================== -->
+    <section id="tab-architecture" class="tab-content">
       <div class="architecture-container glass">
-        <h2>System Architecture & Quantitative Methodology</h2>
-        <p class="arch-subtitle">This application is powered by an institution-grade 11-engine quantitative ensemble using <strong>100% free regulatory and market data channels</strong>.</p>
-        
+        <h2>System Architecture &amp; Quantitative Methodology</h2>
+        <p class="arch-subtitle">Institutional-grade <strong>13-engine quantitative ensemble</strong> powered by <strong>16 100% free regulatory &amp; public market data channels</strong>, automatically refreshed via GitHub Actions.</p>
+
         <div class="diagram">
-            <div class="diagram-layer">
-                <div class="diagram-box blue">
-                    <h4>Data Channels (14)</h4>
-                    <p>SEC DERA 13F, 13D/13G, Form 4, 13F/A CT Reveal, N-PORT, N-PX, EU Short Register, Form 4 Insiders, SEC CORRESP Letters, yfinance, FF5, FRED, CFTC COT, OCC Options</p>
-                </div>
+          <div class="diagram-layer">
+            <div class="diagram-box blue">
+              <h4>Data Ingestion Layer — 16 Free Public Channels</h4>
+              <p>SEC EDGAR 13F-HR &amp; 13F-NT • SEC Schedule 13D/13G • SEC Company Tickers (10,399+) • Form 4 Insiders • Form N-PORT/N-PX • FINRA Short Interest • SEC Reg SHO Threshold • CFTC COT Futures • EU Short Registers • Options Put/Call Ratio • Fama-French 5-Factor • FRED Macro • Pair-Trade Short Mapping • Tail-Risk Hedge Signals • Credit/CRE Distress Indicators • GICS Sector Classification</p>
             </div>
-            <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
-            <div class="diagram-layer engine-grid">
-                <div class="diagram-box purple">E1 Price Drift</div>
-                <div class="diagram-box purple">E2 Kalman RBSA</div>
-                <div class="diagram-box purple">E3 Bayesian Jump</div>
-                <div class="diagram-box purple">E4 Options Delta</div>
-                <div class="diagram-box purple">E5 Crowding Matrix</div>
-                <div class="diagram-box purple">E6 NLP Sentiment</div>
-                <div class="diagram-box purple">E7 CFTC Tilts</div>
-                <div class="diagram-box purple">E8 Meta Return Gap</div>
-                <div class="diagram-box purple">E9 GNN Herding</div>
-                <div class="diagram-box purple">E10 Insider Boost</div>
-                <div class="diagram-box purple">E11 SEC Scrutiny</div>
+          </div>
+
+          <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
+
+          <div class="diagram-layer engine-grid">
+            <div class="diagram-box purple"><span>E1</span> Adaptive Price Drift</div>
+            <div class="diagram-box purple"><span>E2</span> Kalman Filter RBSA</div>
+            <div class="diagram-box purple"><span>E3</span> Bayesian 13D Jump</div>
+            <div class="diagram-box purple"><span>E4</span> Options Delta Model</div>
+            <div class="diagram-box purple"><span>E5</span> Conviction-Crowding</div>
+            <div class="diagram-box purple"><span>E6</span> Letter NLP Sentiment</div>
+            <div class="diagram-box purple"><span>E7</span> CFTC Macro Tilts</div>
+            <div class="diagram-box purple"><span>E8</span> 13F Meta Return Gap</div>
+            <div class="diagram-box purple"><span>E9</span> GNN Herding Graph</div>
+            <div class="diagram-box purple"><span>E10</span> Insider Boost</div>
+            <div class="diagram-box purple"><span>E11</span> SEC Scrutiny Scan</div>
+            <div class="diagram-box purple"><span>E12</span> Short Squeeze Scorer</div>
+            <div class="diagram-box purple"><span>E13</span> Exposure Aggregator</div>
+          </div>
+
+          <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
+
+          <div class="diagram-layer">
+            <div class="diagram-box emerald">
+              <h4>Multi-Timeframe Fusion &amp; Automated Static Delivery</h4>
+              <p>Aggregates sub-manager 13F filings with real-time 13D &amp; FINRA short overlays → Static JSON build → Zero-latency GitHub Pages deployment</p>
             </div>
-            <div class="diagram-arrow"><i data-lucide="arrow-down"></i></div>
-            <div class="diagram-layer">
-                <div class="diagram-box emerald">
-                    <h4>Multi-Timeframe Fusion & Output</h4>
-                    <p>Automated CI/CD Pipeline updating via GitHub Actions directly to GitHub Pages</p>
-                </div>
-            </div>
+          </div>
         </div>
       </div>
+    </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- Footer with Disclaimer -->
     <footer>
-      <p>Hosted on <a href="https://eljja.github.io/Hedge" target="_blank">GitHub Pages</a> • Open Source Project <a href="https://github.com/eljja/Hedge" target="_blank">github.com/eljja/Hedge</a></p>
+      <div class="footer-links">
+        <span>Hosted on <a href="https://eljja.github.io/Hedge" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+        <span>•</span>
+        <span>Open Source (<a href="https://github.com/eljja/Hedge/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache 2.0</a>)</span>
+        <span>•</span>
+        <span><a href="https://github.com/eljja/Hedge" target="_blank" rel="noopener noreferrer">github.com/eljja/Hedge</a></span>
+        <span>•</span>
+        <span>Shortcut: <kbd>/</kbd> Search, <kbd>Esc</kbd> Clear</span>
+      </div>
+      <p class="footer-disclaimer">
+        Disclaimer: All data is sourced from public regulatory filings (SEC EDGAR 13F-HR, 13D/G, FINRA, CFTC) and quantitative estimation models. Form 13F excludes direct short stock sales and reports holdings with up to a 45-day lag. For research and educational purposes only — not investment advice.
+      </p>
     </footer>
 
   </div>
 
+  <!-- ==================== TICKER DEEP-DIVE MODAL ==================== -->
+  <div id="tickerModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTickerTitle">
+    <div class="modal-dialog glass">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-ticker-pill" id="modalTickerBadge">NVDA</span>
+          <div>
+            <h3 id="modalTickerTitle" class="modal-company-name">NVIDIA Corp</h3>
+            <span id="modalTickerSector" class="modal-sector-sub">Information Technology</span>
+          </div>
+        </div>
+        <div class="modal-header-actions">
+          <a id="modalYahooLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">Yahoo Finance</a>
+          <a id="modalSecLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">SEC Filings</a>
+          <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body" id="modalBodyContent">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast hidden"></div>
+
   <!-- Scripts -->
-  <script>lucide.createIcons();</script>
   <script src="js/app.js"></script>
 </body>
 </html>

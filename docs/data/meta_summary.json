@@ -1,10 +1,11 @@
 {
-  "last_updated": "2026-11-22T04:51:35.984535",
+  "last_updated": "2026-11-22T22:36:45.878670",
+  "latest_report_date": "2026-09-30",
   "funds_count": 50,
-  "funds_with_real_data": 0,
+  "funds_with_real_data": 50,
   "channels_active": 16,
   "engines_active": 13,
-  "total_tracked_aum_billions": 582.0,
+  "total_tracked_aum_billions": 3070.9,
   "metrics": {
     "sector_mae": 0.042,
     "spearman_ic": 0.385,

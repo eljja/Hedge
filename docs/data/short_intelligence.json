@@ -6,7 +6,10 @@
     "borrow_fee_pct": 20.1,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Going concern, minimal revenue",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "BBBY",
@@ -15,7 +18,10 @@
     "borrow_fee_pct": 16.9,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Bankruptcy/restructuring risk",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "BYND",
@@ -24,7 +30,10 @@
     "borrow_fee_pct": 15.6,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Revenue decline, plant-based trend fading",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "NKLA",
@@ -33,7 +42,10 @@
     "borrow_fee_pct": 14.0,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Execution risk, questionable demand",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "UPST",
@@ -42,7 +54,10 @@
     "borrow_fee_pct": 12.6,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "AI lending model unproven in downturn",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "GME",
@@ -51,7 +66,12 @@
     "borrow_fee_pct": 11.3,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Retail squeeze target, institutional short thesis on fundamental overvaluation",
-    "squeeze_risk": "HIGH"
+    "squeeze_risk": "HIGH",
+    "put_funds_count": 1,
+    "put_total_m": 44.3,
+    "put_top_funds": [
+      "Two Sigma Investments"
+    ]
   },
   {
     "ticker": "MPW",
@@ -60,7 +80,10 @@
     "borrow_fee_pct": 9.2,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Hospital REIT tenant credit risk",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "AMC",
@@ -69,7 +92,10 @@
     "borrow_fee_pct": 8.5,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Theater chain structural decline, debt overhang",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "KSS",
@@ -78,7 +104,10 @@
     "borrow_fee_pct": 8.4,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Department store secular decline",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "PARA",
@@ -87,7 +116,10 @@
     "borrow_fee_pct": 7.7,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Legacy media decline, streaming losses",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "RIVN",
@@ -96,7 +128,13 @@
     "borrow_fee_pct": 7.4,
     "borrow_status": "Hard-to-Borrow (HTB)",
     "thesis": "Cash burn rate unsustainable, production ramp risk",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 2,
+    "put_total_m": 147.9,
+    "put_top_funds": [
+      "Two Sigma Investments",
+      "Sculptor Capital"
+    ]
   },
   {
     "ticker": "VNO",
@@ -105,7 +143,10 @@
     "borrow_fee_pct": 7.0,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Office REIT CRE stress, work-from-home structural shift",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "LCID",
@@ -114,7 +155,10 @@
     "borrow_fee_pct": 6.7,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Demand uncertainty, valuation premium vs deliveries",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "CVNA",
@@ -123,7 +167,10 @@
     "borrow_fee_pct": 5.9,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Debt load, used car market normalization",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "SLG",
@@ -132,7 +179,10 @@
     "borrow_fee_pct": 5.8,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "NYC office vacancy rates, refinancing risk",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "NIO",
@@ -141,7 +191,10 @@
     "borrow_fee_pct": 5.5,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China EV overcapacity, cash burn",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "WBA",
@@ -150,7 +203,10 @@
     "borrow_fee_pct": 5.3,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Pharmacy margin pressure, store closures",
-    "squeeze_risk": "MODERATE"
+    "squeeze_risk": "MODERATE",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "COIN",
@@ -159,7 +215,10 @@
     "borrow_fee_pct": 4.7,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Crypto regulatory risk, revenue volatility",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "DG",
@@ -168,7 +227,10 @@
     "borrow_fee_pct": 4.6,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Margin compression, labor cost increases",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "SNAP",
@@ -177,7 +239,10 @@
     "borrow_fee_pct": 4.1,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Ad revenue weakness, user growth stalling",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "PINS",
@@ -186,7 +251,10 @@
     "borrow_fee_pct": 3.5,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Monetization challenges vs META competition",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "DASH",
@@ -195,7 +263,10 @@
     "borrow_fee_pct": 3.4,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Path to profitability unclear, gig economy regulatory risk",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "FXI",
@@ -204,7 +275,10 @@
     "borrow_fee_pct": 3.2,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China macro bearish hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "PDD",
@@ -213,7 +287,10 @@
     "borrow_fee_pct": 2.6,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Temu economics unsustainable, China exposure",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "BABA",
@@ -222,7 +299,10 @@
     "borrow_fee_pct": 2.3,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "China regulatory risk, geopolitical tension",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "IYR",
@@ -231,7 +311,12 @@
     "borrow_fee_pct": 2.1,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Commercial real estate distress hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 1,
+    "put_total_m": 23.8,
+    "put_top_funds": [
+      "ExodusPoint Capital"
+    ]
   },
   {
     "ticker": "EWJ",
@@ -240,7 +325,10 @@
     "borrow_fee_pct": 2.0,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Japan yen weakness / BOJ policy risk",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 0,
+    "put_total_m": 0,
+    "put_top_funds": []
   },
   {
     "ticker": "XLE",
@@ -249,7 +337,14 @@
     "borrow_fee_pct": 1.9,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Energy sector macro hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 5,
+    "put_total_m": 3231.5,
+    "put_top_funds": [
+      "Millennium Management",
+      "Soros Fund Management",
+      "Tudor Investment Corp"
+    ]
   },
   {
     "ticker": "TSLA",
@@ -258,7 +353,14 @@
     "borrow_fee_pct": 1.7,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Margin compression, competition intensifying",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 8,
+    "put_total_m": 14081.2,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Hudson Bay Capital"
+    ]
   },
   {
     "ticker": "IWM",
@@ -267,7 +369,14 @@
     "borrow_fee_pct": 1.6,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Small-cap economic sensitivity hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 11,
+    "put_total_m": 31259.2,
+    "put_top_funds": [
+      "Millennium Management",
+      "Tudor Investment Corp",
+      "Citadel Advisors"
+    ]
   },
   {
     "ticker": "HYG",
@@ -276,7 +385,14 @@
     "borrow_fee_pct": 1.3,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Credit spread widening hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 6,
+    "put_total_m": 9510.0,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Balyasny Asset Management",
+      "Millennium Management"
+    ]
   },
   {
     "ticker": "QQQ",
@@ -285,7 +401,14 @@
     "borrow_fee_pct": 1.0,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Tech concentration risk hedge",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 11,
+    "put_total_m": 55155.4,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Tudor Investment Corp"
+    ]
   },
   {
     "ticker": "SPY",
@@ -294,6 +417,157 @@
     "borrow_fee_pct": 0.8,
     "borrow_status": "Easy-to-Borrow (ETB)",
     "thesis": "Portfolio tail-risk hedge via PUT options",
-    "squeeze_risk": "LOW"
+    "squeeze_risk": "LOW",
+    "put_funds_count": 14,
+    "put_total_m": 45988.2,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Farallon Capital"
+    ]
+  },
+  {
+    "ticker": "MU",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 8 funds ($23,273M notional)",
+    "put_funds_count": 8,
+    "put_total_m": 23272.8,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "D.E. Shaw & Co."
+    ]
+  },
+  {
+    "ticker": "NVDA",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 12 funds ($21,083M notional)",
+    "put_funds_count": 12,
+    "put_total_m": 21083.2,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Walleye Capital"
+    ]
+  },
+  {
+    "ticker": "AMD",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 8 funds ($16,361M notional)",
+    "put_funds_count": 8,
+    "put_total_m": 16361.4,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Walleye Capital"
+    ]
+  },
+  {
+    "ticker": "AAPL",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 9 funds ($15,552M notional)",
+    "put_funds_count": 9,
+    "put_total_m": 15552.1,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Balyasny Asset Management"
+    ]
+  },
+  {
+    "ticker": "MSFT",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 10 funds ($13,738M notional)",
+    "put_funds_count": 10,
+    "put_total_m": 13737.6,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Walleye Capital"
+    ]
+  },
+  {
+    "ticker": "META",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 8 funds ($12,381M notional)",
+    "put_funds_count": 8,
+    "put_total_m": 12381.0,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Walleye Capital"
+    ]
+  },
+  {
+    "ticker": "SNDK",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 5 funds ($12,211M notional)",
+    "put_funds_count": 5,
+    "put_total_m": 12211.4,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "D.E. Shaw & Co.",
+      "Millennium Management"
+    ]
+  },
+  {
+    "ticker": "GOOGL",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 7 funds ($9,748M notional)",
+    "put_funds_count": 7,
+    "put_total_m": 9747.7,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Walleye Capital"
+    ]
+  },
+  {
+    "ticker": "AMZN",
+    "short_interest_pct": 4.2,
+    "days_to_cover": 1.4,
+    "borrow_fee_pct": 0.8,
+    "borrow_status": "Easy-to-Borrow (ETB)",
+    "squeeze_risk": "LOW",
+    "thesis": "Active institutional 13F PUT hedge across 7 funds ($9,691M notional)",
+    "put_funds_count": 7,
+    "put_total_m": 9690.9,
+    "put_top_funds": [
+      "Citadel Advisors",
+      "Millennium Management",
+      "Hudson Bay Capital"
+    ]
   }
 ]
