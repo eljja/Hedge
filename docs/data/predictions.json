@@ -8116,7 +8116,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.02059,
+      "weight": 0.0093,
       "confidence": 93.0,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -8139,7 +8139,7 @@
       "ticker": "PARA",
       "name": "Paramount Global",
       "sector": "Communication Services",
-      "weight": 0.02044,
+      "weight": 0.00923,
       "confidence": 92.3,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -8161,7 +8161,7 @@
       "ticker": "VNO",
       "name": "Vornado Realty Trust",
       "sector": "Real Estate",
-      "weight": 0.02044,
+      "weight": 0.00923,
       "confidence": 92.3,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -8223,7 +8223,7 @@
       "ticker": "INTC",
       "name": "Intel Corp",
       "sector": "Information Technology",
-      "weight": 0.01337,
+      "weight": 0.00604,
       "confidence": 88.9,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -8444,7 +8444,7 @@
       "ticker": "SNAP",
       "name": "Snap Inc",
       "sector": "Communication Services",
-      "weight": 0.00683,
+      "weight": 0.00308,
       "confidence": 70.9,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -8484,7 +8484,7 @@
       "ticker": "IWM",
       "name": "iShares Russell 2000 ETF",
       "sector": "Index",
-      "weight": 0.00661,
+      "weight": 0.00299,
       "confidence": 76.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -8726,7 +8726,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00272,
+      "weight": 0.00123,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -9618,6 +9618,28 @@
       "raw_value_m": 3430.3
     },
     {
+      "ticker": "BA",
+      "name": "Boeing Co",
+      "sector": "Industrials",
+      "weight": 0.04166,
+      "confidence": 92.5,
+      "rating": "CONFIRMED",
+      "prob_tier": "T1 • 100%",
+      "apply_factor": 1.0,
+      "type": "SHORT",
+      "instrument": "EU STATUTORY",
+      "putCall": null,
+      "raw_value_m": 2424.1,
+      "value_m": 2424.1,
+      "signals": [
+        "EU/UK Reg (0.89%)",
+        "Pair vs GE (29.8%)",
+        "SEC Scrutiny"
+      ],
+      "thesis": "Statutory UK/EU Aviation Pair Hedge net short disclosure (0.89% of issued share capital)",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "CPRT",
       "name": "Copart Inc",
       "sector": "Industrials",
@@ -9638,32 +9660,10 @@
       "source": "SEC 13D/G"
     },
     {
-      "ticker": "BA",
-      "name": "Boeing Co",
-      "sector": "Industrials",
-      "weight": 0.04074,
-      "confidence": 92.5,
-      "rating": "CONFIRMED",
-      "prob_tier": "T1 • 100%",
-      "apply_factor": 1.0,
-      "type": "SHORT",
-      "instrument": "EU STATUTORY",
-      "putCall": null,
-      "raw_value_m": 2370.4,
-      "value_m": 2370.4,
-      "signals": [
-        "EU/UK Reg (0.89%)",
-        "Pair vs GE (29.8%)",
-        "SEC Scrutiny"
-      ],
-      "thesis": "Statutory UK/EU Aviation Pair Hedge net short disclosure (0.89% of issued share capital)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Index",
-      "weight": 0.03667,
+      "weight": 0.0375,
       "confidence": 92.5,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -9671,8 +9671,8 @@
       "type": "SHORT",
       "instrument": "EU STATUTORY",
       "putCall": null,
-      "raw_value_m": 2133.4,
-      "value_m": 2133.4,
+      "raw_value_m": 2181.7,
+      "value_m": 2181.7,
       "signals": [
         "EU/UK Reg (1.25%)",
         "Network (13 peers)",
@@ -9682,24 +9682,24 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "PATH",
-      "name": "UiPath Inc",
-      "sector": "Information Technology",
-      "weight": 0.02753,
-      "confidence": 89.3,
+      "ticker": "SNAP",
+      "name": "Snap Inc",
+      "sector": "Communication Services",
+      "weight": 0.0251,
+      "confidence": 86.5,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
       "apply_factor": 0.75,
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 2136.0,
-      "value_m": 1602.0,
+      "raw_value_m": 1947.0,
+      "value_m": 1460.3,
       "signals": [
-        "Pair vs MSFT (12.5%)",
-        "Network (4 peers)"
+        "Pair vs GOOG (6.9%)",
+        "Pair vs GOOGL (1.6%)"
       ],
-      "thesis": "Microsoft Copilot enterprise bundling displacing standalone RPA vendor UiPath (PATH) (paired against 12.5% 13F long in MSFT)",
+      "thesis": "Alphabet AI ad dominance paired against sub-scale social ad platform SNAP (paired against 6.9% 13F long in GOOG)",
       "source": "Multi-Vector Inference"
     },
     {
@@ -9783,6 +9783,50 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.01187,
+      "confidence": 75.3,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1381.3,
+      "value_m": 690.7,
+      "signals": [
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.01187,
+      "confidence": 75.3,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1381.3,
+      "value_m": 690.7,
+      "signals": [
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "VM",
       "name": "Vulcan Matls CO",
       "sector": "Other",
@@ -9803,54 +9847,10 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
-      "sector": "Index",
-      "weight": 0.01161,
-      "confidence": 75.3,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 1350.7,
-      "value_m": 675.4,
-      "signals": [
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.01161,
-      "confidence": 75.3,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 1350.7,
-      "value_m": 675.4,
-      "signals": [
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00486,
+      "weight": 0.00497,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -9858,8 +9858,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 1131.9,
-      "value_m": 283.0,
+      "raw_value_m": 1157.5,
+      "value_m": 289.4,
       "signals": [
         "Network (7 peers)"
       ],
@@ -12883,33 +12883,10 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat Inc",
-      "sector": "Consumer Staples",
-      "weight": 0.02679,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 1340.5,
-      "value_m": 1005.4,
-      "signals": [
-        "Pair vs CMG (9.3%)",
-        "Pair vs QSR (5.1%)",
-        "FINRA SI 36.4%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "Fast-casual unit-growth compounder paired against distressed plant-based protein (BYND) (paired against 9.3% 13F long in CMG)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.02578,
+      "weight": 0.02587,
       "confidence": 89.2,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -12917,8 +12894,8 @@
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 1289.9,
-      "value_m": 967.5,
+      "raw_value_m": 1294.6,
+      "value_m": 971.0,
       "signals": [
         "Pair vs AMZN (6.9%)",
         "Network (4 peers)",
@@ -12926,27 +12903,6 @@
         "Reg SHO FTD"
       ],
       "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 6.9% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "SNAP",
-      "name": "Snap Inc",
-      "sector": "Communication Services",
-      "weight": 0.02567,
-      "confidence": 89.1,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 1284.3,
-      "value_m": 963.2,
-      "signals": [
-        "Pair vs META (6.7%)",
-        "Pair vs GOOGL (5.8%)"
-      ],
-      "thesis": "Digital advertising pair: Long META AI reel monetization vs. Short SNAP ARPU lag (paired against 6.7% 13F long in META)",
       "source": "Multi-Vector Inference"
     },
     {
@@ -12970,10 +12926,54 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "PATH",
+      "name": "UiPath Inc",
+      "sector": "Information Technology",
+      "weight": 0.02525,
+      "confidence": 87.2,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 1263.4,
+      "value_m": 947.6,
+      "signals": [
+        "Pair vs MSFT (6.8%)",
+        "Network (4 peers)"
+      ],
+      "thesis": "Microsoft Copilot enterprise bundling displacing standalone RPA vendor UiPath (PATH) (paired against 6.8% 13F long in MSFT)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury ETF",
+      "sector": "Fixed Income",
+      "weight": 0.02517,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1259.6,
+      "value_m": 944.7,
+      "signals": [
+        "News / Letter",
+        "Network (4 peers)",
+        "Strategy Overlay",
+        "FINRA SI 14.2%"
+      ],
+      "thesis": "Ackman macro presentation: long-end Treasury yield & structural inflation swaption hedge",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "LYFT",
       "name": "Lyft Inc",
       "sector": "Industrials",
-      "weight": 0.0146,
+      "weight": 0.01465,
       "confidence": 74.9,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -12981,8 +12981,8 @@
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 1095.6,
-      "value_m": 547.8,
+      "raw_value_m": 1099.6,
+      "value_m": 549.8,
       "signals": [
         "Pair vs UBER (7.6%)"
       ],
@@ -12990,30 +12990,30 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "PINS",
-      "name": "Pinterest Inc",
+      "ticker": "SNAP",
+      "name": "Snap Inc",
       "sector": "Communication Services",
-      "weight": 0.01333,
-      "confidence": 69.4,
+      "weight": 0.01453,
+      "confidence": 75.4,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
       "apply_factor": 0.5,
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 1000.3,
-      "value_m": 500.2,
+      "raw_value_m": 1090.8,
+      "value_m": 545.4,
       "signals": [
         "Pair vs META (6.7%)"
       ],
-      "thesis": "Social commerce ad-spend share donor short paired against META (paired against 6.7% 13F long in META)",
+      "thesis": "Digital advertising pair: Long META AI reel monetization vs. Short SNAP ARPU lag (paired against 6.7% 13F long in META)",
       "source": "Multi-Vector Inference"
     },
     {
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00496,
+      "weight": 0.00498,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -13021,8 +13021,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 744.1,
-      "value_m": 186.0,
+      "raw_value_m": 746.8,
+      "value_m": 186.7,
       "signals": [
         "Network (7 peers)"
       ],
@@ -13476,7 +13476,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.01388,
+      "weight": 0.00612,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -13519,7 +13519,7 @@
       "ticker": "XLE",
       "name": "Energy Select Sector SPDR",
       "sector": "Energy",
-      "weight": 0.01318,
+      "weight": 0.00581,
       "confidence": 84.9,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -13700,7 +13700,7 @@
       "ticker": "NVDA",
       "name": "NVDA",
       "sector": "Other",
-      "weight": 0.00721,
+      "weight": 0.00318,
       "confidence": 69.7,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -13720,7 +13720,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.00624,
+      "weight": 0.00275,
       "confidence": 71.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -13762,7 +13762,7 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Index",
-      "weight": 0.00274,
+      "weight": 0.00121,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -14977,6 +14977,52 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.00868,
+      "confidence": 88.8,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 451.4,
+      "value_m": 338.6,
+      "signals": [
+        "News / Letter",
+        "Network (13 peers)",
+        "Strategy Overlay",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "Multi-asset credit & merger-arb spread widening protection",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.00844,
+      "confidence": 86.3,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 438.7,
+      "value_m": 329.0,
+      "signals": [
+        "News / Letter",
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "Event-driven equity beta overlay",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "MSTR",
       "name": "Strategy Inc",
       "sector": "Information Technology",
@@ -14995,6 +15041,27 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "IYR",
+      "name": "iShares U.S. Real Estate ETF",
+      "sector": "Real Estate",
+      "weight": 0.00838,
+      "confidence": 85.7,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 435.7,
+      "value_m": 326.7,
+      "signals": [
+        "News / Letter",
+        "Network (4 peers)"
+      ],
+      "thesis": "Real estate credit & distressed asset hedge",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "LNTH",
@@ -15037,73 +15104,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.01207,
-      "confidence": 88.8,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 373.5,
-      "value_m": 280.1,
-      "signals": [
-        "News / Letter",
-        "Network (13 peers)",
-        "Strategy Overlay",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "Multi-asset credit & merger-arb spread widening protection",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
-      "sector": "Index",
-      "weight": 0.01173,
-      "confidence": 86.3,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 363.0,
-      "value_m": 272.2,
-      "signals": [
-        "News / Letter",
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "Event-driven equity beta overlay",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IYR",
-      "name": "iShares U.S. Real Estate ETF",
-      "sector": "Real Estate",
-      "weight": 0.01165,
-      "confidence": 85.7,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 360.5,
-      "value_m": 270.4,
-      "signals": [
-        "News / Letter",
-        "Network (4 peers)"
-      ],
-      "thesis": "Real estate credit & distressed asset hedge",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "LQDA",
       "name": "Liquidia Corp",
       "sector": "Other",
@@ -15127,7 +15127,7 @@
       "ticker": "MPW",
       "name": "Medical Properties Trust",
       "sector": "Real Estate",
-      "weight": 0.00546,
+      "weight": 0.00393,
       "confidence": 71.7,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -15135,8 +15135,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 253.3,
-      "value_m": 126.7,
+      "raw_value_m": 306.2,
+      "value_m": 153.1,
       "signals": [
         "Network (3 peers)",
         "FINRA SI 28.6%",
@@ -15150,7 +15150,7 @@
       "ticker": "SMCI",
       "name": "Super Micro Computer",
       "sector": "Information Technology",
-      "weight": 0.00532,
+      "weight": 0.00383,
       "confidence": 69.9,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -15158,8 +15158,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 247.0,
-      "value_m": 123.5,
+      "raw_value_m": 298.5,
+      "value_m": 149.2,
       "signals": [
         "Network (4 peers)",
         "FINRA SI 18.9%",
@@ -15172,7 +15172,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.0024,
+      "weight": 0.00173,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -15180,8 +15180,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 222.9,
-      "value_m": 55.7,
+      "raw_value_m": 269.4,
+      "value_m": 67.4,
       "signals": [
         "Network (9 peers)"
       ],
@@ -15251,6 +15251,74 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury ETF",
+      "sector": "Fixed Income",
+      "weight": 0.00859,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1420.7,
+      "value_m": 1065.5,
+      "signals": [
+        "News / Letter",
+        "Network (6 peers)",
+        "CFTC Futures",
+        "FINRA SI 14.2%"
+      ],
+      "thesis": "Pure Alpha macro view: US fiscal supply & bond duration short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy Select Sector SPDR",
+      "sector": "Energy",
+      "weight": 0.00832,
+      "confidence": 86.6,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1376.2,
+      "value_m": 1032.2,
+      "signals": [
+        "News / Letter",
+        "Network (7 peers)",
+        "CFTC Futures"
+      ],
+      "thesis": "Global growth deceleration commodity demand overlay",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corp",
+      "sector": "Information Technology",
+      "weight": 0.00827,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 1367.8,
+      "value_m": 1025.8,
+      "signals": [
+        "Pair vs NVDA (2.7%)",
+        "Pair vs AVGO (2.0%)",
+        "Pair vs AMD (1.3%)",
+        "Network (6 peers)"
+      ],
+      "thesis": "AI datacenter compute pair: Long NVDA GPU monopoly vs. Short INTC x86 server share loss (paired against 2.7% 13F long in NVDA)",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
       "sector": "Information Technology",
@@ -15271,6 +15339,49 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.00404,
+      "confidence": 75.1,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 1002.5,
+      "value_m": 501.3,
+      "signals": [
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "SPY",
+      "name": "SPDR S&P 500 ETF Trust",
+      "sector": "Index",
+      "weight": 0.00399,
+      "confidence": 74.2,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 990.5,
+      "value_m": 495.2,
+      "signals": [
+        "Network (11 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "AVGO",
       "name": "Broadcom Inc",
       "sector": "Information Technology",
@@ -15289,74 +15400,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "TLT",
-      "name": "iShares 20+ Year Treasury ETF",
-      "sector": "Fixed Income",
-      "weight": 0.01918,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 587.8,
-      "value_m": 440.9,
-      "signals": [
-        "News / Letter",
-        "Network (6 peers)",
-        "CFTC Futures",
-        "FINRA SI 14.2%"
-      ],
-      "thesis": "Pure Alpha macro view: US fiscal supply & bond duration short",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "XLE",
-      "name": "Energy Select Sector SPDR",
-      "sector": "Energy",
-      "weight": 0.01858,
-      "confidence": 86.6,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 569.4,
-      "value_m": 427.0,
-      "signals": [
-        "News / Letter",
-        "Network (7 peers)",
-        "CFTC Futures"
-      ],
-      "thesis": "Global growth deceleration commodity demand overlay",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corp",
-      "sector": "Information Technology",
-      "weight": 0.01846,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 565.9,
-      "value_m": 424.4,
-      "signals": [
-        "Pair vs NVDA (2.7%)",
-        "Pair vs AVGO (2.0%)",
-        "Pair vs AMD (1.3%)",
-        "Network (6 peers)"
-      ],
-      "thesis": "AI datacenter compute pair: Long NVDA GPU monopoly vs. Short INTC x86 server share loss (paired against 2.7% 13F long in NVDA)",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "LRCX",
@@ -15499,46 +15542,23 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.00902,
-      "confidence": 75.1,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 414.8,
-      "value_m": 207.4,
-      "signals": [
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00891,
-      "confidence": 74.2,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
+      "weight": 0.0017,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
       "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
+      "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 409.8,
-      "value_m": 204.9,
+      "raw_value_m": 842.3,
+      "value_m": 210.6,
       "signals": [
-        "Network (11 peers)",
-        "Strategy Overlay"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -15820,26 +15840,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00379,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 348.5,
-      "value_m": 87.1,
-      "signals": [
-        "Network (8 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "tiger_global": [
@@ -15967,7 +15967,7 @@
       "ticker": "INTC",
       "name": "Intel Corp",
       "sector": "Information Technology",
-      "weight": 0.04463,
+      "weight": 0.04093,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -15990,7 +15990,7 @@
       "ticker": "SMCI",
       "name": "Super Micro Computer",
       "sector": "Information Technology",
-      "weight": 0.04398,
+      "weight": 0.04033,
       "confidence": 88.1,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -16013,7 +16013,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.0433,
+      "weight": 0.0397,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -16216,7 +16216,7 @@
       "ticker": "PINS",
       "name": "Pinterest Inc",
       "sector": "Communication Services",
-      "weight": 0.02146,
+      "weight": 0.01968,
       "confidence": 69.9,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -16276,7 +16276,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.01816,
+      "weight": 0.01665,
       "confidence": 73.9,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -16457,7 +16457,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00775,
+      "weight": 0.00711,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -18191,7 +18191,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.04355,
+      "weight": 0.03709,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -18234,7 +18234,7 @@
       "ticker": "WBA",
       "name": "Walgreens Boots Alliance",
       "sector": "Consumer Staples",
-      "weight": 0.0416,
+      "weight": 0.03543,
       "confidence": 85.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -18256,7 +18256,7 @@
       "ticker": "SNAP",
       "name": "Snap Inc",
       "sector": "Communication Services",
-      "weight": 0.04148,
+      "weight": 0.03532,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -18519,7 +18519,7 @@
       "ticker": "DG",
       "name": "Dollar General Corp",
       "sector": "Consumer Staples",
-      "weight": 0.022,
+      "weight": 0.01874,
       "confidence": 72.2,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -18539,7 +18539,7 @@
       "ticker": "PINS",
       "name": "Pinterest Inc",
       "sector": "Communication Services",
-      "weight": 0.02137,
+      "weight": 0.0182,
       "confidence": 69.1,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -18619,7 +18619,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00808,
+      "weight": 0.00688,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -19920,6 +19920,97 @@
   ],
   "sculptor": [
     {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.01657,
+      "confidence": 88.3,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 728.9,
+      "value_m": 546.7,
+      "signals": [
+        "News / Letter",
+        "Network (15 peers)",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "Multi-strategy credit & convertible arbitrage overlay",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "MPW",
+      "name": "Medical Properties Trust",
+      "sector": "Real Estate",
+      "weight": 0.01638,
+      "confidence": 87.3,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 720.6,
+      "value_m": 540.5,
+      "signals": [
+        "News / Letter",
+        "Network (5 peers)",
+        "FINRA SI 28.6%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "Distressed REIT capital-structure short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co",
+      "sector": "Consumer Discretionary",
+      "weight": 0.016,
+      "confidence": 85.3,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 704.1,
+      "value_m": 528.1,
+      "signals": [
+        "News / Letter",
+        "Network (4 peers)",
+        "FINRA SI 14.8%",
+        "SEC Scrutiny"
+      ],
+      "thesis": "Auto credit & structured products short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "KSS",
+      "name": "Kohl's Corp",
+      "sector": "Consumer Discretionary",
+      "weight": 0.01572,
+      "confidence": 87.7,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 691.5,
+      "value_m": 518.6,
+      "signals": [
+        "Pair vs AMZN (2.2%)",
+        "Network (5 peers)",
+        "FINRA SI 24.5%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 2.2% 13F long in AMZN)",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "SHC",
       "name": "Sotera Health Co",
       "sector": "Health Care",
@@ -19978,6 +20069,49 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "sector": "Index",
+      "weight": 0.00805,
+      "confidence": 76.6,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 531.1,
+      "value_m": 265.6,
+      "signals": [
+        "Network (14 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "GNN co-holding network propagation: 14 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.00791,
+      "confidence": 75.3,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 522.1,
+      "value_m": 261.1,
+      "signals": [
+        "Network (14 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "GNN co-holding network propagation: 14 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "INTC",
@@ -20240,97 +20374,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.01313,
-      "confidence": 88.3,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 182.5,
-      "value_m": 136.9,
-      "signals": [
-        "News / Letter",
-        "Network (15 peers)",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "Multi-strategy credit & convertible arbitrage overlay",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "MPW",
-      "name": "Medical Properties Trust",
-      "sector": "Real Estate",
-      "weight": 0.01297,
-      "confidence": 87.3,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 180.4,
-      "value_m": 135.3,
-      "signals": [
-        "News / Letter",
-        "Network (5 peers)",
-        "FINRA SI 28.6%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "Distressed REIT capital-structure short",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co",
-      "sector": "Consumer Discretionary",
-      "weight": 0.01268,
-      "confidence": 85.3,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 176.3,
-      "value_m": 132.2,
-      "signals": [
-        "News / Letter",
-        "Network (4 peers)",
-        "FINRA SI 14.8%",
-        "SEC Scrutiny"
-      ],
-      "thesis": "Auto credit & structured products short",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "KSS",
-      "name": "Kohl's Corp",
-      "sector": "Consumer Discretionary",
-      "weight": 0.01246,
-      "confidence": 87.7,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 173.1,
-      "value_m": 129.9,
-      "signals": [
-        "Pair vs AMZN (2.2%)",
-        "Network (5 peers)",
-        "FINRA SI 24.5%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 2.2% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "WBD",
       "name": "Warner Bros Discovery INC",
       "sector": "Financials",
@@ -20389,6 +20432,26 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla Inc",
+      "sector": "Consumer Discretionary",
+      "weight": 0.00332,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 437.5,
+      "value_m": 109.4,
+      "signals": [
+        "Network (10 peers)"
+      ],
+      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "KLAC",
@@ -20531,49 +20594,6 @@
       "thesis": "Net directional 13F PUT short position ($84M notional disclosed in SEC filing)"
     },
     {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00638,
-      "confidence": 76.6,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 133.0,
-      "value_m": 66.5,
-      "signals": [
-        "Network (14 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "GNN co-holding network propagation: 14 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
-      "sector": "Index",
-      "weight": 0.00627,
-      "confidence": 75.3,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 130.7,
-      "value_m": 65.4,
-      "signals": [
-        "Network (14 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "GNN co-holding network propagation: 14 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "SMCI",
       "name": "Super Micro Computer, Inc.",
       "sector": "Information Technology",
@@ -20674,26 +20694,6 @@
         "13F-HR PUT"
       ],
       "thesis": "Net directional 13F PUT short position ($43M notional disclosed in SEC filing)"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla Inc",
-      "sector": "Consumer Discretionary",
-      "weight": 0.00263,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 109.6,
-      "value_m": 27.4,
-      "signals": [
-        "Network (10 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "magnetar": [
@@ -20721,7 +20721,7 @@
       "ticker": "SMCI",
       "name": "Super Micro Computer",
       "sector": "Information Technology",
-      "weight": 0.02067,
+      "weight": 0.01638,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -20729,8 +20729,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 281.6,
-      "value_m": 211.2,
+      "raw_value_m": 305.8,
+      "value_m": 229.3,
       "signals": [
         "News / Letter",
         "Network (4 peers)",
@@ -20744,7 +20744,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.02054,
+      "weight": 0.01627,
       "confidence": 88.8,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -20752,8 +20752,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 279.7,
-      "value_m": 209.8,
+      "raw_value_m": 303.7,
+      "value_m": 227.8,
       "signals": [
         "News / Letter",
         "Network (13 peers)",
@@ -20767,7 +20767,7 @@
       "ticker": "MSTR",
       "name": "Strategy (MicroStrategy)",
       "sector": "Information Technology",
-      "weight": 0.02018,
+      "weight": 0.01599,
       "confidence": 87.3,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -20775,8 +20775,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 275.0,
-      "value_m": 206.2,
+      "raw_value_m": 298.6,
+      "value_m": 223.9,
       "signals": [
         "News / Letter",
         "Strategy Overlay",
@@ -20789,7 +20789,7 @@
       "ticker": "IWM",
       "name": "iShares Russell 2000 ETF",
       "sector": "Index",
-      "weight": 0.00975,
+      "weight": 0.00773,
       "confidence": 75.3,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -20797,8 +20797,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 199.2,
-      "value_m": 99.6,
+      "raw_value_m": 216.3,
+      "value_m": 108.2,
       "signals": [
         "Network (11 peers)",
         "Strategy Overlay",
@@ -20811,7 +20811,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.0093,
+      "weight": 0.00736,
       "confidence": 71.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -20819,8 +20819,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 190.0,
-      "value_m": 95.0,
+      "raw_value_m": 206.3,
+      "value_m": 103.1,
       "signals": [
         "Network (5 peers)",
         "FINRA SI 24.5%",
@@ -21313,7 +21313,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00408,
+      "weight": 0.00324,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -21321,8 +21321,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 166.9,
-      "value_m": 41.7,
+      "raw_value_m": 181.3,
+      "value_m": 45.3,
       "signals": [
         "Network (9 peers)"
       ],
@@ -21435,7 +21435,7 @@
       "ticker": "WBA",
       "name": "Walgreens Boots Alliance",
       "sector": "Consumer Staples",
-      "weight": 0.07474,
+      "weight": 0.06116,
       "confidence": 92.8,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -21478,7 +21478,7 @@
       "ticker": "INTC",
       "name": "Intel Corp",
       "sector": "Information Technology",
-      "weight": 0.07247,
+      "weight": 0.0593,
       "confidence": 92.6,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -21500,7 +21500,7 @@
       "ticker": "BA",
       "name": "Boeing Co",
       "sector": "Industrials",
-      "weight": 0.072,
+      "weight": 0.05892,
       "confidence": 92.0,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -21681,7 +21681,7 @@
       "ticker": "BYND",
       "name": "Beyond Meat Inc",
       "sector": "Consumer Staples",
-      "weight": 0.02331,
+      "weight": 0.01908,
       "confidence": 76.6,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -21704,7 +21704,7 @@
       "ticker": "IWM",
       "name": "iShares Russell 2000 ETF",
       "sector": "Index",
-      "weight": 0.02288,
+      "weight": 0.01872,
       "confidence": 75.2,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -21906,7 +21906,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.0096,
+      "weight": 0.00786,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -22029,7 +22029,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.02733,
+      "weight": 0.02177,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -22052,7 +22052,7 @@
       "ticker": "IYR",
       "name": "iShares U.S. Real Estate ETF",
       "sector": "Real Estate",
-      "weight": 0.02699,
+      "weight": 0.0215,
       "confidence": 88.3,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -22073,7 +22073,7 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Index",
-      "weight": 0.02674,
+      "weight": 0.0213,
       "confidence": 87.5,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -22135,7 +22135,7 @@
       "ticker": "IWM",
       "name": "iShares Russell 2000 ETF",
       "sector": "Index",
-      "weight": 0.01289,
+      "weight": 0.01027,
       "confidence": 75.3,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -22157,7 +22157,7 @@
       "ticker": "MPW",
       "name": "Medical Properties Trust",
       "sector": "Real Estate",
-      "weight": 0.01227,
+      "weight": 0.00977,
       "confidence": 71.7,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -22240,7 +22240,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.0054,
+      "weight": 0.0043,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -22317,6 +22317,74 @@
         "13F-HR PUT"
       ],
       "thesis": "CFTC WTI Crude net short (-1.20σ) & non-OPEC supply surplus hedge"
+    },
+    {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
+      "weight": 0.01502,
+      "confidence": 88.7,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 560.9,
+      "value_m": 420.6,
+      "signals": [
+        "News / Letter",
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "Soros credit spread & leveraged-loan refinancing wall hedge",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corp",
+      "sector": "Information Technology",
+      "weight": 0.01464,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 546.7,
+      "value_m": 410.0,
+      "signals": [
+        "Pair vs TSM (2.9%)",
+        "Pair vs NVDA (2.3%)",
+        "Network (6 peers)"
+      ],
+      "thesis": "Leading-edge node monopoly (TSMC) paired against Intel Foundry execution risk (paired against 2.9% 13F long in TSM)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "KSS",
+      "name": "Kohl's Corp",
+      "sector": "Consumer Discretionary",
+      "weight": 0.01443,
+      "confidence": 87.9,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 538.8,
+      "value_m": 404.1,
+      "signals": [
+        "Pair vs AMZN (3.1%)",
+        "Network (4 peers)",
+        "FINRA SI 24.5%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 3.1% 13F long in AMZN)",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "INTC",
@@ -22419,6 +22487,26 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "FXI",
+      "name": "iShares China Large-Cap ETF",
+      "sector": "International",
+      "weight": 0.00825,
+      "confidence": 73.1,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 462.2,
+      "value_m": 231.1,
+      "signals": [
+        "News / Letter"
+      ],
+      "thesis": "Geopolitical & China structural deflation macro overlay",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "PCG",
       "name": "PG&E Corp",
       "sector": "Utilities",
@@ -22437,6 +22525,26 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc",
+      "sector": "Communication Services",
+      "weight": 0.00773,
+      "confidence": 71.4,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 432.9,
+      "value_m": 216.5,
+      "signals": [
+        "Pair vs GOOGL (2.4%)"
+      ],
+      "thesis": "Search/YouTube ad dominance paired against sub-scale social ad platform SNAP (paired against 2.4% 13F long in GOOGL)",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "XLU",
@@ -22759,6 +22867,26 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "sector": "Index",
+      "weight": 0.00299,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 335.1,
+      "value_m": 83.8,
+      "signals": [
+        "Network (8 peers)"
+      ],
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "BL",
       "name": "Blackline, INC.",
       "sector": "Other",
@@ -22819,74 +22947,6 @@
       "thesis": "Disclosed 13F PUT collar / downside convexity overlay against $196M long equity stake"
     },
     {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.00723,
-      "confidence": 88.7,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 82.0,
-      "value_m": 61.5,
-      "signals": [
-        "News / Letter",
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "Soros credit spread & leveraged-loan refinancing wall hedge",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel Corp",
-      "sector": "Information Technology",
-      "weight": 0.00705,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 79.9,
-      "value_m": 60.0,
-      "signals": [
-        "Pair vs TSM (2.9%)",
-        "Pair vs NVDA (2.3%)",
-        "Network (6 peers)"
-      ],
-      "thesis": "Leading-edge node monopoly (TSMC) paired against Intel Foundry execution risk (paired against 2.9% 13F long in TSM)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "KSS",
-      "name": "Kohl's Corp",
-      "sector": "Consumer Discretionary",
-      "weight": 0.00695,
-      "confidence": 87.9,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 78.8,
-      "value_m": 59.1,
-      "signals": [
-        "Pair vs AMZN (3.1%)",
-        "Network (4 peers)",
-        "FINRA SI 24.5%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 3.1% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
       "sector": "Other",
@@ -22925,66 +22985,6 @@
         "13F-HR PUT"
       ],
       "thesis": "Disclosed 13F PUT collar / downside convexity overlay against $250M long equity stake"
-    },
-    {
-      "ticker": "FXI",
-      "name": "iShares China Large-Cap ETF",
-      "sector": "International",
-      "weight": 0.00397,
-      "confidence": 73.1,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 67.6,
-      "value_m": 33.8,
-      "signals": [
-        "News / Letter"
-      ],
-      "thesis": "Geopolitical & China structural deflation macro overlay",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "SNAP",
-      "name": "Snap Inc",
-      "sector": "Communication Services",
-      "weight": 0.00373,
-      "confidence": 71.4,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 63.3,
-      "value_m": 31.7,
-      "signals": [
-        "Pair vs GOOGL (2.4%)"
-      ],
-      "thesis": "Search/YouTube ad dominance paired against sub-scale social ad platform SNAP (paired against 2.4% 13F long in GOOGL)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00145,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 49.0,
-      "value_m": 12.3,
-      "signals": [
-        "Network (8 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "appaloosa": [
@@ -23192,7 +23192,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.03733,
+      "weight": 0.02016,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -23215,7 +23215,7 @@
       "ticker": "WBA",
       "name": "Walgreens Boots Alliance",
       "sector": "Consumer Staples",
-      "weight": 0.03644,
+      "weight": 0.01968,
       "confidence": 87.3,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -23237,7 +23237,7 @@
       "ticker": "INTC",
       "name": "Intel Corp",
       "sector": "Information Technology",
-      "weight": 0.03462,
+      "weight": 0.01869,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -23339,7 +23339,7 @@
       "ticker": "LYFT",
       "name": "Lyft Inc",
       "sector": "Industrials",
-      "weight": 0.0184,
+      "weight": 0.00994,
       "confidence": 74.5,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -23379,7 +23379,7 @@
       "ticker": "PINS",
       "name": "Pinterest Inc",
       "sector": "Communication Services",
-      "weight": 0.01657,
+      "weight": 0.00895,
       "confidence": 68.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -23519,7 +23519,7 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Index",
-      "weight": 0.00638,
+      "weight": 0.00344,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -23843,7 +23843,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.02661,
+      "weight": 0.01745,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -23866,7 +23866,7 @@
       "ticker": "PATH",
       "name": "UiPath Inc",
       "sector": "Information Technology",
-      "weight": 0.026,
+      "weight": 0.01705,
       "confidence": 88.6,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -23888,7 +23888,7 @@
       "ticker": "WBA",
       "name": "Walgreens Boots Alliance",
       "sector": "Consumer Staples",
-      "weight": 0.02548,
+      "weight": 0.01671,
       "confidence": 85.6,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -24069,7 +24069,7 @@
       "ticker": "SNAP",
       "name": "Snap Inc",
       "sector": "Communication Services",
-      "weight": 0.01473,
+      "weight": 0.00966,
       "confidence": 75.7,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -24089,7 +24089,7 @@
       "ticker": "PINS",
       "name": "Pinterest Inc",
       "sector": "Communication Services",
-      "weight": 0.01377,
+      "weight": 0.00903,
       "confidence": 70.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -24149,7 +24149,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00473,
+      "weight": 0.0031,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -24898,6 +24898,74 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "KSS",
+      "name": "Kohl's Corp",
+      "sector": "Consumer Discretionary",
+      "weight": 0.01746,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 605.3,
+      "value_m": 454.0,
+      "signals": [
+        "Pair vs AMZN (18.5%)",
+        "Network (5 peers)",
+        "FINRA SI 24.5%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 18.5% 13F long in AMZN)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "WBA",
+      "name": "Walgreens Boots Alliance",
+      "sector": "Consumer Staples",
+      "weight": 0.01707,
+      "confidence": 87.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 591.8,
+      "value_m": 443.8,
+      "signals": [
+        "Pair vs AMZN (18.5%)",
+        "Network (3 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "Amazon Pharmacy & prime logistics expansion vs. brick-and-mortar drugstore decline (WBA) (paired against 18.5% 13F long in AMZN)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat Inc",
+      "sector": "Consumer Staples",
+      "weight": 0.01545,
+      "confidence": 88.5,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 535.4,
+      "value_m": 401.6,
+      "signals": [
+        "Pair vs QSR (9.5%)",
+        "FINRA SI 36.4%",
+        "Reg SHO FTD",
+        "SEC Scrutiny"
+      ],
+      "thesis": "Global QSR franchise cash flow paired against unprofitable food-tech (BYND) (paired against 9.5% 13F long in QSR)",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "GPC",
       "name": "Genuine Parts CO",
       "sector": "Other",
@@ -25018,48 +25086,23 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "KSS",
-      "name": "Kohl's Corp",
-      "sector": "Consumer Discretionary",
-      "weight": 0.0388,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
+      "ticker": "SNAP",
+      "name": "Snap Inc",
+      "sector": "Communication Services",
+      "weight": 0.00807,
+      "confidence": 72.7,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 261.1,
-      "value_m": 195.8,
+      "raw_value_m": 419.5,
+      "value_m": 209.7,
       "signals": [
-        "Pair vs AMZN (18.5%)",
-        "Network (5 peers)",
-        "FINRA SI 24.5%",
-        "Reg SHO FTD"
+        "Pair vs GOOG (6.4%)"
       ],
-      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 18.5% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "WBA",
-      "name": "Walgreens Boots Alliance",
-      "sector": "Consumer Staples",
-      "weight": 0.03793,
-      "confidence": 87.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 255.2,
-      "value_m": 191.4,
-      "signals": [
-        "Pair vs AMZN (18.5%)",
-        "Network (3 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "Amazon Pharmacy & prime logistics expansion vs. brick-and-mortar drugstore decline (WBA) (paired against 18.5% 13F long in AMZN)",
+      "thesis": "Alphabet AI ad dominance paired against sub-scale social ad platform SNAP (paired against 6.4% 13F long in GOOG)",
       "source": "Multi-Vector Inference"
     },
     {
@@ -25103,6 +25146,28 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.00686,
+      "confidence": 75.3,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 356.9,
+      "value_m": 178.4,
+      "signals": [
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "HONA",
       "name": "Honeywell Aerospace Inc.",
       "sector": "Industrials",
@@ -25121,29 +25186,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat Inc",
-      "sector": "Consumer Staples",
-      "weight": 0.03432,
-      "confidence": 88.5,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 230.9,
-      "value_m": 173.2,
-      "signals": [
-        "Pair vs QSR (9.5%)",
-        "FINRA SI 36.4%",
-        "Reg SHO FTD",
-        "SEC Scrutiny"
-      ],
-      "thesis": "Global QSR franchise cash flow paired against unprofitable food-tech (BYND) (paired against 9.5% 13F long in QSR)",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "HLF",
@@ -25246,26 +25288,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap Inc",
-      "sector": "Communication Services",
-      "weight": 0.01793,
-      "confidence": 72.7,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 180.9,
-      "value_m": 90.5,
-      "signals": [
-        "Pair vs GOOG (6.4%)"
-      ],
-      "thesis": "Alphabet AI ad dominance paired against sub-scale social ad platform SNAP (paired against 6.4% 13F long in GOOG)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "MOH",
       "name": "Molina Healthcare, INC.",
       "sector": "Health Care",
@@ -25326,32 +25348,10 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
-      "sector": "Index",
-      "weight": 0.01526,
-      "confidence": 75.3,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 153.9,
-      "value_m": 77.0,
-      "signals": [
-        "Network (11 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00638,
+      "weight": 0.00288,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -25359,8 +25359,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 129.0,
-      "value_m": 32.2,
+      "raw_value_m": 299.1,
+      "value_m": 74.8,
       "signals": [
         "Network (9 peers)"
       ],
@@ -25653,7 +25653,7 @@
       "ticker": "XLK",
       "name": "XLK",
       "sector": "Other",
-      "weight": 0.03395,
+      "weight": 0.02969,
       "confidence": 70.5,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -25673,7 +25673,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.03046,
+      "weight": 0.02663,
       "confidence": 75.3,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -25775,7 +25775,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.01276,
+      "weight": 0.01116,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -26076,51 +26076,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "KSS",
-      "name": "Kohl's Corp",
-      "sector": "Consumer Discretionary",
-      "weight": 0.02779,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 329.4,
-      "value_m": 247.1,
-      "signals": [
-        "Pair vs AMZN (17.5%)",
-        "Network (4 peers)",
-        "FINRA SI 24.5%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "E-commerce share gainer (AMZN) paired against department store donor (KSS) (paired against 17.5% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "WBA",
-      "name": "Walgreens Boots Alliance",
-      "sector": "Consumer Staples",
-      "weight": 0.0272,
-      "confidence": 87.5,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 322.4,
-      "value_m": 241.8,
-      "signals": [
-        "News / Letter",
-        "Pair vs AMZN (17.5%)",
-        "Network (4 peers)"
-      ],
-      "thesis": "Structurally impaired value-trap short basket",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "CRH",
       "name": "CRH plc",
       "sector": "Materials",
@@ -26181,6 +26136,52 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer",
+      "sector": "Information Technology",
+      "weight": 0.01851,
+      "confidence": 86.1,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 296.1,
+      "value_m": 222.1,
+      "signals": [
+        "Pair vs NVDA (7.5%)",
+        "Network (3 peers)",
+        "FINRA SI 18.9%",
+        "SEC Scrutiny"
+      ],
+      "thesis": "Long NVDA silicon pricing power vs. Short SMCI commoditized server rack margin squeeze (paired against 7.5% 13F long in NVDA)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.01834,
+      "confidence": 88.7,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 293.5,
+      "value_m": 220.1,
+      "signals": [
+        "News / Letter",
+        "Network (11 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "Loeb investor letter: single-name & small-cap short alpha vs. high-grade compounders",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "FLEX",
       "name": "Flex Ltd.",
       "sector": "Other",
@@ -26199,6 +26200,27 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "PATH",
+      "name": "UiPath Inc",
+      "sector": "Information Technology",
+      "weight": 0.01792,
+      "confidence": 86.6,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 286.7,
+      "value_m": 215.0,
+      "signals": [
+        "Pair vs MSFT (5.0%)",
+        "Network (4 peers)"
+      ],
+      "thesis": "Microsoft Copilot enterprise bundling displacing standalone RPA vendor UiPath (PATH) (paired against 5.0% 13F long in MSFT)",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "COF",
@@ -26239,29 +26261,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro Computer",
-      "sector": "Information Technology",
-      "weight": 0.02318,
-      "confidence": 86.1,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 274.8,
-      "value_m": 206.1,
-      "signals": [
-        "Pair vs NVDA (7.5%)",
-        "Network (3 peers)",
-        "FINRA SI 18.9%",
-        "SEC Scrutiny"
-      ],
-      "thesis": "Long NVDA silicon pricing power vs. Short SMCI commoditized server rack margin squeeze (paired against 7.5% 13F long in NVDA)",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "LYV",
@@ -26364,6 +26363,26 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "SNAP",
+      "name": "Snap Inc",
+      "sector": "Communication Services",
+      "weight": 0.01132,
+      "confidence": 75.7,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 271.9,
+      "value_m": 135.9,
+      "signals": [
+        "Pair vs META (10.3%)"
+      ],
+      "thesis": "Digital advertising pair: Long META AI reel monetization vs. Short SNAP ARPU lag (paired against 10.3% 13F long in META)",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "FWONA",
       "name": "Liberty Media Corp",
       "sector": "Other",
@@ -26404,30 +26423,10 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SNAP",
-      "name": "Snap Inc",
-      "sector": "Communication Services",
-      "weight": 0.01419,
-      "confidence": 75.7,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 252.3,
-      "value_m": 126.2,
-      "signals": [
-        "Pair vs META (10.3%)"
-      ],
-      "thesis": "Digital advertising pair: Long META AI reel monetization vs. Short SNAP ARPU lag (paired against 10.3% 13F long in META)",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "PINS",
       "name": "Pinterest Inc",
       "sector": "Communication Services",
-      "weight": 0.01324,
+      "weight": 0.01057,
       "confidence": 70.6,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -26435,8 +26434,8 @@
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 235.3,
-      "value_m": 117.7,
+      "raw_value_m": 253.6,
+      "value_m": 126.8,
       "signals": [
         "Pair vs META (10.3%)"
       ],
@@ -26604,6 +26603,26 @@
       "thesis": "Institutional portfolio beta-neutralization & tail-risk PUT overlay"
     },
     {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "sector": "Index",
+      "weight": 0.00365,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 175.4,
+      "value_m": 43.8,
+      "signals": [
+        "Network (7 peers)"
+      ],
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "PFGC",
       "name": "Performance Food Group Co",
       "sector": "Other",
@@ -26622,26 +26641,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00458,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 162.8,
-      "value_m": 40.7,
-      "signals": [
-        "Network (7 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "duquesne": [
@@ -27341,7 +27340,7 @@
       "ticker": "SPY",
       "name": "SPDR S&P 500 ETF Trust",
       "sector": "Index",
-      "weight": 0.03902,
+      "weight": 0.04393,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -27362,7 +27361,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.03862,
+      "weight": 0.04348,
       "confidence": 88.5,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -27383,7 +27382,7 @@
       "ticker": "BYND",
       "name": "Beyond Meat Inc",
       "sector": "Consumer Staples",
-      "weight": 0.03827,
+      "weight": 0.04309,
       "confidence": 87.7,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -27686,7 +27685,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.01878,
+      "weight": 0.02114,
       "confidence": 76.8,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -27709,7 +27708,7 @@
       "ticker": "WBA",
       "name": "Walgreens Boots Alliance",
       "sector": "Consumer Staples",
-      "weight": 0.0185,
+      "weight": 0.02083,
       "confidence": 75.7,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -27890,7 +27889,7 @@
       "ticker": "INTC",
       "name": "Intel Corp",
       "sector": "Information Technology",
-      "weight": 0.00753,
+      "weight": 0.00847,
       "confidence": 61.6,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -27929,6 +27928,74 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "KSS",
+      "name": "Kohl's Corp",
+      "sector": "Consumer Discretionary",
+      "weight": 0.02437,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 194.9,
+      "value_m": 146.2,
+      "signals": [
+        "News / Letter",
+        "Pair vs AMZN (7.4%)",
+        "Network (6 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "Tiger-descendant L/S equity fundamental retail short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "WBA",
+      "name": "Walgreens Boots Alliance",
+      "sector": "Consumer Staples",
+      "weight": 0.02385,
+      "confidence": 87.5,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "PAIR SHORT",
+      "putCall": null,
+      "raw_value_m": 190.8,
+      "value_m": 143.1,
+      "signals": [
+        "Pair vs AMZN (7.4%)",
+        "Network (6 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "Amazon Pharmacy & prime logistics expansion vs. brick-and-mortar drugstore decline (WBA) (paired against 7.4% 13F long in AMZN)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.02267,
+      "confidence": 86.3,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 181.4,
+      "value_m": 136.0,
+      "signals": [
+        "News / Letter",
+        "Network (10 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "Equity L/S beta neutralization overlay",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "SGI",
       "name": "Somnigroup International INC.",
       "sector": "Other",
@@ -27949,29 +28016,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "KSS",
-      "name": "Kohl's Corp",
-      "sector": "Consumer Discretionary",
-      "weight": 0.029,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 154.6,
-      "value_m": 116.0,
-      "signals": [
-        "News / Letter",
-        "Pair vs AMZN (7.4%)",
-        "Network (6 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "Tiger-descendant L/S equity fundamental retail short",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "BURL",
       "name": "Burlington Stores, Inc.",
       "sector": "Other",
@@ -27990,51 +28034,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "WBA",
-      "name": "Walgreens Boots Alliance",
-      "sector": "Consumer Staples",
-      "weight": 0.02838,
-      "confidence": 87.5,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "PAIR SHORT",
-      "putCall": null,
-      "raw_value_m": 151.4,
-      "value_m": 113.5,
-      "signals": [
-        "Pair vs AMZN (7.4%)",
-        "Network (6 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "Amazon Pharmacy & prime logistics expansion vs. brick-and-mortar drugstore decline (WBA) (paired against 7.4% 13F long in AMZN)",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
-      "sector": "Index",
-      "weight": 0.02698,
-      "confidence": 86.3,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 143.9,
-      "value_m": 107.9,
-      "signals": [
-        "News / Letter",
-        "Network (10 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "Equity L/S beta neutralization overlay",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "CLH",
@@ -28317,6 +28316,29 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
+      "ticker": "BYND",
+      "name": "Beyond Meat Inc",
+      "sector": "Consumer Staples",
+      "weight": 0.01127,
+      "confidence": 76.6,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 135.2,
+      "value_m": 67.6,
+      "signals": [
+        "Network (4 peers)",
+        "Strategy Overlay",
+        "FINRA SI 36.4%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "GNN co-holding network propagation: 4 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
       "ticker": "CGM",
       "name": "Cboe Global Mkts INC",
       "sector": "Other",
@@ -28355,6 +28377,29 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana Co",
+      "sector": "Consumer Discretionary",
+      "weight": 0.01095,
+      "confidence": 74.4,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 131.3,
+      "value_m": 65.7,
+      "signals": [
+        "Network (3 peers)",
+        "Strategy Overlay",
+        "FINRA SI 14.8%",
+        "SEC Scrutiny"
+      ],
+      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "RCL",
@@ -28397,29 +28442,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "BYND",
-      "name": "Beyond Meat Inc",
-      "sector": "Consumer Staples",
-      "weight": 0.0134,
-      "confidence": 76.6,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 107.3,
-      "value_m": 53.6,
-      "signals": [
-        "Network (4 peers)",
-        "Strategy Overlay",
-        "FINRA SI 36.4%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "GNN co-holding network propagation: 4 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "TSM",
       "name": "Taiwan Semiconductor (TSMC)",
       "sector": "Information Technology",
@@ -28438,29 +28460,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "CVNA",
-      "name": "Carvana Co",
-      "sector": "Consumer Discretionary",
-      "weight": 0.01303,
-      "confidence": 74.4,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 104.2,
-      "value_m": 52.1,
-      "signals": [
-        "Network (3 peers)",
-        "Strategy Overlay",
-        "FINRA SI 14.8%",
-        "SEC Scrutiny"
-      ],
-      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "SPHR",
@@ -28526,7 +28525,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00553,
+      "weight": 0.00463,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -28534,8 +28533,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 88.4,
-      "value_m": 22.1,
+      "raw_value_m": 111.4,
+      "value_m": 27.8,
       "signals": [
         "Network (8 peers)"
       ],
@@ -28545,30 +28544,10 @@
   ],
   "winton": [
     {
-      "ticker": "BRK.A",
-      "name": "Berkshire Hathaway Cl A",
-      "sector": "Financials",
-      "weight": 0.06288,
-      "confidence": 95.0,
-      "rating": "CONFIRMED",
-      "type": "LONG",
-      "instrument": "EQUITY",
-      "putCall": null,
-      "value_m": 162.1,
-      "source": "13F-HR",
-      "prob_tier": "T1 • 100%",
-      "apply_factor": 1.0,
-      "raw_value_m": 162.1,
-      "signals": [
-        "SEC 13F-HR"
-      ],
-      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
       "ticker": "TLT",
       "name": "iShares 20+ Year Treasury ETF",
       "sector": "Fixed Income",
-      "weight": 0.02875,
+      "weight": 0.02876,
       "confidence": 92.6,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -28576,8 +28555,8 @@
       "type": "SHORT",
       "instrument": "EU STATUTORY",
       "putCall": null,
-      "raw_value_m": 115.0,
-      "value_m": 115.0,
+      "raw_value_m": 287.6,
+      "value_m": 287.6,
       "signals": [
         "EU/UK Reg (1.40%)",
         "Network (4 peers)",
@@ -28599,8 +28578,8 @@
       "type": "SHORT",
       "instrument": "EU STATUTORY",
       "putCall": null,
-      "raw_value_m": 114.3,
-      "value_m": 114.3,
+      "raw_value_m": 285.7,
+      "value_m": 285.7,
       "signals": [
         "EU/UK Reg (1.15%)",
         "Network (5 peers)"
@@ -28612,7 +28591,7 @@
       "ticker": "EWJ",
       "name": "iShares MSCI Japan ETF",
       "sector": "International",
-      "weight": 0.02827,
+      "weight": 0.02826,
       "confidence": 91.0,
       "rating": "CONFIRMED",
       "prob_tier": "T1 • 100%",
@@ -28620,8 +28599,8 @@
       "type": "SHORT",
       "instrument": "EU STATUTORY",
       "putCall": null,
-      "raw_value_m": 113.1,
-      "value_m": 113.1,
+      "raw_value_m": 282.6,
+      "value_m": 282.6,
       "signals": [
         "EU/UK Reg (0.88%)"
       ],
@@ -28632,7 +28611,7 @@
       "ticker": "MSTR",
       "name": "Strategy (MicroStrategy)",
       "sector": "Information Technology",
-      "weight": 0.01808,
+      "weight": 0.01807,
       "confidence": 89.2,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -28640,13 +28619,78 @@
       "type": "SHORT",
       "instrument": "PAIR SHORT",
       "putCall": null,
-      "raw_value_m": 96.4,
-      "value_m": 72.3,
+      "raw_value_m": 241.0,
+      "value_m": 180.7,
       "signals": [
         "Pair vs IBIT (1.2%)",
         "FINRA SI 15.2%"
       ],
       "thesis": "Crypto basis pair: Long spot Bitcoin ETF (IBIT) vs. Short MicroStrategy (MSTR) NAV premium (paired against 1.2% 13F long in IBIT)",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "BRK.A",
+      "name": "Berkshire Hathaway Cl A",
+      "sector": "Financials",
+      "weight": 0.06288,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "instrument": "EQUITY",
+      "putCall": null,
+      "value_m": 162.1,
+      "source": "13F-HR",
+      "prob_tier": "T1 • 100%",
+      "apply_factor": 1.0,
+      "raw_value_m": 162.1,
+      "signals": [
+        "SEC 13F-HR"
+      ],
+      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.00928,
+      "confidence": 76.8,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 185.5,
+      "value_m": 92.8,
+      "signals": [
+        "Network (9 peers)",
+        "Strategy Overlay",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "BYND",
+      "name": "Beyond Meat Inc",
+      "sector": "Consumer Staples",
+      "weight": 0.00925,
+      "confidence": 76.6,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 185.0,
+      "value_m": 92.5,
+      "signals": [
+        "Network (4 peers)",
+        "Strategy Overlay",
+        "FINRA SI 36.4%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "GNN co-holding network propagation: 4 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -28710,48 +28754,23 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00928,
-      "confidence": 76.8,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 74.2,
-      "value_m": 37.1,
-      "signals": [
-        "Network (9 peers)",
-        "Strategy Overlay",
-        "FINRA SI 18.5%"
-      ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "BYND",
-      "name": "Beyond Meat Inc",
-      "sector": "Consumer Staples",
-      "weight": 0.00925,
-      "confidence": 76.6,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
+      "weight": 0.00381,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 74.0,
-      "value_m": 37.0,
+      "raw_value_m": 152.4,
+      "value_m": 38.1,
       "signals": [
-        "Network (4 peers)",
-        "Strategy Overlay",
-        "FINRA SI 36.4%",
-        "Reg SHO FTD"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 4 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -29173,26 +29192,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.0038,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 61.0,
-      "value_m": 15.2,
-      "signals": [
-        "Network (9 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "cerberus": [
@@ -29220,7 +29219,7 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.02043,
+      "weight": 0.01893,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -29228,8 +29227,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 108.9,
-      "value_m": 81.7,
+      "raw_value_m": 1514.0,
+      "value_m": 1135.5,
       "signals": [
         "News / Letter",
         "Network (13 peers)",
@@ -29243,7 +29242,7 @@
       "ticker": "KRE",
       "name": "SPDR S&P Regional Banking ETF",
       "sector": "Financials",
-      "weight": 0.01973,
+      "weight": 0.01829,
       "confidence": 86.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -29251,8 +29250,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 105.2,
-      "value_m": 78.9,
+      "raw_value_m": 1463.2,
+      "value_m": 1097.4,
       "signals": [
         "News / Letter",
         "Network (3 peers)",
@@ -29265,7 +29264,7 @@
       "ticker": "KSS",
       "name": "Kohl's Corp",
       "sector": "Consumer Discretionary",
-      "weight": 0.0193,
+      "weight": 0.01789,
       "confidence": 84.5,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -29273,8 +29272,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 102.9,
-      "value_m": 77.2,
+      "raw_value_m": 1431.0,
+      "value_m": 1073.2,
       "signals": [
         "News / Letter",
         "Network (5 peers)",
@@ -29288,7 +29287,7 @@
       "ticker": "MPW",
       "name": "Medical Properties Trust",
       "sector": "Real Estate",
-      "weight": 0.00988,
+      "weight": 0.00915,
       "confidence": 77.2,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -29296,8 +29295,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 79.0,
-      "value_m": 39.5,
+      "raw_value_m": 1098.2,
+      "value_m": 549.1,
       "signals": [
         "Network (5 peers)",
         "Strategy Overlay",
@@ -29311,7 +29310,7 @@
       "ticker": "IYR",
       "name": "iShares U.S. Real Estate ETF",
       "sector": "Real Estate",
-      "weight": 0.00985,
+      "weight": 0.00913,
       "confidence": 77.0,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -29319,8 +29318,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 78.8,
-      "value_m": 39.4,
+      "raw_value_m": 1095.3,
+      "value_m": 547.7,
       "signals": [
         "Network (3 peers)",
         "Strategy Overlay"
@@ -29332,7 +29331,7 @@
       "ticker": "QQQ",
       "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.00402,
+      "weight": 0.00374,
       "confidence": 63.1,
       "rating": "LOW",
       "prob_tier": "T4 • 25%",
@@ -29340,8 +29339,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 64.6,
-      "value_m": 16.1,
+      "raw_value_m": 897.6,
+      "value_m": 224.4,
       "signals": [
         "Network (7 peers)"
       ],
@@ -29924,30 +29923,10 @@
   ],
   "canyon_partners": [
     {
-      "ticker": "CBL",
-      "name": "Cbl & Assoc Pptys INC",
-      "sector": "Other",
-      "weight": 0.52766,
-      "confidence": 95.0,
-      "rating": "CONFIRMED",
-      "type": "LONG",
-      "instrument": "EQUITY",
-      "putCall": null,
-      "value_m": 395.7,
-      "source": "13F-HR",
-      "prob_tier": "T1 • 100%",
-      "apply_factor": 1.0,
-      "raw_value_m": 395.7,
-      "signals": [
-        "SEC 13F-HR"
-      ],
-      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.02025,
+      "weight": 0.02024,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -29955,8 +29934,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 108.0,
-      "value_m": 81.0,
+      "raw_value_m": 647.7,
+      "value_m": 485.8,
       "signals": [
         "News / Letter",
         "Network (13 peers)",
@@ -29978,8 +29957,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 107.8,
-      "value_m": 80.9,
+      "raw_value_m": 647.0,
+      "value_m": 485.3,
       "signals": [
         "News / Letter",
         "Network (5 peers)",
@@ -30001,8 +29980,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 106.0,
-      "value_m": 79.5,
+      "raw_value_m": 636.1,
+      "value_m": 477.1,
       "signals": [
         "News / Letter",
         "Strategy Overlay",
@@ -30010,6 +29989,89 @@
         "Reg SHO FTD"
       ],
       "thesis": "Distressed theater debt-vs-equity capital structure short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "CBL",
+      "name": "Cbl & Assoc Pptys INC",
+      "sector": "Other",
+      "weight": 0.52766,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "instrument": "EQUITY",
+      "putCall": null,
+      "value_m": 395.7,
+      "source": "13F-HR",
+      "prob_tier": "T1 • 100%",
+      "apply_factor": 1.0,
+      "raw_value_m": 395.7,
+      "signals": [
+        "SEC 13F-HR"
+      ],
+      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "IYR",
+      "name": "iShares U.S. Real Estate ETF",
+      "sector": "Real Estate",
+      "weight": 0.00976,
+      "confidence": 77.0,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 468.6,
+      "value_m": 234.3,
+      "signals": [
+        "Network (3 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "VNO",
+      "name": "Vornado Realty Trust",
+      "sector": "Real Estate",
+      "weight": 0.00951,
+      "confidence": 75.0,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 456.5,
+      "value_m": 228.2,
+      "signals": [
+        "Network (3 peers)",
+        "Strategy Overlay",
+        "FINRA SI 14.9%"
+      ],
+      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "sector": "Index",
+      "weight": 0.004,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 384.0,
+      "value_m": 96.0,
+      "signals": [
+        "Network (7 peers)"
+      ],
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -30031,49 +30093,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "IYR",
-      "name": "iShares U.S. Real Estate ETF",
-      "sector": "Real Estate",
-      "weight": 0.00978,
-      "confidence": 77.0,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 78.1,
-      "value_m": 39.1,
-      "signals": [
-        "Network (3 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "VNO",
-      "name": "Vornado Realty Trust",
-      "sector": "Real Estate",
-      "weight": 0.0095,
-      "confidence": 75.0,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 76.1,
-      "value_m": 38.0,
-      "signals": [
-        "Network (3 peers)",
-        "Strategy Overlay",
-        "FINRA SI 14.9%"
-      ],
-      "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "AMBP",
@@ -30296,26 +30315,6 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.004,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 64.0,
-      "value_m": 16.0,
-      "signals": [
-        "Network (7 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
       "ticker": "RRX",
       "name": "Regal Rexnord Corp",
       "sector": "Other",
@@ -30421,6 +30420,118 @@
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
+      "weight": 0.02032,
+      "confidence": 89.4,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 596.1,
+      "value_m": 447.1,
+      "signals": [
+        "News / Letter",
+        "Network (13 peers)",
+        "Strategy Overlay",
+        "FINRA SI 22.4%"
+      ],
+      "thesis": "Global credit opportunity & distressed debt tail hedge",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IYR",
+      "name": "iShares U.S. Real Estate ETF",
+      "sector": "Real Estate",
+      "weight": 0.02028,
+      "confidence": 89.2,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "FUTURES / SWAP",
+      "putCall": null,
+      "raw_value_m": 594.7,
+      "value_m": 446.1,
+      "signals": [
+        "News / Letter",
+        "Network (3 peers)",
+        "Strategy Overlay"
+      ],
+      "thesis": "European & US commercial real estate debt distress short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "VNO",
+      "name": "Vornado Realty Trust",
+      "sector": "Real Estate",
+      "weight": 0.01978,
+      "confidence": 87.0,
+      "rating": "HIGH",
+      "prob_tier": "T2 • 75%",
+      "apply_factor": 0.75,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 580.1,
+      "value_m": 435.1,
+      "signals": [
+        "News / Letter",
+        "Network (3 peers)",
+        "Strategy Overlay",
+        "FINRA SI 14.9%"
+      ],
+      "thesis": "Office CRE refinancing wall equity short",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "MPW",
+      "name": "Medical Properties Trust",
+      "sector": "Real Estate",
+      "weight": 0.00983,
+      "confidence": 77.2,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 432.4,
+      "value_m": 216.2,
+      "signals": [
+        "Network (5 peers)",
+        "Strategy Overlay",
+        "FINRA SI 28.6%",
+        "Reg SHO FTD"
+      ],
+      "thesis": "GNN co-holding network propagation: 5 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Index",
+      "weight": 0.0094,
+      "confidence": 73.8,
+      "rating": "MODERATE",
+      "prob_tier": "T3 • 50%",
+      "apply_factor": 0.5,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 413.3,
+      "value_m": 206.7,
+      "signals": [
+        "Network (8 peers)",
+        "FINRA SI 18.5%"
+      ],
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "HYG",
+      "name": "iShares iBoxx High Yield ETF",
+      "sector": "Fixed Income",
       "weight": 0.2705,
       "confidence": 95.0,
       "rating": "CONFIRMED",
@@ -30498,115 +30609,23 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "HYG",
-      "name": "iShares iBoxx High Yield ETF",
-      "sector": "Fixed Income",
-      "weight": 0.02032,
-      "confidence": 89.4,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 108.4,
-      "value_m": 81.3,
-      "signals": [
-        "News / Letter",
-        "Network (13 peers)",
-        "Strategy Overlay",
-        "FINRA SI 22.4%"
-      ],
-      "thesis": "Global credit opportunity & distressed debt tail hedge",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IYR",
-      "name": "iShares U.S. Real Estate ETF",
-      "sector": "Real Estate",
-      "weight": 0.02027,
-      "confidence": 89.2,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "FUTURES / SWAP",
-      "putCall": null,
-      "raw_value_m": 108.1,
-      "value_m": 81.1,
-      "signals": [
-        "News / Letter",
-        "Network (3 peers)",
-        "Strategy Overlay"
-      ],
-      "thesis": "European & US commercial real estate debt distress short",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "VNO",
-      "name": "Vornado Realty Trust",
-      "sector": "Real Estate",
-      "weight": 0.01977,
-      "confidence": 87.0,
-      "rating": "HIGH",
-      "prob_tier": "T2 • 75%",
-      "apply_factor": 0.75,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 105.5,
-      "value_m": 79.1,
-      "signals": [
-        "News / Letter",
-        "Network (3 peers)",
-        "Strategy Overlay",
-        "FINRA SI 14.9%"
-      ],
-      "thesis": "Office CRE refinancing wall equity short",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "MPW",
-      "name": "Medical Properties Trust",
-      "sector": "Real Estate",
-      "weight": 0.00982,
-      "confidence": 77.2,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 78.6,
-      "value_m": 39.3,
-      "signals": [
-        "Network (5 peers)",
-        "Strategy Overlay",
-        "FINRA SI 28.6%",
-        "Reg SHO FTD"
-      ],
-      "thesis": "GNN co-holding network propagation: 5 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
-    },
-    {
-      "ticker": "IWM",
-      "name": "iShares Russell 2000 ETF",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
-      "weight": 0.0094,
-      "confidence": 73.8,
-      "rating": "MODERATE",
-      "prob_tier": "T3 • 50%",
-      "apply_factor": 0.5,
+      "weight": 0.00402,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 75.2,
-      "value_m": 37.6,
+      "raw_value_m": 353.4,
+      "value_m": 88.4,
       "signals": [
-        "Network (8 peers)",
-        "FINRA SI 18.5%"
+        "Network (7 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -30628,26 +30647,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00402,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 64.3,
-      "value_m": 16.1,
-      "signals": [
-        "Network (7 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     },
     {
       "ticker": "VST",
@@ -30712,30 +30711,10 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "S",
-      "name": "SentinelOne, Inc.",
-      "sector": "Other",
-      "weight": 0.26162,
-      "confidence": 95.0,
-      "rating": "CONFIRMED",
-      "type": "LONG",
-      "instrument": "EQUITY",
-      "putCall": null,
-      "value_m": 117.3,
-      "source": "13F-HR",
-      "prob_tier": "T1 • 100%",
-      "apply_factor": 1.0,
-      "raw_value_m": 117.3,
-      "signals": [
-        "SEC 13F-HR"
-      ],
-      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
       "ticker": "HYG",
       "name": "iShares iBoxx High Yield ETF",
       "sector": "Fixed Income",
-      "weight": 0.02035,
+      "weight": 0.02036,
       "confidence": 89.4,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -30743,8 +30722,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 108.6,
-      "value_m": 81.4,
+      "raw_value_m": 380.1,
+      "value_m": 285.0,
       "signals": [
         "News / Letter",
         "Network (13 peers)",
@@ -30758,7 +30737,7 @@
       "ticker": "MPW",
       "name": "Medical Properties Trust",
       "sector": "Real Estate",
-      "weight": 0.02032,
+      "weight": 0.02034,
       "confidence": 89.3,
       "rating": "HIGH",
       "prob_tier": "T2 • 75%",
@@ -30766,8 +30745,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 108.5,
-      "value_m": 81.3,
+      "raw_value_m": 379.6,
+      "value_m": 284.7,
       "signals": [
         "News / Letter",
         "Network (5 peers)",
@@ -30789,8 +30768,8 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 103.5,
-      "value_m": 77.6,
+      "raw_value_m": 362.2,
+      "value_m": 271.6,
       "signals": [
         "News / Letter",
         "Network (3 peers)",
@@ -30812,8 +30791,8 @@
       "type": "SHORT",
       "instrument": "FUTURES / SWAP",
       "putCall": null,
-      "raw_value_m": 78.6,
-      "value_m": 39.3,
+      "raw_value_m": 275.0,
+      "value_m": 137.5,
       "signals": [
         "Network (3 peers)",
         "Strategy Overlay"
@@ -30825,7 +30804,7 @@
       "ticker": "VNO",
       "name": "Vornado Realty Trust",
       "sector": "Real Estate",
-      "weight": 0.00957,
+      "weight": 0.00956,
       "confidence": 75.0,
       "rating": "MODERATE",
       "prob_tier": "T3 • 50%",
@@ -30833,14 +30812,54 @@
       "type": "SHORT",
       "instrument": "EQUITY SHORT",
       "putCall": null,
-      "raw_value_m": 76.5,
-      "value_m": 38.3,
+      "raw_value_m": 267.8,
+      "value_m": 133.9,
       "signals": [
         "Network (3 peers)",
         "Strategy Overlay",
         "FINRA SI 14.9%"
       ],
       "thesis": "GNN co-holding network propagation: 3 peer hedge funds hold convergent short/PUT positions",
+      "source": "Multi-Vector Inference"
+    },
+    {
+      "ticker": "S",
+      "name": "SentinelOne, Inc.",
+      "sector": "Other",
+      "weight": 0.26162,
+      "confidence": 95.0,
+      "rating": "CONFIRMED",
+      "type": "LONG",
+      "instrument": "EQUITY",
+      "putCall": null,
+      "value_m": 117.3,
+      "source": "13F-HR",
+      "prob_tier": "T1 • 100%",
+      "apply_factor": 1.0,
+      "raw_value_m": 117.3,
+      "signals": [
+        "SEC 13F-HR"
+      ],
+      "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "sector": "Index",
+      "weight": 0.00402,
+      "confidence": 63.1,
+      "rating": "LOW",
+      "prob_tier": "T4 • 25%",
+      "apply_factor": 0.25,
+      "type": "SHORT",
+      "instrument": "EQUITY SHORT",
+      "putCall": null,
+      "raw_value_m": 225.3,
+      "value_m": 56.3,
+      "signals": [
+        "Network (7 peers)"
+      ],
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -30862,26 +30881,6 @@
         "SEC 13F-HR"
       ],
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
-    },
-    {
-      "ticker": "QQQ",
-      "name": "Invesco QQQ Trust",
-      "sector": "Index",
-      "weight": 0.00402,
-      "confidence": 63.1,
-      "rating": "LOW",
-      "prob_tier": "T4 • 25%",
-      "apply_factor": 0.25,
-      "type": "SHORT",
-      "instrument": "EQUITY SHORT",
-      "putCall": null,
-      "raw_value_m": 64.4,
-      "value_m": 16.1,
-      "signals": [
-        "Network (7 peers)"
-      ],
-      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
-      "source": "Multi-Vector Inference"
     }
   ],
   "matrix_capital": [
