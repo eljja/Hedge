@@ -1413,8 +1413,8 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00166,
       "confidence": 63.1,
@@ -1427,9 +1427,9 @@
       "raw_value_m": 2239.3,
       "value_m": 559.8,
       "signals": [
-        "Network (11 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -3576,8 +3576,8 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00164,
       "confidence": 63.1,
@@ -3590,9 +3590,9 @@
       "raw_value_m": 931.3,
       "value_m": 232.8,
       "signals": [
-        "Network (11 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -4331,8 +4331,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00396,
       "confidence": 63.1,
@@ -4345,9 +4345,9 @@
       "raw_value_m": 1809.2,
       "value_m": 452.3,
       "signals": [
-        "Network (10 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -7831,8 +7831,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00614,
       "confidence": 63.1,
@@ -7845,9 +7845,9 @@
       "raw_value_m": 1803.7,
       "value_m": 450.9,
       "signals": [
-        "Network (11 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -9454,8 +9454,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00786,
       "confidence": 63.1,
@@ -9468,9 +9468,9 @@
       "raw_value_m": 1713.7,
       "value_m": 428.4,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -11276,8 +11276,8 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00571,
       "confidence": 63.1,
@@ -11290,9 +11290,9 @@
       "raw_value_m": 746.9,
       "value_m": 186.7,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -11931,8 +11931,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.004,
       "confidence": 63.1,
@@ -11945,9 +11945,9 @@
       "raw_value_m": 516.1,
       "value_m": 129.0,
       "signals": [
-        "Network (11 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -12439,8 +12439,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.01017,
       "confidence": 63.1,
@@ -12453,9 +12453,9 @@
       "raw_value_m": 1294.1,
       "value_m": 323.5,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -16454,8 +16454,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00711,
       "confidence": 63.1,
@@ -16468,9 +16468,9 @@
       "raw_value_m": 625.8,
       "value_m": 156.4,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -18616,8 +18616,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00688,
       "confidence": 63.1,
@@ -18630,9 +18630,9 @@
       "raw_value_m": 495.2,
       "value_m": 123.8,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -19247,8 +19247,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00691,
       "confidence": 63.1,
@@ -19261,9 +19261,9 @@
       "raw_value_m": 354.2,
       "value_m": 88.6,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -19898,8 +19898,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00777,
       "confidence": 63.1,
@@ -19912,9 +19912,9 @@
       "raw_value_m": 356.0,
       "value_m": 89.0,
       "signals": [
-        "Network (9 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -21310,8 +21310,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00324,
       "confidence": 63.1,
@@ -21324,9 +21324,9 @@
       "raw_value_m": 181.3,
       "value_m": 45.3,
       "signals": [
-        "Network (10 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -21903,8 +21903,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00786,
       "confidence": 63.1,
@@ -21917,9 +21917,9 @@
       "raw_value_m": 377.2,
       "value_m": 94.3,
       "signals": [
-        "Network (10 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -24796,8 +24796,8 @@
       "thesis": "Semiconductor cycle beta neutralization against concentrated NVDA/AVGO/TSM longs"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00671,
       "confidence": 63.1,
@@ -24810,9 +24810,9 @@
       "raw_value_m": 164.4,
       "value_m": 41.1,
       "signals": [
-        "Network (10 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -25348,8 +25348,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00288,
       "confidence": 63.1,
@@ -25362,9 +25362,9 @@
       "raw_value_m": 299.1,
       "value_m": 74.8,
       "signals": [
-        "Network (10 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -28522,8 +28522,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00463,
       "confidence": 63.1,
@@ -28536,9 +28536,9 @@
       "raw_value_m": 111.4,
       "value_m": 27.8,
       "signals": [
-        "Network (10 peers)"
+        "Network (8 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 8 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -28754,8 +28754,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00381,
       "confidence": 63.1,
@@ -28768,9 +28768,9 @@
       "raw_value_m": 152.4,
       "value_m": 38.1,
       "signals": [
-        "Network (11 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 11 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -29901,8 +29901,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00565,
       "confidence": 63.1,
@@ -29915,9 +29915,9 @@
       "raw_value_m": 90.3,
       "value_m": 22.6,
       "signals": [
-        "Network (10 peers)"
+        "Network (9 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 9 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     }
   ],
@@ -30055,8 +30055,8 @@
       "source": "Multi-Vector Inference"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.004,
       "confidence": 63.1,
@@ -30069,9 +30069,9 @@
       "raw_value_m": 384.0,
       "value_m": 96.0,
       "signals": [
-        "Network (10 peers)"
+        "Network (7 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -30609,8 +30609,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00402,
       "confidence": 63.1,
@@ -30623,9 +30623,9 @@
       "raw_value_m": 353.4,
       "value_m": 88.4,
       "signals": [
-        "Network (10 peers)"
+        "Network (7 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
@@ -30843,8 +30843,8 @@
       "thesis": "Confirmed institutional long holding reported in SEC Form 13F-HR"
     },
     {
-      "ticker": "SPY",
-      "name": "SPDR S&P 500 ETF Trust",
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
       "sector": "Index",
       "weight": 0.00402,
       "confidence": 63.1,
@@ -30857,9 +30857,9 @@
       "raw_value_m": 225.3,
       "value_m": 56.3,
       "signals": [
-        "Network (10 peers)"
+        "Network (7 peers)"
       ],
-      "thesis": "GNN co-holding network propagation: 10 peer hedge funds hold convergent short/PUT positions",
+      "thesis": "GNN co-holding network propagation: 7 peer hedge funds hold convergent short/PUT positions",
       "source": "Multi-Vector Inference"
     },
     {
