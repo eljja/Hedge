@@ -211,9 +211,9 @@
       "Millennium Management",
       "Tudor Investment Corp"
     ],
-    "inferred_funds_count": 16,
-    "total_short_funds": 27,
-    "total_short_m": 57530.3,
+    "inferred_funds_count": 38,
+    "total_short_funds": 49,
+    "total_short_m": 61336.2,
     "top_short_funds": [
       "Citadel Advisors",
       "Millennium Management",
@@ -249,9 +249,9 @@
       "Millennium Management",
       "Farallon Capital"
     ],
-    "inferred_funds_count": 31,
-    "total_short_funds": 45,
-    "total_short_m": 53515.5,
+    "inferred_funds_count": 9,
+    "total_short_funds": 23,
+    "total_short_m": 49709.6,
     "top_short_funds": [
       "Citadel Advisors",
       "Millennium Management",
@@ -306,8 +306,8 @@
     "apply_factor": 1.0,
     "rating": "CONFIRMED",
     "vectors": [
-      "13F-HR PUT",
-      "News / Letter"
+      "News / Letter",
+      "13F-HR PUT"
     ],
     "squeeze_risk": "LOW",
     "thesis": "Active institutional 13F PUT & multi-vector short across 13 funds ($21,290M effective notional)",
